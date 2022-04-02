@@ -1,3 +1,6 @@
+Original App Design Project - README Template
+===
+
 # CovidPass
 
 ## Table of Contents
@@ -39,8 +42,6 @@ Covid app to keep track of a person's covid status, vaccinations, etc. Uses QR c
 
 **Optional Nice-to-have Stories**
 
-* User can see how many devices nearby
-* User can see how mnay total exchanges today
 * User can see posible exposures 
 * User can change language
 * User can use "hey Siri", or tap the back of your phone to add shortcuts
@@ -98,7 +99,9 @@ Covid app to keep track of a person's covid status, vaccinations, etc. Uses QR c
 
 ## Wireframes
 [Add picture of your hand sketched wireframes in this section]
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://i.imgur.com/56HV0Cm.jpg" width=600>
+<img src="https://i.imgur.com/2A5wTma.jpg" width=600>
+
 
 ### [BONUS] Digital Wireframes & Mockups
 
@@ -107,8 +110,30 @@ Covid app to keep track of a person's covid status, vaccinations, etc. Uses QR c
 ## Schema 
 [This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | username      | String   | user' name |
+   | password      | String   | user's password |
+   | email address | String   | user's email address|
+   | gender        | String   | user's gender |
+   | DOB           | DateTime | user's DOB  |
+   | phone number  | Number   | user's phone number |
+   | address       | String   | user's address |
+   | user image    | File     | user's image |
+   | QR Code       | File     | QR Code for endering building |
+   | vaccination card | File  | user's vaccination card |
+   | test date     | DateTime | vaccinate date  |
+
 ### Networking
-- [Add list of network requests by screen ]
+- Home Feed Screen
+    - (Read/GET) Query vaccination card information where user is author
+- Scan QR Code Screen
+    - (Create/POST) Scan new QR code
+- History Screen
+    - (Read/GET) Query pass history 
+- Profile Screen
+    - (Read/GET) Query logged in user object
+    - (Update/PUT) Update user profile image
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
