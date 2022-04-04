@@ -7,15 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		29E68FD9E51EF0179462BF22 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE16385B69EA600750933DF7 /* Pods_CovidPass_CovidPassUITests.framework */; };
+		B6ABBD9427F8D564002F16FB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6ABBD9327F8D564002F16FB /* LoginViewController.swift */; };
+		C05F3B8CAAD8BE96E2D9897A /* Pods_CovidPassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 21E06081CFFAFAD2087AA303 /* Pods_CovidPassTests.framework */; };
 		C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB527F8D081007831FC /* AppDelegate.swift */; };
 		C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB727F8D081007831FC /* SceneDelegate.swift */; };
-		C7692EBA27F8D081007831FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB927F8D081007831FC /* ViewController.swift */; };
 		C7692EBD27F8D081007831FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7692EBB27F8D081007831FC /* Main.storyboard */; };
 		C7692EBF27F8D084007831FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C7692EBE27F8D084007831FC /* Assets.xcassets */; };
 		C7692EC227F8D084007831FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C7692EC027F8D084007831FC /* LaunchScreen.storyboard */; };
 		C7692ECD27F8D085007831FC /* CovidPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ECC27F8D085007831FC /* CovidPassTests.swift */; };
 		C7692ED727F8D085007831FC /* CovidPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED627F8D085007831FC /* CovidPassUITests.swift */; };
 		C7692ED927F8D085007831FC /* CovidPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */; };
+		F15A79213E600D4B69595D6A /* Pods_CovidPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 827D6409566CCAA842826085 /* Pods_CovidPass.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,10 +39,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0CF24C2F4B09DD8AECD574FA /* Pods-CovidPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.release.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.release.xcconfig"; sourceTree = "<group>"; };
+		1559D490D3EEC6DA1168BAAA /* Pods-CovidPass-CovidPassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		21E06081CFFAFAD2087AA303 /* Pods_CovidPassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DF6A857A74F3E7B1881191D /* Pods-CovidPassTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPassTests.debug.xcconfig"; path = "Target Support Files/Pods-CovidPassTests/Pods-CovidPassTests.debug.xcconfig"; sourceTree = "<group>"; };
+		827D6409566CCAA842826085 /* Pods_CovidPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		98748EE9EBC712772E3857DB /* Pods-CovidPassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPassTests.release.xcconfig"; path = "Target Support Files/Pods-CovidPassTests/Pods-CovidPassTests.release.xcconfig"; sourceTree = "<group>"; };
+		B6ABBD9327F8D564002F16FB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		B6CB673437141166E31B5EDF /* Pods-CovidPass-CovidPassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.release.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692EB527F8D081007831FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7692EB727F8D081007831FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C7692EB927F8D081007831FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C7692EBC27F8D081007831FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C7692EBE27F8D084007831FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C7692EC127F8D084007831FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +59,8 @@
 		C7692ED227F8D085007831FC /* CovidPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692ED627F8D085007831FC /* CovidPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITests.swift; sourceTree = "<group>"; };
 		C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CE16385B69EA600750933DF7 /* Pods_CovidPass_CovidPassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPass_CovidPassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E88E5C6E37270F5B1E0E354C /* Pods-CovidPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F15A79213E600D4B69595D6A /* Pods_CovidPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C05F3B8CAAD8BE96E2D9897A /* Pods_CovidPassTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +84,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				29E68FD9E51EF0179462BF22 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8CC373ED1EB5771F98593BB1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E88E5C6E37270F5B1E0E354C /* Pods-CovidPass.debug.xcconfig */,
+				0CF24C2F4B09DD8AECD574FA /* Pods-CovidPass.release.xcconfig */,
+				1559D490D3EEC6DA1168BAAA /* Pods-CovidPass-CovidPassUITests.debug.xcconfig */,
+				B6CB673437141166E31B5EDF /* Pods-CovidPass-CovidPassUITests.release.xcconfig */,
+				7DF6A857A74F3E7B1881191D /* Pods-CovidPassTests.debug.xcconfig */,
+				98748EE9EBC712772E3857DB /* Pods-CovidPassTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C16C170E0A7B452D59788DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				827D6409566CCAA842826085 /* Pods_CovidPass.framework */,
+				CE16385B69EA600750933DF7 /* Pods_CovidPass_CovidPassUITests.framework */,
+				21E06081CFFAFAD2087AA303 /* Pods_CovidPassTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C7692EA927F8D081007831FC = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +121,8 @@
 				C7692ECB27F8D085007831FC /* CovidPassTests */,
 				C7692ED527F8D085007831FC /* CovidPassUITests */,
 				C7692EB327F8D081007831FC /* Products */,
+				8CC373ED1EB5771F98593BB1 /* Pods */,
+				C16C170E0A7B452D59788DFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +141,11 @@
 			children = (
 				C7692EB527F8D081007831FC /* AppDelegate.swift */,
 				C7692EB727F8D081007831FC /* SceneDelegate.swift */,
-				C7692EB927F8D081007831FC /* ViewController.swift */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				C7692EBE27F8D084007831FC /* Assets.xcassets */,
 				C7692EC027F8D084007831FC /* LaunchScreen.storyboard */,
 				C7692EC327F8D084007831FC /* Info.plist */,
+				B6ABBD9327F8D564002F16FB /* LoginViewController.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
@@ -134,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7692EDC27F8D085007831FC /* Build configuration list for PBXNativeTarget "CovidPass" */;
 			buildPhases = (
+				13ABA1AFDA430AD28156E9AC /* [CP] Check Pods Manifest.lock */,
 				C7692EAE27F8D081007831FC /* Sources */,
 				C7692EAF27F8D081007831FC /* Frameworks */,
 				C7692EB027F8D081007831FC /* Resources */,
+				145A9FC9B5D4E2DC5781B53F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +193,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7692EDF27F8D085007831FC /* Build configuration list for PBXNativeTarget "CovidPassTests" */;
 			buildPhases = (
+				2E259E2611AFF9DA2D6CE586 /* [CP] Check Pods Manifest.lock */,
 				C7692EC427F8D085007831FC /* Sources */,
 				C7692EC527F8D085007831FC /* Frameworks */,
 				C7692EC627F8D085007831FC /* Resources */,
@@ -169,9 +212,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C7692EE227F8D085007831FC /* Build configuration list for PBXNativeTarget "CovidPassUITests" */;
 			buildPhases = (
+				DD525E491CBF38BB2B518ABF /* [CP] Check Pods Manifest.lock */,
 				C7692ECE27F8D085007831FC /* Sources */,
 				C7692ECF27F8D085007831FC /* Frameworks */,
 				C7692ED027F8D085007831FC /* Resources */,
+				E40D6DE462EC9A2E91B59F63 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,12 +298,115 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		13ABA1AFDA430AD28156E9AC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CovidPass-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		145A9FC9B5D4E2DC5781B53F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidPass/Pods-CovidPass-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidPass/Pods-CovidPass-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CovidPass/Pods-CovidPass-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2E259E2611AFF9DA2D6CE586 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CovidPassTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD525E491CBF38BB2B518ABF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CovidPass-CovidPassUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E40D6DE462EC9A2E91B59F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		C7692EAE27F8D081007831FC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C7692EBA27F8D081007831FC /* ViewController.swift in Sources */,
+				B6ABBD9427F8D564002F16FB /* LoginViewController.swift in Sources */,
 				C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */,
 				C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */,
 			);
@@ -434,6 +582,7 @@
 		};
 		C7692EDD27F8D085007831FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E88E5C6E37270F5B1E0E354C /* Pods-CovidPass.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -462,6 +611,7 @@
 		};
 		C7692EDE27F8D085007831FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0CF24C2F4B09DD8AECD574FA /* Pods-CovidPass.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -490,6 +640,7 @@
 		};
 		C7692EE027F8D085007831FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DF6A857A74F3E7B1881191D /* Pods-CovidPassTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -510,6 +661,7 @@
 		};
 		C7692EE127F8D085007831FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 98748EE9EBC712772E3857DB /* Pods-CovidPassTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -530,6 +682,7 @@
 		};
 		C7692EE327F8D085007831FC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1559D490D3EEC6DA1168BAAA /* Pods-CovidPass-CovidPassUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -548,6 +701,7 @@
 		};
 		C7692EE427F8D085007831FC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6CB673437141166E31B5EDF /* Pods-CovidPass-CovidPassUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
