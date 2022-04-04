@@ -1,0 +1,44 @@
+PODS:
+  - Alamofire (5.5.0)
+  - AlamofireImage (4.2.0):
+    - Alamofire (~> 5.4)
+  - Bolts/Tasks (1.9.1)
+  - MBProgressHUD (1.2.0)
+  - MessageInputBar (0.4.1):
+    - MessageInputBar/Core (= 0.4.1)
+  - MessageInputBar/Core (0.4.1)
+  - Parse (1.19.3):
+    - Parse/Core (= 1.19.3)
+  - Parse/Core (1.19.3):
+    - Bolts/Tasks (= 1.9.1)
+  - QRCode (2.0)
+
+DEPENDENCIES:
+  - AlamofireImage
+  - MBProgressHUD
+  - MessageInputBar
+  - Parse
+  - QRCode
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - AlamofireImage
+    - Bolts
+    - MBProgressHUD
+    - MessageInputBar
+    - Parse
+    - QRCode
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  AlamofireImage: 34a2d90b0e5fe6a5605f85ae4b7b01e784c60192
+  Bolts: 8c1e8aab2f603387b8b9924f57d1d64f43d3ffdc
+  MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  Parse: 0abb63a0ff6fa34a3f64b81d595a294e2ece143a
+  QRCode: f98a1886c8f37523704a7512a4c0cd45b34c18a4
+
+PODFILE CHECKSUM: 2bb6f318a02f04b53d381f56776877373db0933e
+
+COCOAPODS: 1.11.2
