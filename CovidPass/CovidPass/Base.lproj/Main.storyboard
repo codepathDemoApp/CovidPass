@@ -119,7 +119,7 @@
         <scene sceneID="W7z-Z5-7T6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qDe-DO-G1n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="icons8-history" id="GEF-TC-X4r"/>
+                    <tabBarItem key="tabBarItem" title="History" image="history" id="GEF-TC-X4r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6MU-Z6-ww7">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
@@ -156,7 +156,7 @@
     </scenes>
     <resources>
         <image name="feed_tab" width="25" height="25"/>
-        <image name="icons8-history" width="24" height="24"/>
+        <image name="history" width="24" height="24"/>
         <image name="profile_tab" width="25" height="25"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <systemColor name="systemBackgroundColor">
