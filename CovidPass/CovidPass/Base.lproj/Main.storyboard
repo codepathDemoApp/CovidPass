@@ -19,7 +19,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <segue destination="JA4-Q7-qkh" kind="presentation" identifier="loginSegue" id="NRB-fG-xpF"/>
+                        <segue destination="JA4-Q7-qkh" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="NRB-fG-xpF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -31,7 +31,7 @@
             <objects>
                 <viewController id="fEO-xu-emN" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fc8-3d-1Jb">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="3Os-eL-oy0"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,7 +50,7 @@
             <objects>
                 <viewController id="jqH-Ge-bW0" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBo-MI-oip">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lP3-BZ-GRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -66,7 +66,7 @@
             <objects>
                 <viewController id="7i1-aA-pY1" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qzx-lh-8JH">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="FUt-Vh-U4f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -103,7 +103,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="feed_tab" id="7um-am-OWO"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QeW-56-coS">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -122,7 +122,7 @@
                     <tabBarItem key="tabBarItem" title="History" image="history" id="GEF-TC-X4r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6MU-Z6-ww7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -141,7 +141,7 @@
                     <tabBarItem key="tabBarItem" title="Profile" image="profile_tab" id="Pg2-3U-fRY"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="YBf-Cm-rr8">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
