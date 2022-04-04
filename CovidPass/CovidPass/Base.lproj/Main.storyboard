@@ -55,7 +55,12 @@
                         <viewLayoutGuide key="safeArea" id="lP3-BZ-GRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="NVc-6U-ZaU"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="NVc-6U-ZaU">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bZd-aY-bKa"/>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="sxF-IW-dfQ"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCj-6L-fKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -71,7 +76,12 @@
                         <viewLayoutGuide key="safeArea" id="FUt-Vh-U4f"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="3nF-4O-Did"/>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="3nF-4O-Did">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="moI-rX-ZwY"/>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="pEr-qG-0Na"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oNV-PP-EdW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
