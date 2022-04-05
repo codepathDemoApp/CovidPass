@@ -13,6 +13,7 @@
 		B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC227FD015400057FB2 /* LoginViewController.swift */; };
 		B64BAAC527FD015D00057FB2 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC427FD015D00057FB2 /* HistoryViewController.swift */; };
 		B64BAAC727FD016600057FB2 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC627FD016600057FB2 /* ProfileViewController.swift */; };
+		B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC827FD06F200057FB2 /* HistoryCell.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
 		C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB527F8D081007831FC /* AppDelegate.swift */; };
 		C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB727F8D081007831FC /* SceneDelegate.swift */; };
@@ -53,6 +54,7 @@
 		B64BAAC227FD015400057FB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		B64BAAC427FD015D00057FB2 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 		B64BAAC627FD016600057FB2 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		B64BAAC827FD06F200057FB2 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692EB527F8D081007831FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C7692EB727F8D081007831FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -107,7 +109,6 @@
 				A85EE0F735D47E5726A74E91 /* Pods-CovidPassTests.debug.xcconfig */,
 				69FA0B6656499EE6D9AB2E34 /* Pods-CovidPassTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -139,6 +140,7 @@
 				C7692EB527F8D081007831FC /* AppDelegate.swift */,
 				C7692EB727F8D081007831FC /* SceneDelegate.swift */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
+				B64BAAC827FD06F200057FB2 /* HistoryCell.swift */,
 				C7692EBE27F8D084007831FC /* Assets.xcassets */,
 				C7692EC027F8D084007831FC /* LaunchScreen.storyboard */,
 				C7692EC327F8D084007831FC /* Info.plist */,
@@ -417,6 +419,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B64BAAC727FD016600057FB2 /* ProfileViewController.swift in Sources */,
+				B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */,
 				B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */,
 				C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */,
 				C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */,

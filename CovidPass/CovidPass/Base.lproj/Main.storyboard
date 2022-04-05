@@ -11,31 +11,13 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginViewController" id="BYZ-38-t0r" customClass="LoginViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" usesAttributedText="YES" allowsEditingTextAttributes="YES" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2Tz-Lm-YlB">
-                                <rect key="frame" x="20" y="372" width="350" height="34"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Email">
-                                        <attributes>
-                                            <color key="NSColor" systemColor="labelColor"/>
-                                            <font key="NSFont" metaFont="system" size="14"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-yc-mPg">
-                                <rect key="frame" x="20" y="422" width="350" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
-                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXs-yw-ElU">
-                                <rect key="frame" x="20" y="516" width="350" height="40"/>
+                                <rect key="frame" x="20" y="520" width="350" height="40"/>
                                 <color key="backgroundColor" red="0.94483494758605957" green="0.95280766487121582" blue="0.94802403450012207" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8td-Fl-PlZ"/>
@@ -49,7 +31,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFw-V7-cR1">
-                                <rect key="frame" x="20" y="564" width="350" height="40"/>
+                                <rect key="frame" x="20" y="568" width="350" height="40"/>
                                 <color key="backgroundColor" red="0.94502770900726318" green="0.95330893993377686" blue="0.94834020137786867" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mx6-Yj-74L"/>
@@ -63,36 +45,68 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CovidPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lu-F6-knu">
-                                <rect key="frame" x="100" y="273" width="190" height="40"/>
+                                <rect key="frame" x="100" y="254" width="190" height="40"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jmL-IE-DPI">
+                                <rect key="frame" x="20" y="302" width="95" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Username">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fgg-dK-Gxh">
+                                <rect key="frame" x="30" y="339" width="330" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2zk-G7-7h7">
+                                <rect key="frame" x="20" y="389" width="90" height="32"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Password">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="15"/>
+                                </buttonConfiguration>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-yc-mPg">
+                                <rect key="frame" x="30" y="426" width="330" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                            </textField>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2Tz-Lm-YlB" firstAttribute="top" secondItem="0Lu-F6-knu" secondAttribute="bottom" constant="59" id="0pQ-2h-Qzq"/>
-                            <constraint firstItem="2Tz-Lm-YlB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="AdB-Jv-CpP"/>
-                            <constraint firstItem="f9o-yc-mPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bji-3c-RuO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Tz-Lm-YlB" secondAttribute="trailing" constant="20" id="FsD-B9-SIN"/>
+                            <constraint firstItem="2zk-G7-7h7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0bM-66-bNX"/>
+                            <constraint firstItem="fgg-dK-Gxh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="1vL-gV-VPp"/>
+                            <constraint firstItem="jmL-IE-DPI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4Tn-0g-IEt"/>
+                            <constraint firstItem="f9o-yc-mPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="Bji-3c-RuO"/>
+                            <constraint firstItem="f9o-yc-mPg" firstAttribute="top" secondItem="2zk-G7-7h7" secondAttribute="bottom" constant="5" id="G2r-du-TI5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fgg-dK-Gxh" secondAttribute="trailing" constant="30" id="GIq-vi-RjV"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFw-V7-cR1" secondAttribute="trailing" constant="20" id="JlY-ub-gTt"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fFw-V7-cR1" secondAttribute="bottom" constant="31" id="LMd-Zp-wZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Lu-F6-knu" secondAttribute="trailing" constant="100" id="OLG-5P-h70"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9o-yc-mPg" secondAttribute="trailing" constant="20" id="PLj-zz-UCS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9o-yc-mPg" secondAttribute="trailing" constant="30" id="PLj-zz-UCS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="2zk-G7-7h7" secondAttribute="trailing" symbolic="YES" id="QmV-Cv-S2G"/>
                             <constraint firstItem="fFw-V7-cR1" firstAttribute="top" secondItem="gXs-yw-ElU" secondAttribute="bottom" constant="8" id="TCt-Ku-ayf"/>
                             <constraint firstItem="gXs-yw-ElU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TUQ-lV-ai6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gXs-yw-ElU" secondAttribute="trailing" constant="20" id="TW9-dW-qk4"/>
-                            <constraint firstItem="f9o-yc-mPg" firstAttribute="top" secondItem="2Tz-Lm-YlB" secondAttribute="bottom" constant="16" id="UZJ-FB-zAm"/>
+                            <constraint firstItem="2zk-G7-7h7" firstAttribute="top" secondItem="fgg-dK-Gxh" secondAttribute="bottom" constant="16" id="aKd-7F-UvZ"/>
                             <constraint firstItem="gXs-yw-ElU" firstAttribute="top" secondItem="f9o-yc-mPg" secondAttribute="bottom" constant="60" id="hgz-wA-Lop"/>
-                            <constraint firstItem="0Lu-F6-knu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="229" id="qJP-kV-IEb"/>
+                            <constraint firstItem="0Lu-F6-knu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="210" id="qJP-kV-IEb"/>
+                            <constraint firstItem="jmL-IE-DPI" firstAttribute="top" secondItem="0Lu-F6-knu" secondAttribute="bottom" constant="8" id="rEf-p1-FRD"/>
+                            <constraint firstItem="fgg-dK-Gxh" firstAttribute="top" secondItem="jmL-IE-DPI" secondAttribute="bottom" constant="5" id="sa5-4D-zHu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jmL-IE-DPI" secondAttribute="trailing" symbolic="YES" id="tGB-Um-yr5"/>
                             <constraint firstItem="0Lu-F6-knu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="w4S-ET-bDP"/>
                             <constraint firstItem="fFw-V7-cR1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="xr9-gS-KAR"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="passwordField" destination="f9o-yc-mPg" id="VYc-ww-bgO"/>
-                        <outlet property="usernameField" destination="2Tz-Lm-YlB" id="hAR-dU-Ahb"/>
+                        <outlet property="usernameField" destination="fgg-dK-Gxh" id="rcW-H5-48l"/>
                         <segue destination="JA4-Q7-qkh" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="NRB-fG-xpF"/>
                     </connections>
                 </viewController>
@@ -431,7 +445,7 @@ United Statesv</string>
                                 <rect key="frame" x="0.0" y="186.33333333333331" width="390" height="657.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="119" id="P5Q-XW-ok0">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="119" id="P5Q-XW-ok0" customClass="HistoryCell" customModule="CovidPass" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P5Q-XW-ok0" id="bw9-I7-HqG">
@@ -521,7 +535,7 @@ United Statesv</string>
         <!--Tab Bar Controller-->
         <scene sceneID="j3o-Yv-Sen">
             <objects>
-                <tabBarController id="JA4-Q7-qkh" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TarbarController" id="JA4-Q7-qkh" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="161-Y2-IL3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -603,9 +617,6 @@ United Statesv</string>
         <image name="profile_tab" width="25" height="25"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
