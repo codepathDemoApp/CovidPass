@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CovidPassIconNoBorder" translatesAutoresizingMaskIntoConstraints="NO" id="QBX-qF-v5J">
-                                <rect key="frame" x="117" y="358" width="180" height="180"/>
+                                <rect key="frame" x="117" y="274" width="180" height="180"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CovidPass" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yye-s6-RJj">
-                                <rect key="frame" x="144" y="772" width="127" height="31"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CovidPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yye-s6-RJj">
+                                <rect key="frame" x="120" y="470" width="174" height="30.5"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -29,11 +29,13 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yye-s6-RJj" secondAttribute="trailing" constant="143" id="8OC-lk-5nU"/>
-                            <constraint firstItem="QBX-qF-v5J" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="BJ9-WF-1yR"/>
+                            <constraint firstItem="Yye-s6-RJj" firstAttribute="top" secondItem="QBX-qF-v5J" secondAttribute="bottom" constant="16" id="2Fg-Rw-EnU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Yye-s6-RJj" secondAttribute="trailing" constant="120" id="8OC-lk-5nU"/>
+                            <constraint firstItem="Yye-s6-RJj" firstAttribute="top" secondItem="QBX-qF-v5J" secondAttribute="bottom" constant="16" id="ENf-D3-afv"/>
                             <constraint firstItem="QBX-qF-v5J" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="a54-ja-nWj"/>
-                            <constraint firstItem="Yye-s6-RJj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="144" id="e8c-N0-rft"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Yye-s6-RJj" secondAttribute="bottom" constant="59" id="wis-oV-CVX"/>
+                            <constraint firstItem="QBX-qF-v5J" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="230" id="cSQ-v8-tZn"/>
+                            <constraint firstItem="Yye-s6-RJj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="e8c-N0-rft"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Yye-s6-RJj" secondAttribute="bottom" constant="59" id="wis-oV-CVX"/>
                         </constraints>
                     </view>
                 </viewController>
