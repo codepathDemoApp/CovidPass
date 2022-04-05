@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -32,25 +32,35 @@
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Password" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f9o-yc-mPg">
                                 <rect key="frame" x="20" y="422" width="350" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gXs-yw-ElU">
                                 <rect key="frame" x="20" y="516" width="350" height="40"/>
-                                <color key="backgroundColor" red="0.95398098909545093" green="0.96361596805533178" blue="0.95921957203135033" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.94483494758605957" green="0.95280766487121582" blue="0.94802403450012207" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="8td-Fl-PlZ"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Log In"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign In">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5kW-ug-oGG"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fFw-V7-cR1">
-                                <rect key="frame" x="20" y="739" width="350" height="40"/>
-                                <color key="backgroundColor" red="0.84951506939130961" green="0.84951506939130961" blue="0.84951506939130961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <rect key="frame" x="20" y="564" width="350" height="40"/>
+                                <color key="backgroundColor" red="0.94502770900726318" green="0.95330893993377686" blue="0.94834020137786867" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="mx6-Yj-74L"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Create an account"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sign Up">
+                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQT-Lx-44S"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CovidPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lu-F6-knu">
                                 <rect key="frame" x="100" y="273" width="190" height="40"/>
@@ -67,9 +77,10 @@
                             <constraint firstItem="f9o-yc-mPg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bji-3c-RuO"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Tz-Lm-YlB" secondAttribute="trailing" constant="20" id="FsD-B9-SIN"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fFw-V7-cR1" secondAttribute="trailing" constant="20" id="JlY-ub-gTt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fFw-V7-cR1" secondAttribute="bottom" constant="31" id="LMd-Zp-wZu"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="fFw-V7-cR1" secondAttribute="bottom" constant="31" id="LMd-Zp-wZu"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="0Lu-F6-knu" secondAttribute="trailing" constant="100" id="OLG-5P-h70"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f9o-yc-mPg" secondAttribute="trailing" constant="20" id="PLj-zz-UCS"/>
+                            <constraint firstItem="fFw-V7-cR1" firstAttribute="top" secondItem="gXs-yw-ElU" secondAttribute="bottom" constant="8" id="TCt-Ku-ayf"/>
                             <constraint firstItem="gXs-yw-ElU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="TUQ-lV-ai6"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gXs-yw-ElU" secondAttribute="trailing" constant="20" id="TW9-dW-qk4"/>
                             <constraint firstItem="f9o-yc-mPg" firstAttribute="top" secondItem="2Tz-Lm-YlB" secondAttribute="bottom" constant="16" id="UZJ-FB-zAm"/>
@@ -80,6 +91,8 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="passwordField" destination="f9o-yc-mPg" id="VYc-ww-bgO"/>
+                        <outlet property="usernameField" destination="2Tz-Lm-YlB" id="hAR-dU-Ahb"/>
                         <segue destination="JA4-Q7-qkh" kind="presentation" identifier="loginSegue" modalPresentationStyle="fullScreen" id="NRB-fG-xpF"/>
                     </connections>
                 </viewController>
@@ -90,7 +103,7 @@
         <!--Home-->
         <scene sceneID="Bli-Ev-2dI">
             <objects>
-                <viewController id="fEO-xu-emN" sceneMemberID="viewController">
+                <viewController id="fEO-xu-emN" customClass="HomeViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fc8-3d-1Jb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,8 +214,16 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Home" id="HKY-H4-xET">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="8A1-rH-aN2"/>
-                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="lC7-8u-Ajp"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="8A1-rH-aN2">
+                            <connections>
+                                <action selector="onLogOut:" destination="fEO-xu-emN" id="nok-dD-eCp"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="lC7-8u-Ajp">
+                            <connections>
+                                <action selector="scanQR:" destination="fEO-xu-emN" id="flQ-4U-WTO"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PMV-JP-tpL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -212,7 +233,7 @@
         <!--Profile-->
         <scene sceneID="0Ls-Wq-Me9">
             <objects>
-                <viewController id="jqH-Ge-bW0" sceneMemberID="viewController">
+                <viewController id="jqH-Ge-bW0" customClass="ProfileViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBo-MI-oip">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -373,8 +394,16 @@ United Statesv</string>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="Profile" id="NVc-6U-ZaU">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bZd-aY-bKa"/>
-                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="sxF-IW-dfQ"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="bZd-aY-bKa">
+                            <connections>
+                                <action selector="onLogOut:" destination="jqH-Ge-bW0" id="wKB-wm-jJD"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="sxF-IW-dfQ">
+                            <connections>
+                                <action selector="scanQR:" destination="jqH-Ge-bW0" id="nhs-AQ-TPf"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
@@ -385,7 +414,7 @@ United Statesv</string>
         <!--History-->
         <scene sceneID="aQL-Tj-cBx">
             <objects>
-                <viewController id="7i1-aA-pY1" sceneMemberID="viewController">
+                <viewController id="7i1-aA-pY1" customClass="HistoryViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qzx-lh-8JH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -472,8 +501,16 @@ United Statesv</string>
                     </view>
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="History" id="3nF-4O-Did">
-                        <barButtonItem key="leftBarButtonItem" title="Logout" id="moI-rX-ZwY"/>
-                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="pEr-qG-0Na"/>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="moI-rX-ZwY">
+                            <connections>
+                                <action selector="onLogOut:" destination="7i1-aA-pY1" id="vpc-zo-0fB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="pEr-qG-0Na">
+                            <connections>
+                                <action selector="scanQR:" destination="7i1-aA-pY1" id="ua9-w0-7iF"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
