@@ -21,6 +21,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         usernameField.delegate = self
         passwordField.delegate = self
         
+        signInButton.layer.cornerRadius = 12
+        signInButton.layer.masksToBounds = true
+        signUpButton.layer.cornerRadius = 12
+        signUpButton.layer.masksToBounds = true
+        
         // Do any additional setup after loading the view.
     }
     
@@ -32,7 +37,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
             if user != nil {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
             } else {
                 print("Error: \(error!.localizedDescription)")
                 let alert = UIAlertController(title: "Incorrect Password", message: "The username or password you entered is incorrect.", preferredStyle: UIAlertController.Style.alert)
@@ -53,7 +58,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         user.signUpInBackground { success, error in
             if success {
-                self.performSegue(withIdentifier: "loginSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
             } else {
                 print("Error: \(error!.localizedDescription)")
             }
