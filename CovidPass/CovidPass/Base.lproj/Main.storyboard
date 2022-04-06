@@ -891,11 +891,13 @@ United Statesv</string>
             </objects>
             <point key="canvasLocation" x="-2323" y="2506"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Settings-->
         <scene sceneID="bbX-01-fB8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zT1-qS-1ba" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="XCg-cM-lyu"/>
+                    <tabBarItem key="tabBarItem" title="Settings" id="XCg-cM-lyu">
+                        <imageReference key="selectedImage" image="gearshape.fill" catalog="system" symbolScale="large"/>
+                    </tabBarItem>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s5w-4O-M5i">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
@@ -934,6 +936,7 @@ United Statesv</string>
         <image name="building.2.fill" catalog="system" width="128" height="106"/>
         <image name="feed_tab" width="25" height="25"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
+        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
         <image name="history" width="24" height="24"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="profile_tab" width="25" height="25"/>
