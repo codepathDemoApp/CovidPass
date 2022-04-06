@@ -12,6 +12,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
+    @IBOutlet weak var signInButton: UIButton!
+    @IBOutlet weak var signUpButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -69,6 +71,23 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
+    // responsive signIn button
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if (!(usernameField.text?.count == 0) && !(passwordField.text?.count == 0)) {
+            signInButton.isUserInteractionEnabled = true
+            signInButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 1)
+        } else {
+            signInButton.isUserInteractionEnabled = false
+            signInButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 0.5)
+        }
+    }
+    
+//    @IBAction func onUsernameEdit(_ sender: Any) {
+//        print("changed")
+//        if (usernameField.text?.count == 0) {
+//            print("username is empty")
+//        }
+//    }
     /*
     // MARK: - Navigation
 
