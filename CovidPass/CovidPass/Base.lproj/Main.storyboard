@@ -44,6 +44,7 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="onSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="VVb-B5-MzR"/>
+                                    <segue destination="GeW-vN-5wk" kind="presentation" modalPresentationStyle="fullScreen" id="ZR3-N8-lrk"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CovidPass" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Lu-F6-knu">
@@ -169,7 +170,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Kak-pW-g25">
-                        <barButtonItem key="leftBarButtonItem" title="Login" image="chevron.left" catalog="system" id="Zxt-ol-5Zn"/>
+                        <barButtonItem key="leftBarButtonItem" title="backLogin" id="Zxt-ol-5Zn">
+                            <imageReference key="image" image="xmark" catalog="system" symbolScale="large"/>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEk-AN-Xjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -929,7 +932,6 @@ United Statesv</string>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="building.2.fill" catalog="system" width="128" height="106"/>
-        <image name="chevron.left" catalog="system" width="96" height="128"/>
         <image name="feed_tab" width="25" height="25"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
         <image name="history" width="24" height="24"/>
@@ -938,6 +940,7 @@ United Statesv</string>
         <image name="qrcode" catalog="system" width="128" height="114"/>
         <image name="qrcode.viewfinder" catalog="system" width="128" height="115"/>
         <image name="star.fill" catalog="system" width="128" height="116"/>
+        <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
