@@ -35,6 +35,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
                 self.performSegue(withIdentifier: "loginSegue", sender: nil)
             } else {
                 print("Error: \(error!.localizedDescription)")
+                let alert = UIAlertController(title: "Incorrect Password", message: "The username or password you entered is incorrect.", preferredStyle: UIAlertController.Style.alert)
+                
+                alert.addAction(UIAlertAction(title: "Try again", style: UIAlertAction.Style.default, handler: nil))
+                
+                self.present(alert, animated: true, completion: nil)
             }
         }
     }
@@ -82,12 +87,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-//    @IBAction func onUsernameEdit(_ sender: Any) {
-//        print("changed")
-//        if (usernameField.text?.count == 0) {
-//            print("username is empty")
-//        }
-//    }
+    
     /*
     // MARK: - Navigation
 
