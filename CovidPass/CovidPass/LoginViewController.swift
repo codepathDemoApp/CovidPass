@@ -23,8 +23,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         signInButton.layer.cornerRadius = 12
         signInButton.layer.masksToBounds = true
-        signUpButton.layer.cornerRadius = 12
-        signUpButton.layer.masksToBounds = true
+//        signUpButton.layer.cornerRadius = 12
+//        signUpButton.layer.masksToBounds = true
         
         // Do any additional setup after loading the view.
     }
@@ -91,7 +91,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
             signInButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 0.5)
         }
     }
-    
     
     /*
     // MARK: - Navigation
