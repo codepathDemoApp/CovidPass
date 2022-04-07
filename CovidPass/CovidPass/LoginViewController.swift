@@ -26,10 +26,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         signInButton.layer.cornerRadius = 12
         signInButton.layer.masksToBounds = true
         
-//        imageIcon.image = UIImage(named: "eye.slash")
-//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-//        imageIcon.isUserInteractionEnabled = true
-//        imageIcon.addGestureRecognizer(tapGestureRecognizer)
         // Do any additional setup after loading the view.
     }
     
@@ -49,23 +45,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         iconClick = !iconClick
     }
     
-    
-    
-//    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
-//
-//        let tappedImage = tapGestureRecognizer.view as! UIImageView
-//        if iconClick {
-//            iconClick = false
-//            tappedImage.image = UIImage(named: "eye")
-//            passwordField.isSecureTextEntry = false
-//        }
-//        else {
-//            iconClick = false
-//            tappedImage.image = UIImage(named: "eye.slash")
-//            passwordField.isSecureTextEntry = true
-//        }
-//    }
-    
     // Sign in
     @IBAction func onSignIn(_ sender: Any) {
         
@@ -74,7 +53,13 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
             if user != nil {
-                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
+                
+                if username.contains("Admin-") {
+                    self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
+                } else {
+                    self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
+                }
+                
             } else {
                 print("Error: \(error!.localizedDescription)")
                 let alert = UIAlertController(title: "Incorrect Password", message: "The username or password you entered is incorrect.", preferredStyle: UIAlertController.Style.alert)
@@ -86,22 +71,21 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-    // Sign up
-    @IBAction func onSignUp(_ sender: Any) {
-        
-        let user = PFUser()
-        user.username = usernameField.text
-        user.password = passwordField.text
-        
-        user.signUpInBackground { success, error in
-            if success {
-                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
-            } else {
-                print("Error: \(error!.localizedDescription)")
-            }
-        }
-        
-    }
+//    // Sign up
+//    @IBAction func onSignUp(_ sender: Any) {
+//
+//        let user = PFUser()
+//        user.username = usernameField.text
+//        user.password = passwordField.text
+//
+//        user.signUpInBackground { success, error in
+//            if success {
+//                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
+//            } else {
+//                print("Error: \(error!.localizedDescription)")
+//            }
+//        }
+//    }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
