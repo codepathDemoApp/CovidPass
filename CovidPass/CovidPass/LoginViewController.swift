@@ -13,7 +13,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var signInButton: UIButton!
-    @IBOutlet weak var signUpButton: UIButton!
+    @IBOutlet weak var textSecureButton: UIButton!
+    
+    var iconClick = true
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,11 +25,46 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         
         signInButton.layer.cornerRadius = 12
         signInButton.layer.masksToBounds = true
-//        signUpButton.layer.cornerRadius = 12
-//        signUpButton.layer.masksToBounds = true
         
+//        imageIcon.image = UIImage(named: "eye.slash")
+//        let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+//        imageIcon.isUserInteractionEnabled = true
+//        imageIcon.addGestureRecognizer(tapGestureRecognizer)
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func onSecure(_ sender: Any) {
+        if(iconClick == true) {
+            
+            let image = UIImage(systemName: "eye")
+            textSecureButton.setImage(image, for: UIControl.State.normal)
+            passwordField.isSecureTextEntry = false
+            
+        } else {
+            let image = UIImage(systemName: "eye.slash")
+            textSecureButton.setImage(image, for: UIControl.State.normal)
+            passwordField.isSecureTextEntry = true
+        }
+
+        iconClick = !iconClick
+    }
+    
+    
+    
+//    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
+//
+//        let tappedImage = tapGestureRecognizer.view as! UIImageView
+//        if iconClick {
+//            iconClick = false
+//            tappedImage.image = UIImage(named: "eye")
+//            passwordField.isSecureTextEntry = false
+//        }
+//        else {
+//            iconClick = false
+//            tappedImage.image = UIImage(named: "eye.slash")
+//            passwordField.isSecureTextEntry = true
+//        }
+//    }
     
     // Sign in
     @IBAction func onSignIn(_ sender: Any) {
