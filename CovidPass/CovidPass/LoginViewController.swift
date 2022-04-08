@@ -34,7 +34,6 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // Secure Button. Allows user to look at their password.
     @IBAction func onSecure(_ sender: Any) {
         if(iconClick == true) {
-            
             let image = UIImage(systemName: "eye")
             textSecureButton.setImage(image, for: UIControl.State.normal)
             passwordField.isSecureTextEntry = false
