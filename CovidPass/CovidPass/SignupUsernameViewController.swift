@@ -7,13 +7,14 @@
 
 import UIKit
 
-class SignupUsernameViewController: UIViewController {
+class SignupUsernameViewController: UIViewController, UITextFieldDelegate {
     
     @IBOutlet weak var usernameField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        usernameField.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -25,7 +26,7 @@ class SignupUsernameViewController: UIViewController {
     }
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
-        if !(usernameField.text?.count == 0) {
+        if (usernameField.text!.count > 4) {
             nextButton.isUserInteractionEnabled = true
             nextButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 1)
         } else {
@@ -33,7 +34,7 @@ class SignupUsernameViewController: UIViewController {
             nextButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 0.5)
         }
     }
-    
+
     @IBAction func onCancel(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
