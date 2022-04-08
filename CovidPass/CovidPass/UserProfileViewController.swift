@@ -1,14 +1,14 @@
 //
-//  SettingsViewController.swift
+//  ProfileViewController.swift
 //  CovidPass
 //
-//  Created by LYON on 4/7/22.
+//  Created by LYON on 4/4/22.
 //
 
 import UIKit
 import Parse
 
-class SettingsViewController: UIViewController {
+class UserProfileViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,7 +16,8 @@ class SettingsViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLogout(_ sender: Any) {
+    @IBAction func onLogOut(_ sender: Any) {
+        
         PFUser.logOut()
         
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -37,7 +38,8 @@ class SettingsViewController: UIViewController {
         delegate.window?.layer.add(transition, forKey: kCATransition)
     }
     
-
+    @IBAction func scanQR(_ sender: Any) {
+    }
     /*
     // MARK: - Navigation
 

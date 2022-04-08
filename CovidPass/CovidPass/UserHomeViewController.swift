@@ -1,5 +1,5 @@
 //
-//  ProfileViewController.swift
+//  HomeViewController.swift
 //  CovidPass
 //
 //  Created by LYON on 4/4/22.
@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class ProfileViewController: UIViewController {
+class UserHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +40,8 @@ class ProfileViewController: UIViewController {
     
     @IBAction func scanQR(_ sender: Any) {
     }
+    
+    
     /*
     // MARK: - Navigation
 

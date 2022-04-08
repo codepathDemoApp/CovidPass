@@ -1,14 +1,14 @@
 //
-//  HomeViewController.swift
+//  LocationQRViewController.swift
 //  CovidPass
 //
-//  Created by LYON on 4/4/22.
+//  Created by Jackson Tran on 4/7/22.
 //
 
 import UIKit
 import Parse
 
-class HomeViewController: UIViewController {
+class LocationQRViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,8 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLogOut(_ sender: Any) {
-        
+
+    @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -37,11 +37,6 @@ class HomeViewController: UIViewController {
 
         delegate.window?.layer.add(transition, forKey: kCATransition)
     }
-    
-    @IBAction func scanQR(_ sender: Any) {
-    }
-    
-    
     /*
     // MARK: - Navigation
 

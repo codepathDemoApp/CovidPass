@@ -1,14 +1,14 @@
 //
-//  HistoryViewController.swift
+//  SettingsViewController.swift
 //  CovidPass
 //
-//  Created by LYON on 4/4/22.
+//  Created by LYON on 4/7/22.
 //
 
 import UIKit
 import Parse
 
-class HistoryViewController: UIViewController {
+class LocationSettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +16,7 @@ class HistoryViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onLogOut(_ sender: Any) {
-        
+    @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         
         let main = UIStoryboard(name: "Main", bundle: nil)
@@ -38,9 +37,7 @@ class HistoryViewController: UIViewController {
         delegate.window?.layer.add(transition, forKey: kCATransition)
     }
     
-    @IBAction func scanQR(_ sender: Any) {
-    }
-    
+
     /*
     // MARK: - Navigation
 
