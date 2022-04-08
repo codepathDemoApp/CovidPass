@@ -16,7 +16,7 @@ class SignupPasswordViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        passwordField.autocorrectionType = .no
         passwordField.delegate = self
         // Do any additional setup after loading the view.
     }

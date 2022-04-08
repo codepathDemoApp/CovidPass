@@ -22,6 +22,8 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
 
         usernameField.delegate = self
         passwordField.delegate = self
+        usernameField.autocorrectionType = .no
+        passwordField.autocorrectionType = .no
         
         signInButton.layer.cornerRadius = 12
         signInButton.layer.masksToBounds = true
@@ -29,6 +31,7 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
+    // Secure Button. Allows user to look at their password.
     @IBAction func onSecure(_ sender: Any) {
         if(iconClick == true) {
             
@@ -91,14 +94,15 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         self.view.endEditing(true)
     }
 
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == usernameField {
             passwordField.becomeFirstResponder()
         } else if textField == passwordField {
             textField.resignFirstResponder()
+            onSignIn((Any).self)
         }
-        onSignIn((Any).self)
         return true
     }
     
