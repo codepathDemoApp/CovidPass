@@ -8,6 +8,7 @@ Original App Design Project - README Template
 1. [Product Spec](#Product-Spec)
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
+3. [Sprint 1](#Sprint-1)
 
 ## Overview
 ### Description
@@ -137,3 +138,5 @@ Covid app to keep track of a person's covid status, vaccinations, etc. Uses QR c
     - (Update/PUT) Update user profile image
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
+
+### Sprint 1
