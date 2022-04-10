@@ -164,6 +164,10 @@ User can logout of account and sign back in. User can see their unable password 
 
 <img src='https://media4.giphy.com/media/N53dMY6aJxNLTVOYEL/giphy.gif?cid=790b76115efb5c8dfcaef717b4c2325b09731160d06a3782&rid=giphy.gif&ct=g' title='Log Out and Password Security' width='' alt='Video Walkthrough' />
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+User stays signed in upon restarting app.
 
-<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='https://media4.giphy.com/media/P1H1hz2lw5UkPmXudx/giphy.gif?cid=790b7611c93c8b900ab536072bbd78783b4ef1de5c81b2df&rid=giphy.gif&ct=g' title='Stay Signed In' width='' alt='Video Walkthrough' />
+
+User signs up as a location type account.
+
+<img src='https://media1.giphy.com/media/9wryFVOgrIf3k8iqgd/giphy.gif?cid=790b7611b2defc4af512a8b0001180ccfbd1f104fe515d26&rid=giphy.gif&ct=g' title='Location Account' width='' alt='Video Walkthrough' />
