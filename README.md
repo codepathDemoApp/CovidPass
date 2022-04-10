@@ -139,4 +139,31 @@ Covid app to keep track of a person's covid status, vaccinations, etc. Uses QR c
 - [Create basic snippets for each Parse network request]
 - [OPTIONAL: List endpoints if using existing API such as Yelp]
 
-### Sprint 1
+## Sprint 1
+
+### What we achieved
+- Designed logo/Icon of App
+- Launchscreen design
+- Login/Signup functionality
+    - User stays signed in
+    - User can log out
+    - User can choose type of account when signing up (user/location)
+    - Login segues to different set of screens depending on the type account
+- Home screen for user/location
+    - Apply wireframes into UI in Xcode (non-functional)
+
+### Video Walkthrough
+
+Here's a walkthrough of implemented user stories:
+
+Launchscreen shows when opening app. User signs up as a user type account.
+
+<img src='https://media1.giphy.com/media/VFcJSEUmV0Qqf5DlAb/giphy.gif?cid=790b76115075d8c552ece741280a86563c0b18a60945939f&rid=giphy.gif&ct=g' title='Launch Screen and Sign Up' width='' alt='Video Walkthrough' />
+
+User can logout of account and sign back in. User can see their unable password security.
+
+<img src='https://media4.giphy.com/media/N53dMY6aJxNLTVOYEL/giphy.gif?cid=790b76115efb5c8dfcaef717b4c2325b09731160d06a3782&rid=giphy.gif&ct=g' title='Log Out and Password Security' width='' alt='Video Walkthrough' />
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
