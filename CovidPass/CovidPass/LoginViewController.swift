@@ -54,20 +54,20 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let password = passwordField.text!
         
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
+            let usertype = user?["type"] as! String
+
             if user != nil {
-                
-                if username.contains("Admin-") {
+                if usertype == "location" {
                     self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
                 } else {
                     self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
                 }
-                
             } else {
                 print("Error: \(error!.localizedDescription)")
                 let alert = UIAlertController(title: "Incorrect Password", message: "The username or password you entered is incorrect.", preferredStyle: UIAlertController.Style.alert)
-                
+
                 alert.addAction(UIAlertAction(title: "Try again", style: UIAlertAction.Style.default, handler: nil))
-                
+
                 self.present(alert, animated: true, completion: nil)
             }
         }

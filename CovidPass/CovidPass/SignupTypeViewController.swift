@@ -32,8 +32,11 @@ class SignupTypeViewController: UIViewController {
         
         let user = PFUser()
 
-        user.username = "Admin-" + username
+        user.username = username
         user.password = password
+        user["type"] = "location"
+        
+        print("System: successfully signed \(user.username!) as location type account")
 
         user.signUpInBackground { success, error in
             if success {
@@ -51,6 +54,9 @@ class SignupTypeViewController: UIViewController {
         
         user.username = username
         user.password = password
+        user["type"] = "user"
+        
+        print("System: successfully signed \(user.username!) as user type account")
 
         user.signUpInBackground { success, error in
             if success {
