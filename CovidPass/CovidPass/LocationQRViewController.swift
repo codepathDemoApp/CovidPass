@@ -14,6 +14,8 @@ class LocationQRViewController: UIViewController {
     
     @IBOutlet weak var qrCodeImage: UIImageView!
     
+    var user = PFUser.current()!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,18 +46,24 @@ class LocationQRViewController: UIViewController {
     
     @IBAction func onRegenerate(_ sender: Any) {
         if qrCodeImage.image == nil {
-            let qrCode = QRCode(generateRandomCode(length: 6))
+            let code = generateRandomCode(length: 6)
+            let qrCode = QRCode(code)
             qrCodeImage.backgroundColor = nil
             qrCodeImage.image = qrCode?.image
+            user["qrcode"] = code
+            user.saveInBackground()
             return
         }
         
         let alert = UIAlertController(title: "Regenerate QR Code", message: "Are you sure you want to regenerate your QR Code?", preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { UIAlertAction in
-            let qrCode = QRCode(self.generateRandomCode(length: 6))
+            let code = self.generateRandomCode(length: 6)
+            let qrCode = QRCode(code)
             self.qrCodeImage.backgroundColor = nil
             self.qrCodeImage.image = qrCode?.image
+            self.user["qrcode"] = code
+            self.user.saveInBackground()
         }))
         
         alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil))
