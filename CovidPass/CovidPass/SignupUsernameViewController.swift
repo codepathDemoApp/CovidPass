@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Parse
 
 class SignupUsernameViewController: UIViewController, UITextFieldDelegate {
     
@@ -20,11 +21,38 @@ class SignupUsernameViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let username = usernameField.text
-        let destinationVC = segue.destination as! SignupPasswordViewController
-        destinationVC.username = username!
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let username = usernameField.text
+//        let destinationVC = segue.destination as! SignupPasswordViewController
+//        destinationVC.username = username!
+//    }
+    
+    @IBAction func onNext(_ sender: Any) {
+        let query = PFQuery(className: "_User")
+        query.includeKey("username")
+        query.findObjectsInBackground { (usernames, error) in
+            if usernames != nil {
+                let username = self.usernameField.text
+                let listUser = usernames!
+                for i in listUser {
+                    let name = i["username"] as! String
+                    if name == username {
+                        let alert = UIAlertController(title: "Username already exist", message: "The username \(name) is not available.", preferredStyle: UIAlertController.Style.alert)
+
+                        alert.addAction(UIAlertAction(title: "Close", style: UIAlertAction.Style.default, handler: nil))
+
+                        self.present(alert, animated: true, completion: nil)
+                    }
+                }
+                self.performSegue(withIdentifier: "segueToPassword", sender: nil)
+            }
+        }
     }
+    
+    override func shouldPerformSegue(withIdentifier identifier: String, sender: Any?) -> Bool {
+        return false
+    }
+    
     
     func textFieldDidChangeSelection(_ textField: UITextField) {
         if (usernameField.text!.count > 4) {

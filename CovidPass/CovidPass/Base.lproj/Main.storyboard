@@ -180,8 +180,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="onNext:" destination="pWJ-M4-yPu" eventType="touchUpInside" id="2M0-pM-pA0"/>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="M2U-RA-fR6"/>
-                                    <segue destination="uor-n3-657" kind="show" id="I5n-Ty-8KR"/>
+                                    <segue destination="uor-n3-657" kind="show" identifier="segueToPassword" id="I5n-Ty-8KR"/>
                                 </connections>
                             </button>
                         </subviews>
