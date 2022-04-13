@@ -7,9 +7,13 @@
 
 import UIKit
 import Parse
+import QRCode
 
 class LocationQRViewController: UIViewController {
 
+    
+    @IBOutlet weak var qrCodeImage: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -37,6 +41,35 @@ class LocationQRViewController: UIViewController {
 
         delegate.window?.layer.add(transition, forKey: kCATransition)
     }
+    
+    @IBAction func onRegenerate(_ sender: Any) {
+        if qrCodeImage.image == nil {
+            let qrCode = QRCode(generateRandomCode(length: 6))
+            qrCodeImage.backgroundColor = nil
+            qrCodeImage.image = qrCode?.image
+            return
+        }
+        
+        let alert = UIAlertController(title: "Regenerate QR Code", message: "Are you sure you want to regenerate your QR Code?", preferredStyle: UIAlertController.Style.alert)
+
+        alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { UIAlertAction in
+            let qrCode = QRCode(self.generateRandomCode(length: 6))
+            self.qrCodeImage.backgroundColor = nil
+            self.qrCodeImage.image = qrCode?.image
+        }))
+        
+        alert.addAction(UIAlertAction(title: "No", style: UIAlertAction.Style.default, handler: nil))
+        
+        self.present(alert, animated: true, completion: nil)
+        
+
+    }
+    
+    func generateRandomCode(length: Int)-> String{
+        let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+        return String((0..<length).map{ _ in letters.randomElement()!})
+    }
+    
     /*
     // MARK: - Navigation
 
