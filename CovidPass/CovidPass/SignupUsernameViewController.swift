@@ -21,11 +21,11 @@ class SignupUsernameViewController: UIViewController, UITextFieldDelegate {
         // Do any additional setup after loading the view.
     }
     
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        let username = usernameField.text
-//        let destinationVC = segue.destination as! SignupPasswordViewController
-//        destinationVC.username = username!
-//    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let username = usernameField.text
+        let destinationVC = segue.destination as! SignupPasswordViewController
+        destinationVC.username = username!
+    }
     
     @IBAction func onNext(_ sender: Any) {
         let query = PFQuery(className: "_User")
