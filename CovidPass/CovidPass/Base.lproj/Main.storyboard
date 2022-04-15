@@ -824,7 +824,7 @@ United Statesv</string>
         <!--Settings-->
         <scene sceneID="wTE-Xj-Lay">
             <objects>
-                <viewController id="ujr-tN-hH9" customClass="SettingsViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ujr-tN-hH9" customClass="LocationSettingsViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hx6-qd-56e">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

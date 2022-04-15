@@ -22,3 +22,4 @@ target 'CovidPass' do
   end
 
 end
+

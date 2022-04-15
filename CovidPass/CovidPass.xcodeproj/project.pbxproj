@@ -28,6 +28,7 @@
 		C7692ECD27F8D085007831FC /* CovidPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ECC27F8D085007831FC /* CovidPassTests.swift */; };
 		C7692ED727F8D085007831FC /* CovidPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED627F8D085007831FC /* CovidPassUITests.swift */; };
 		C7692ED927F8D085007831FC /* CovidPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */; };
+		EF0DE09E280A0ADC00D3E089 /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DE09D280A0ADC00D3E089 /* SettingsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		C7692ED627F8D085007831FC /* CovidPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITests.swift; sourceTree = "<group>"; };
 		C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CCF1E0F6CB5ADCD52678CE78 /* Pods-CovidPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.debug.xcconfig"; sourceTree = "<group>"; };
+		EF0DE09D280A0ADC00D3E089 /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
 		FB3DC35BED2C23417AA0B869 /* Pods-CovidPass-CovidPassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.release.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -163,6 +165,7 @@
 				B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */,
 				B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */,
 				C748E1A328000889005AB168 /* LocationQRViewController.swift */,
+				EF0DE09D280A0ADC00D3E089 /* SettingsTableViewCell.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
@@ -438,6 +441,7 @@
 				B64BAAC727FD016600057FB2 /* UserProfileViewController.swift in Sources */,
 				B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */,
 				B65B30F027FF9DB700E7A90D /* SignupUsernameViewController.swift in Sources */,
+				EF0DE09E280A0ADC00D3E089 /* SettingsTableViewCell.swift in Sources */,
 				B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */,
 				B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */,
 				B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */,
