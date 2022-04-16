@@ -19,9 +19,17 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let _ = (scene as? UIWindowScene) else { return }
         
         if PFUser.current() != nil {
-            let main = UIStoryboard(name: "Main", bundle: nil)
-            let tarbarController = main.instantiateViewController(withIdentifier: "TarbarController")
-            window?.rootViewController = tarbarController
+            let user = PFUser.current()!
+            let usertype = user["type"] as! String
+            if (usertype == "user") {
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let userTabBarController = main.instantiateViewController(withIdentifier: "userTabBarController")
+                window?.rootViewController = userTabBarController
+            } else {
+                let main = UIStoryboard(name: "Main", bundle: nil)
+                let locationTabBarController = main.instantiateViewController(withIdentifier: "locationTabBarController")
+                window?.rootViewController = locationTabBarController
+            }
         }
     }
 
