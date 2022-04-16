@@ -9,7 +9,7 @@ import UIKit
 import Parse
 import QRCode
 
-class LocationQRViewController: UIViewController {
+class LocationCodeVC: UIViewController {
 
     
     @IBOutlet weak var qrCodeImage: UIImageView!
@@ -19,9 +19,24 @@ class LocationQRViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+//        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed))
+//
+//        longPressRecognizer.minimumPressDuration = 0.5
+//        qrCodeImage.addGestureRecognizer(longPressRecognizer)
+//        qrCodeImage.isUserInteractionEnabled = true
+//        view.addSubview(qrCodeImage)
+        
         // Do any additional setup after loading the view.
     }
     
+//    @objc func longPressed(sender: UILongPressGestureRecognizer) {
+//        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
+//        }
+//
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//            // Dispose of any resources that can be recreated.
+//    }
 
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()

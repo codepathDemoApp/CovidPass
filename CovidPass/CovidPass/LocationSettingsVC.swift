@@ -19,7 +19,7 @@ struct SettingsOption{
     let handler: (() -> Void)
 }
 
-class LocationSettingsViewController: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class LocationSettingsVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)

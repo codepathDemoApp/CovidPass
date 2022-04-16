@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class UserProfileViewController: UIViewController {
+class UserProfileVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
