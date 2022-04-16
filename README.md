@@ -172,5 +172,7 @@ User signs up as a location type account.
 
 <img src='https://media1.giphy.com/media/9wryFVOgrIf3k8iqgd/giphy.gif?cid=790b7611b2defc4af512a8b0001180ccfbd1f104fe515d26&rid=giphy.gif&ct=g' title='Location Account' width='' alt='Video Walkthrough' />
 
+User that logs in as location can access settings.
+
 <img src='http://g.recordit.co/YpzDPmkCQw.gif' title='Settings Account' width='' alt='Video Walkthrough' />
 
