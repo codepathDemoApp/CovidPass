@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -219,7 +219,7 @@
         <!--SignUp Password-->
         <scene sceneID="SCN-dt-hle">
             <objects>
-                <viewController title="SignUp Password" id="uor-n3-657" customClass="SignupPasswordViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUp Password" id="uor-n3-657" customClass="SignupPasswordVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="R28-e8-RcH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -279,7 +279,7 @@
         <!--Signup Type-->
         <scene sceneID="kBB-jX-Pap">
             <objects>
-                <viewController title="Signup Type" id="mYZ-VS-BLt" customClass="SignupTypeViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Signup Type" id="mYZ-VS-BLt" customClass="SignupTypeVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Lwa-Vv-vMB">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -387,7 +387,7 @@
         <!--Home-->
         <scene sceneID="Bli-Ev-2dI">
             <objects>
-                <viewController id="fEO-xu-emN" customClass="UserHomeViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fEO-xu-emN" customClass="UserHomeVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fc8-3d-1Jb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -662,11 +662,12 @@ United Statesv</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-3f-efZ">
-                                <rect key="frame" x="149" y="700" width="94" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-3f-efZ">
+                                <rect key="frame" x="16" y="700" width="358" height="28.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Edit Profile"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Edit Profile">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="h0L-O1-0YK" kind="presentation" identifier="editProfileController" id="Xy3-Ni-pTc"/>
                                 </connections>
@@ -679,9 +680,12 @@ United Statesv</string>
                             <constraint firstItem="Ynl-ZG-1JU" firstAttribute="top" secondItem="H0W-bv-Qe5" secondAttribute="bottom" constant="8" id="NHG-pV-aBw"/>
                             <constraint firstItem="Ynl-ZG-1JU" firstAttribute="centerX" secondItem="uBo-MI-oip" secondAttribute="centerX" id="Nly-oT-WWq"/>
                             <constraint firstItem="jNj-3i-Gcf" firstAttribute="top" secondItem="Ynl-ZG-1JU" secondAttribute="bottom" constant="32" id="PcN-Ti-lPt"/>
+                            <constraint firstItem="lP3-BZ-GRe" firstAttribute="trailing" secondItem="GkL-3f-efZ" secondAttribute="trailing" constant="16" id="Pib-xM-L2W"/>
                             <constraint firstItem="jNj-3i-Gcf" firstAttribute="leading" secondItem="lP3-BZ-GRe" secondAttribute="leading" constant="16" id="e3Z-dU-jeF"/>
+                            <constraint firstItem="GkL-3f-efZ" firstAttribute="centerX" secondItem="Ynl-ZG-1JU" secondAttribute="centerX" id="hVi-lu-VxJ"/>
                             <constraint firstItem="H0W-bv-Qe5" firstAttribute="centerX" secondItem="uBo-MI-oip" secondAttribute="centerX" id="p5T-5x-d4G"/>
                             <constraint firstItem="H0W-bv-Qe5" firstAttribute="top" secondItem="lP3-BZ-GRe" secondAttribute="top" constant="32" id="qzi-HS-YNJ"/>
+                            <constraint firstItem="GkL-3f-efZ" firstAttribute="top" secondItem="jNj-3i-Gcf" secondAttribute="bottom" constant="86.666666666666742" id="syG-fA-Qhf"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jNj-3i-Gcf" secondAttribute="bottom" constant="120" id="wbf-Xd-kL2"/>
                         </constraints>
                     </view>
@@ -709,10 +713,10 @@ United Statesv</string>
             </objects>
             <point key="canvasLocation" x="1749" y="3235"/>
         </scene>
-        <!--Edit Profile Controller-->
+        <!--Profile Edit Controller-->
         <scene sceneID="qh3-aa-9Hv">
             <objects>
-                <viewController storyboardIdentifier="editProfileController" id="h0L-O1-0YK" customClass="editProfileController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editProfileController" id="h0L-O1-0YK" customClass="ProfileEditController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jsc-jF-rLG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -838,12 +842,12 @@ United Statesv</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-1f-xfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="hcU-qr-DOI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1747.6923076923076" y="3979.6208530805684"/>
+            <point key="canvasLocation" x="1748" y="3940"/>
         </scene>
         <!--History-->
         <scene sceneID="aQL-Tj-cBx">
             <objects>
-                <viewController id="7i1-aA-pY1" customClass="UserHistoryViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7i1-aA-pY1" customClass="UserHistoryVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qzx-lh-8JH">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -860,7 +864,7 @@ United Statesv</string>
                                 <rect key="frame" x="0.0" y="186.33333333333331" width="390" height="657.66666666666674"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="119" id="P5Q-XW-ok0" customClass="HistoryCell" customModule="CovidPass" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HistoryCell" rowHeight="119" id="P5Q-XW-ok0" customClass="UserHistoryCell" customModule="CovidPass" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.666666030883789" width="390" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="P5Q-XW-ok0" id="bw9-I7-HqG">
@@ -965,7 +969,7 @@ United Statesv</string>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zcf-XE-e0v" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="945" y="1700"/>
+            <point key="canvasLocation" x="1343" y="1700"/>
         </scene>
         <!--Settings-->
         <scene sceneID="wTE-Xj-Lay">
@@ -987,7 +991,7 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpS-Pf-tCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1505" y="3235"/>
+            <point key="canvasLocation" x="-1223" y="3235"/>
         </scene>
         <!--QR Code-->
         <scene sceneID="vzg-tA-2xG">
@@ -1007,9 +1011,8 @@ United Statesv</string>
                                 <rect key="frame" x="16" y="516" width="358" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                 <rect key="frame" x="26" y="526" width="358" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1035,10 +1038,13 @@ United Statesv</string>
                         <constraints>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="top" secondItem="3cz-WR-m8a" secondAttribute="bottom" constant="32" id="3Ab-j9-yD0"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" constant="55" id="CEg-je-3m2"/>
+                            <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="xNd-ti-gZK" secondAttribute="trailing" constant="6" id="LTS-ne-52P"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="55.333333333333371" id="PrI-xW-w4j"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="3cz-WR-m8a" secondAttribute="trailing" constant="68.329999999999998" id="RNs-Fu-A3e"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="cg8-ZW-2GR"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="16" id="dNz-yJ-XvS"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="26" id="ngL-wj-cTY"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="pmc-eV-lXG"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="rmK-lo-VD0"/>
                         </constraints>
@@ -1056,7 +1062,7 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uc9-I7-cWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2572.3076923076924" y="3234.5971563981043"/>
+            <point key="canvasLocation" x="-2783" y="3235"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5Qn-eP-tdK">
@@ -1069,7 +1075,8 @@ United Statesv</string>
                     </tabBar>
                     <connections>
                         <segue destination="cdy-FF-QV8" kind="relationship" relationship="viewControllers" id="1JH-H2-ehd"/>
-                        <segue destination="zT1-qS-1ba" kind="relationship" relationship="viewControllers" id="fTE-CP-SZf"/>
+                        <segue destination="P3M-NB-5Zx" kind="relationship" relationship="viewControllers" id="RDg-LP-Hpn"/>
+                        <segue destination="zT1-qS-1ba" kind="relationship" relationship="viewControllers" id="8jS-Co-LeU"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeu-o6-z60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1159,7 +1166,7 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrF-Cp-zqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2571" y="3254"/>
+            <point key="canvasLocation" x="2542" y="3235"/>
         </scene>
         <!--Item-->
         <scene sceneID="4az-4z-JPv">
@@ -1177,7 +1184,7 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e0t-u6-vo0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2571" y="2521"/>
+            <point key="canvasLocation" x="2542" y="2506"/>
         </scene>
         <!--QR Code-->
         <scene sceneID="7qd-h9-ba1">
@@ -1196,7 +1203,31 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zt9-Bc-Ias" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2572" y="2506"/>
+            <point key="canvasLocation" x="-2782" y="2506"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="0Or-xw-fgO">
+            <objects>
+                <viewController id="xQH-J9-us5" customClass="LocationHistoryVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBl-SW-3US">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="i1w-Nr-LCg"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="History" id="k8B-2Q-x3j">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="X23-NE-reP">
+                            <connections>
+                                <action selector="onLogout:" destination="xQH-J9-us5" id="vca-Z4-wFF"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Teo-L5-Wgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2009" y="3235"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bbX-01-fB8">
@@ -1217,7 +1248,7 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQY-Mc-EpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1505" y="2506"/>
+            <point key="canvasLocation" x="-1223" y="2506"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A87-MI-NTw">
@@ -1238,6 +1269,25 @@ United Statesv</string>
             </objects>
             <point key="canvasLocation" x="-1163" y="622"/>
         </scene>
+        <!--History-->
+        <scene sceneID="XtG-M8-vGf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="P3M-NB-5Zx" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="clock.fill" catalog="system" id="raB-3p-31f"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="0Lb-lN-g8o">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xQH-J9-us5" kind="relationship" relationship="rootViewController" id="tTX-KI-1Ex"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CIb-Zs-6kK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2009" y="2506"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7W7-iq-m4o"/>
@@ -1246,6 +1296,7 @@ United Statesv</string>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="building.2.fill" catalog="system" width="128" height="106"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="feed_tab" width="25" height="25"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>

@@ -11,16 +11,16 @@
 		0007F1D3280A413900C84AA0 /* UserSettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F1D2280A413900C84AA0 /* UserSettingsTableViewCell.swift */; };
 		0C652C40F9A52E3AD8573907 /* Pods_CovidPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD4E0195F991CCA6A1F4D98 /* Pods_CovidPass.framework */; };
 		32DC4F65D0B38333F5F53022 /* Pods_CovidPassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE516C353F467116B83016 /* Pods_CovidPassTests.framework */; };
-		3F6DEF37280A77E4008D4FD7 /* editProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DEF36280A77E4008D4FD7 /* editProfileController.swift */; };
+		3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */; };
 		3F6DEF39280A7CB4008D4FD7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DEF38280A7CB4008D4FD7 /* ProfileViewController.swift */; };
-		B64BAAC127FD014900057FB2 /* UserHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC027FD014900057FB2 /* UserHomeViewController.swift */; };
+		B64BAAC127FD014900057FB2 /* UserHomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC027FD014900057FB2 /* UserHomeVC.swift */; };
 		B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC227FD015400057FB2 /* LoginViewController.swift */; };
-		B64BAAC527FD015D00057FB2 /* UserHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC427FD015D00057FB2 /* UserHistoryViewController.swift */; };
+		B64BAAC527FD015D00057FB2 /* UserHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */; };
 		B64BAAC727FD016600057FB2 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */; };
-		B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC827FD06F200057FB2 /* HistoryCell.swift */; };
-		B65B30EE27FF9C1700E7A90D /* SignupTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */; };
+		B64BAAC927FD06F200057FB2 /* UserHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */; };
+		B65B30EE27FF9C1700E7A90D /* SignupTypeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */; };
 		B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */; };
-		B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */; };
+		B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */; };
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
@@ -60,19 +60,19 @@
 		2B0A048A50BBF5381828F4EF /* Pods-CovidPass-CovidPassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31FE516C353F467116B83016 /* Pods_CovidPassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3B1CD89A55D81EC8096539A6 /* Pods-CovidPass.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.release.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.release.xcconfig"; sourceTree = "<group>"; };
-		3F6DEF36280A77E4008D4FD7 /* editProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editProfileController.swift; sourceTree = "<group>"; };
+		3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditController.swift; sourceTree = "<group>"; };
 		3F6DEF38280A7CB4008D4FD7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		69FA0B6656499EE6D9AB2E34 /* Pods-CovidPassTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPassTests.release.xcconfig"; path = "Target Support Files/Pods-CovidPassTests/Pods-CovidPassTests.release.xcconfig"; sourceTree = "<group>"; };
 		A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPass_CovidPassUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A85EE0F735D47E5726A74E91 /* Pods-CovidPassTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPassTests.debug.xcconfig"; path = "Target Support Files/Pods-CovidPassTests/Pods-CovidPassTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B64BAAC027FD014900057FB2 /* UserHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeViewController.swift; sourceTree = "<group>"; };
+		B64BAAC027FD014900057FB2 /* UserHomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHomeVC.swift; sourceTree = "<group>"; };
 		B64BAAC227FD015400057FB2 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		B64BAAC427FD015D00057FB2 /* UserHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryViewController.swift; sourceTree = "<group>"; };
+		B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryVC.swift; sourceTree = "<group>"; };
 		B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
-		B64BAAC827FD06F200057FB2 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
-		B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTypeViewController.swift; sourceTree = "<group>"; };
+		B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHistoryCell.swift; sourceTree = "<group>"; };
+		B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTypeVC.swift; sourceTree = "<group>"; };
 		B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameVC.swift; sourceTree = "<group>"; };
-		B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
+		B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordVC.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsViewController.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationQRViewController.swift; sourceTree = "<group>"; };
@@ -166,12 +166,12 @@
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				C7692EC327F8D084007831FC /* Info.plist */,
 				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
-				B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */,
-				B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */,
-				B64BAAC827FD06F200057FB2 /* HistoryCell.swift */,
+				B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */,
+				B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */,
+				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
 				B64BAAC227FD015400057FB2 /* LoginViewController.swift */,
-				B64BAAC027FD014900057FB2 /* UserHomeViewController.swift */,
-				B64BAAC427FD015D00057FB2 /* UserHistoryViewController.swift */,
+				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
+				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
 				B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */,
 				C748E1A328000889005AB168 /* LocationQRViewController.swift */,
 				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
@@ -179,7 +179,7 @@
 				EF0DE09D280A0ADC00D3E089 /* SettingsTableViewCell.swift */,
 				0007F1D2280A413900C84AA0 /* UserSettingsTableViewCell.swift */,
 				0007F1CE280A3CED00C84AA0 /* UserSettingsViewController.swift */,
-				3F6DEF36280A77E4008D4FD7 /* editProfileController.swift */,
+				3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */,
 				3F6DEF38280A7CB4008D4FD7 /* ProfileViewController.swift */,
 			);
 			path = CovidPass;
@@ -452,23 +452,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				C748E1A428000889005AB168 /* LocationQRViewController.swift in Sources */,
-				B65B30EE27FF9C1700E7A90D /* SignupTypeViewController.swift in Sources */,
+				B65B30EE27FF9C1700E7A90D /* SignupTypeVC.swift in Sources */,
 				0007F1CF280A3CED00C84AA0 /* UserSettingsViewController.swift in Sources */,
 				B64BAAC727FD016600057FB2 /* UserProfileViewController.swift in Sources */,
 				B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */,
 				B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */,
 				3F6DEF39280A7CB4008D4FD7 /* ProfileViewController.swift in Sources */,
-				3F6DEF37280A77E4008D4FD7 /* editProfileController.swift in Sources */,
+				3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */,
 				EF0DE09E280A0ADC00D3E089 /* SettingsTableViewCell.swift in Sources */,
-				B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */,
-				B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */,
+				B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */,
+				B64BAAC927FD06F200057FB2 /* UserHistoryCell.swift in Sources */,
 				B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */,
 				B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */,
 				C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */,
 				C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */,
 				0007F1D3280A413900C84AA0 /* UserSettingsTableViewCell.swift in Sources */,
-				B64BAAC527FD015D00057FB2 /* UserHistoryViewController.swift in Sources */,
-				B64BAAC127FD014900057FB2 /* UserHomeViewController.swift in Sources */,
+				B64BAAC527FD015D00057FB2 /* UserHistoryVC.swift in Sources */,
+				B64BAAC127FD014900057FB2 /* UserHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

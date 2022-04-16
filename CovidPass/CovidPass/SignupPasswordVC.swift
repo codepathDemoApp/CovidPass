@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SignupPasswordViewController: UIViewController, UITextFieldDelegate {
+class SignupPasswordVC: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var passwordField: UITextField!
     @IBOutlet weak var nextButton: UIButton!
@@ -23,7 +23,7 @@ class SignupPasswordViewController: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let password = passwordField.text
-        let destinationVC = segue.destination as! SignupTypeViewController
+        let destinationVC = segue.destination as! SignupTypeVC
         destinationVC.password = password!
         destinationVC.username = username
     }

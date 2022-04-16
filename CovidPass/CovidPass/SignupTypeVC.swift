@@ -8,7 +8,7 @@
 import UIKit
 import Parse
 
-class SignupTypeViewController: UIViewController {
+class SignupTypeVC: UIViewController {
 
     @IBOutlet weak var locationButton: UIButton!
     @IBOutlet weak var userButton: UIButton!

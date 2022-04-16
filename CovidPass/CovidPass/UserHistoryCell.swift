@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HistoryCell: UITableViewCell {
+class UserHistoryCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()

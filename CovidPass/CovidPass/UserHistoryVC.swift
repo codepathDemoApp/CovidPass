@@ -1,5 +1,5 @@
 //
-//  HomeViewController.swift
+//  HistoryViewController.swift
 //  CovidPass
 //
 //  Created by LYON on 4/4/22.
@@ -8,11 +8,10 @@
 import UIKit
 import Parse
 
-class UserHomeViewController: UIViewController {
+class UserHistoryVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
     }
     
@@ -40,7 +39,6 @@ class UserHomeViewController: UIViewController {
     
     @IBAction func scanQR(_ sender: Any) {
     }
-    
     
     /*
     // MARK: - Navigation

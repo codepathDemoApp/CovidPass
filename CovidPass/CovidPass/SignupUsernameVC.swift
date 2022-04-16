@@ -23,7 +23,7 @@ class SignupUsernameVC: UIViewController, UITextFieldDelegate {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let username = usernameField.text
-        let destinationVC = segue.destination as! SignupPasswordViewController
+        let destinationVC = segue.destination as! SignupPasswordVC
         destinationVC.username = username!
     }
     
