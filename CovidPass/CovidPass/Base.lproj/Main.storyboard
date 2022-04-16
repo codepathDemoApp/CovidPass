@@ -666,7 +666,7 @@ United States</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-3f-efZ">
                                 <rect key="frame" x="16" y="700" width="358" height="28.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Edit Profile">
+                                <buttonConfiguration key="configuration" style="gray" title="Save Profile">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
