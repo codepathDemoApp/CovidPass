@@ -85,12 +85,16 @@ class LocationCodeVC: UIViewController {
         
         self.present(alert, animated: true, completion: nil)
         
-
     }
     
     func generateRandomCode(length: Int)-> String{
         let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
         return String((0..<length).map{ _ in letters.randomElement()!})
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.onRegenerate((Any).self)
     }
     
     /*
