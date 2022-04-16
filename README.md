@@ -179,10 +179,26 @@ User signs up as a location type account.
 - location type account can access settings 
 - user can not create an existing username 
 - user can not create a username lower than 5 characters
-- user can not create a password lower than 6 cbaracters
-- 
+- user can not create a password lower than 6 characters
 
-User that logs in as location can access settings.
+### Video Walkthrough
 
-<img src='http://g.recordit.co/YpzDPmkCQw.gif' title='Settings Account' width='' alt='Video Walkthrough' />
+Location type account can navigate through navigation bar to access settings.
 
+<img src='http://g.recordit.co/YpzDPmkCQw.gif' title='Location Settings' width='' alt='Video Walkthrough' />
+
+Location type account can generate/regenerate a unique QR code.
+
+<img src='https://media3.giphy.com/media/L82JW1BgYkSOofDI2U/giphy.gif?cid=790b76111cf5b6c8100cb655c22f13fc7bf53d09f540ca21&rid=giphy.gif&ct=g' title='QR code generating' width='' alt='Video Walkthrough' />
+
+User can not create a username with an already existing username.
+
+<img src='https://media4.giphy.com/media/bqv7gmrW4ZD1WajmIT/giphy.gif?cid=790b7611d17da0b65db70eddb1d3a82b3d2e3648c2da393c&rid=giphy.gif&ct=g' title='no repeat username' width='' alt='Video Walkthrough' />
+
+User can not create a username that is less than 5 characters long.
+
+<img src='https://media3.giphy.com/media/5v1BeRxOLr1srIlq7U/giphy.gif?cid=790b76111310b5e44679fb9af2ae289af53aa9a304093198&rid=giphy.gif&ct=g' title='create username requirement' width='' alt='Video Walkthrough' />
+
+User can not create a password that is less than 6 characters long.
+
+<img src='https://media3.giphy.com/media/tyHt3HcF3Gmn7mAkZG/giphy.gif?cid=790b761169a32ac0ef1f4a0acbe402d4d72472f5a4bbeb4a&rid=giphy.gif&ct=g' title='create password requirement' width='' alt='Video Walkthrough' />
