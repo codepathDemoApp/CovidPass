@@ -7,9 +7,15 @@
 
 import UIKit
 import Parse
+import SwiftUI
+import CodeScanner
 
 class UserHomeVC: UIViewController {
 
+    
+    @State private var isShowingScanner = false
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

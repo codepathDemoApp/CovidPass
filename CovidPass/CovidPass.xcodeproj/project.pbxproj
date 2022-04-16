@@ -21,7 +21,6 @@
 		B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */; };
 		B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */; };
-		B66901CD280B48FA00CE6703 /* ScanCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B66901CC280B48FA00CE6703 /* ScanCodeVC.swift */; };
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
 		C748E1A428000889005AB168 /* LocationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748E1A328000889005AB168 /* LocationCodeVC.swift */; };
@@ -33,6 +32,8 @@
 		C7692ECD27F8D085007831FC /* CovidPassTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ECC27F8D085007831FC /* CovidPassTests.swift */; };
 		C7692ED727F8D085007831FC /* CovidPassUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED627F8D085007831FC /* CovidPassUITests.swift */; };
 		C7692ED927F8D085007831FC /* CovidPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */; };
+		C787EA54280B4AEA00A8807A /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C787EA53280B4AEA00A8807A /* CodeScanner */; };
+		C7D75AB9280B71B400B5E7D1 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */; };
 		EF0DE09E280A0ADC00D3E089 /* LocationSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,7 +74,6 @@
 		B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameVC.swift; sourceTree = "<group>"; };
 		B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordVC.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingVC.swift; sourceTree = "<group>"; };
-		B66901CC280B48FA00CE6703 /* ScanCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanCodeVC.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCodeVC.swift; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -88,6 +88,7 @@
 		C7692ED227F8D085007831FC /* CovidPassUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CovidPassUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692ED627F8D085007831FC /* CovidPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITests.swift; sourceTree = "<group>"; };
 		C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
 		CCF1E0F6CB5ADCD52678CE78 /* Pods-CovidPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingCell.swift; sourceTree = "<group>"; };
 		FB3DC35BED2C23417AA0B869 /* Pods-CovidPass-CovidPassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.release.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -98,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C787EA54280B4AEA00A8807A /* CodeScanner in Frameworks */,
 				0C652C40F9A52E3AD8573907 /* Pods_CovidPass.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -163,8 +165,6 @@
 				C7692EB727F8D081007831FC /* SceneDelegate.swift */,
 				C7692EBE27F8D084007831FC /* Assets.xcassets */,
 				C7692EC027F8D084007831FC /* LaunchScreen.storyboard */,
-				C7692EBB27F8D081007831FC /* Main.storyboard */,
-				B66901CC280B48FA00CE6703 /* ScanCodeVC.swift */,
 				C7692EC327F8D084007831FC /* Info.plist */,
 				B64BAAC227FD015400057FB2 /* LoginViewController.swift */,
 				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
@@ -181,6 +181,8 @@
 				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
 				B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */,
 				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
+				C7692EBB27F8D081007831FC /* Main.storyboard */,
+				C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
@@ -230,6 +232,9 @@
 			dependencies = (
 			);
 			name = CovidPass;
+			packageProductDependencies = (
+				C787EA53280B4AEA00A8807A /* CodeScanner */,
+			);
 			productName = CovidPass;
 			productReference = C7692EB227F8D081007831FC /* CovidPass.app */;
 			productType = "com.apple.product-type.application";
@@ -305,6 +310,9 @@
 				Base,
 			);
 			mainGroup = C7692EA927F8D081007831FC;
+			packageReferences = (
+				C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */,
+			);
 			productRefGroup = C7692EB327F8D081007831FC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -467,7 +475,7 @@
 				C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */,
 				0007F1D3280A413900C84AA0 /* UserSettingCell.swift in Sources */,
 				B64BAAC527FD015D00057FB2 /* UserHistoryVC.swift in Sources */,
-				B66901CD280B48FA00CE6703 /* ScanCodeVC.swift in Sources */,
+				C7D75AB9280B71B400B5E7D1 /* ScannerVC.swift in Sources */,
 				B64BAAC127FD014900057FB2 /* UserHomeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -648,9 +656,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = APTKZBPBQJ;
+				DEVELOPMENT_TEAM = 97A6A6Z9V4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to save image";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -662,7 +672,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -678,9 +688,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = APTKZBPBQJ;
+				DEVELOPMENT_TEAM = 97A6A6Z9V4;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "Please allow access to save image";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -692,7 +704,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -820,6 +832,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C787EA53280B4AEA00A8807A /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C7692EAA27F8D081007831FC /* Project object */;
 }

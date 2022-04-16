@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -507,7 +507,7 @@
                         <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="lC7-8u-Ajp">
                             <connections>
                                 <action selector="scanQR:" destination="fEO-xu-emN" id="flQ-4U-WTO"/>
-                                <segue destination="2n0-lA-1rm" kind="presentation" modalPresentationStyle="fullScreen" id="5e0-f3-Wte"/>
+                                <segue destination="9Qd-pD-Z9q" kind="presentation" id="D3f-nu-Hg0"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -701,7 +701,7 @@ United States</string>
                         <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="sxF-IW-dfQ">
                             <connections>
                                 <action selector="scanQR:" destination="jqH-Ge-bW0" id="nhs-AQ-TPf"/>
-                                <segue destination="2n0-lA-1rm" kind="presentation" modalPresentationStyle="fullScreen" id="jDp-rw-has"/>
+                                <segue destination="9Qd-pD-Z9q" kind="presentation" id="K6F-gu-Stu"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -728,6 +728,16 @@ United States</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XFt-yc-KxI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="945" y="4167"/>
+        </scene>
+        <!--Hoster View Controller-->
+        <scene sceneID="kie-tb-V95">
+            <objects>
+                <hostingController id="9Qd-pD-Z9q" customClass="HosterViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="8m1-2b-yih"/>
+                </hostingController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BAd-El-vKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="151" y="4191"/>
         </scene>
         <!--Profile Edit Controller-->
         <scene sceneID="qh3-aa-9Hv">
@@ -958,7 +968,7 @@ United States</string>
                         <barButtonItem key="rightBarButtonItem" title="Scan" image="qrcode.viewfinder" catalog="system" id="pEr-qG-0Na">
                             <connections>
                                 <action selector="scanQR:" destination="7i1-aA-pY1" id="ua9-w0-7iF"/>
-                                <segue destination="2n0-lA-1rm" kind="presentation" modalPresentationStyle="fullScreen" id="PDk-am-k9e"/>
+                                <segue destination="9Qd-pD-Z9q" kind="presentation" id="Fk7-vJ-f9J"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -1307,9 +1317,9 @@ United States</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="aIM-MN-Grc"/>
-        <segue reference="KY3-iV-p6f"/>
-        <segue reference="jDp-rw-has"/>
+        <segue reference="7W7-iq-m4o"/>
+        <segue reference="NRB-fG-xpF"/>
+        <segue reference="K6F-gu-Stu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>

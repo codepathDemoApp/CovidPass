@@ -1,13 +1,13 @@
 //
-//  ScanCodeVC.swift
+//  HostingViewController.swift
 //  CovidPass
 //
-//  Created by LYON on 4/16/22.
+//  Created by Jackson Tran on 4/16/22.
 //
 
 import UIKit
 
-class ScanCodeVC: UIViewController {
+class HostingViewController: UIHostingController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,4 +25,5 @@ class ScanCodeVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 }
