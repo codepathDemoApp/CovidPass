@@ -73,27 +73,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         }
     }
     
-//    // Sign up
-//    @IBAction func onSignUp(_ sender: Any) {
-//
-//        let user = PFUser()
-//        user.username = usernameField.text
-//        user.password = passwordField.text
-//
-//        user.signUpInBackground { success, error in
-//            if success {
-//                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
-//            } else {
-//                print("Error: \(error!.localizedDescription)")
-//            }
-//        }
-//    }
-    
+    // Using return button
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 
-    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         
         if textField == usernameField {
