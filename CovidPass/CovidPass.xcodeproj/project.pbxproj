@@ -18,6 +18,7 @@
 		B65B30F027FF9DB700E7A90D /* SignupUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameViewController.swift */; };
 		B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */; };
+		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
 		C748E1A428000889005AB168 /* LocationQRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748E1A328000889005AB168 /* LocationQRViewController.swift */; };
 		C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB527F8D081007831FC /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		B65B30EF27FF9DB700E7A90D /* SignupUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameViewController.swift; sourceTree = "<group>"; };
 		B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsViewController.swift; sourceTree = "<group>"; };
+		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationQRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationQRViewController.swift; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692EB527F8D081007831FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -163,8 +165,9 @@
 				B64BAAC027FD014900057FB2 /* UserHomeViewController.swift */,
 				B64BAAC427FD015D00057FB2 /* UserHistoryViewController.swift */,
 				B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */,
-				B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */,
 				C748E1A328000889005AB168 /* LocationQRViewController.swift */,
+				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
+				B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */,
 				EF0DE09D280A0ADC00D3E089 /* SettingsTableViewCell.swift */,
 			);
 			path = CovidPass;
@@ -444,6 +447,7 @@
 				EF0DE09E280A0ADC00D3E089 /* SettingsTableViewCell.swift in Sources */,
 				B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */,
 				B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */,
+				B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */,
 				B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */,
 				C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */,
 				C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */,
