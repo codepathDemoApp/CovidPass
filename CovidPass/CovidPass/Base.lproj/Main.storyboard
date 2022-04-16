@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -152,7 +152,7 @@
         <!--SignUp Username-->
         <scene sceneID="Leq-2v-pDp">
             <objects>
-                <viewController title="SignUp Username" id="pWJ-M4-yPu" customClass="SignupUsernameViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUp Username" id="pWJ-M4-yPu" customClass="SignupUsernameVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZS-yP-L0j">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -517,7 +517,7 @@
         <!--Profile-->
         <scene sceneID="0Ls-Wq-Me9">
             <objects>
-                <viewController id="jqH-Ge-bW0" customClass="ProfileViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jqH-Ge-bW0" customClass="UserProfileViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBo-MI-oip">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -842,7 +842,7 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bpS-Pf-tCE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1505" y="3235"/>
+            <point key="canvasLocation" x="-1163" y="3235"/>
         </scene>
         <!--QR Code-->
         <scene sceneID="vzg-tA-2xG">
@@ -862,9 +862,8 @@ United Statesv</string>
                                 <rect key="frame" x="16" y="516" width="358" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                 <rect key="frame" x="26" y="526" width="358" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -890,8 +889,11 @@ United Statesv</string>
                         <constraints>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="top" secondItem="3cz-WR-m8a" secondAttribute="bottom" constant="32" id="3Ab-j9-yD0"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" constant="55" id="CEg-je-3m2"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="55.333333333333371" id="Hib-7V-hDd"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="3cz-WR-m8a" secondAttribute="trailing" constant="68.329999999999998" id="RNs-Fu-A3e"/>
+                            <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="xNd-ti-gZK" secondAttribute="trailing" constant="6" id="aGi-HH-wHX"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="cg8-ZW-2GR"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="26" id="ctO-jT-yZU"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="16" id="dNz-yJ-XvS"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="pmc-eV-lXG"/>
@@ -911,7 +913,7 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uc9-I7-cWg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2572.3076923076924" y="3234.5971563981043"/>
+            <point key="canvasLocation" x="-2852" y="3235"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="5Qn-eP-tdK">
@@ -924,7 +926,8 @@ United Statesv</string>
                     </tabBar>
                     <connections>
                         <segue destination="cdy-FF-QV8" kind="relationship" relationship="viewControllers" id="1JH-H2-ehd"/>
-                        <segue destination="zT1-qS-1ba" kind="relationship" relationship="viewControllers" id="fTE-CP-SZf"/>
+                        <segue destination="GvJ-ED-0qJ" kind="relationship" relationship="viewControllers" id="Bqa-F0-uEt"/>
+                        <segue destination="zT1-qS-1ba" kind="relationship" relationship="viewControllers" id="Nsf-8O-doi"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eeu-o6-z60" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -986,7 +989,7 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4ek-zW-zHj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="2506"/>
+            <point key="canvasLocation" x="1748" y="2506"/>
         </scene>
         <!--Settings-->
         <scene sceneID="ubi-4y-1Zb">
@@ -1064,7 +1067,31 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zt9-Bc-Ias" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2572" y="2506"/>
+            <point key="canvasLocation" x="-2852" y="2506"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Gxy-9T-ylc">
+            <objects>
+                <viewController id="Qy3-aO-3WJ" customClass="LocationHistoryVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vVc-bP-Be8">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="1EL-8v-FVU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="History" id="wFm-wF-kYF">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="fkJ-D1-Z25">
+                            <connections>
+                                <action selector="onLogout:" destination="Qy3-aO-3WJ" id="Hbi-or-jiI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="atn-xq-pZ8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2009" y="3235"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bbX-01-fB8">
@@ -1085,7 +1112,7 @@ United Statesv</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iQY-Mc-EpY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1505" y="2506"/>
+            <point key="canvasLocation" x="-1163" y="2506"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="A87-MI-NTw">
@@ -1106,6 +1133,25 @@ United Statesv</string>
             </objects>
             <point key="canvasLocation" x="-1163" y="622"/>
         </scene>
+        <!--History-->
+        <scene sceneID="dz1-Wf-mrZ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GvJ-ED-0qJ" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="History" image="clock.fill" catalog="system" id="iFC-im-m24"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q6q-eu-IPt">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Qy3-aO-3WJ" kind="relationship" relationship="rootViewController" id="9J8-Bm-bIz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cwB-Ic-Zsu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2009" y="2506"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="aIM-MN-Grc"/>
@@ -1114,6 +1160,7 @@ United Statesv</string>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
         <image name="building.2.fill" catalog="system" width="128" height="106"/>
+        <image name="clock.fill" catalog="system" width="128" height="121"/>
         <image name="eye.slash" catalog="system" width="128" height="86"/>
         <image name="feed_tab" width="25" height="25"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
