@@ -37,6 +37,25 @@ class SignupPasswordVC: UIViewController, UITextFieldDelegate {
             nextButton.tintColor = UIColor.init(red: 36/255, green: 122/255, blue: 255/255, alpha: 0.5)
         }
     }
+    
+    @IBAction func onNext(_ sender: Any) {
+        self.performSegue(withIdentifier: "segueToType", sender: nil)
+    }
+    
+    
+    // Using return button
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == passwordField {
+            textField.resignFirstResponder()
+            onNext((Any).self)
+        }
+        return true
+    }
 
     /*
     // MARK: - Navigation

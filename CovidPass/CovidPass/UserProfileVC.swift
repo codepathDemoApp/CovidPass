@@ -10,11 +10,17 @@ import Parse
 
 class UserProfileVC: UIViewController {
 
+    @IBOutlet weak var editProfileButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+        
+    @IBAction func saveProfileButton(_ sender: Any) {
+    }
+    
     
     @IBAction func onLogOut(_ sender: Any) {
         

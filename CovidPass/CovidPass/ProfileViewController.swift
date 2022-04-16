@@ -8,10 +8,6 @@
 import UIKit
 
 class ProfileViewController: UIViewController {
-
-    @IBOutlet weak var logoutButton: UIBarButtonItem!
-    
-    @IBOutlet weak var qrCodeButton: UIBarButtonItem!
     
     @IBOutlet weak var editProfileButton: UIButton!
     

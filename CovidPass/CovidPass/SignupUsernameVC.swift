@@ -68,6 +68,19 @@ class SignupUsernameVC: UIViewController, UITextFieldDelegate {
         self.dismiss(animated: true, completion: nil)
     }
     
+    // Using return button
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        
+        if textField == usernameField {
+            textField.resignFirstResponder()
+            onNext((Any).self)
+        }
+        return true
+    }
     
     /*
     // MARK: - Navigation

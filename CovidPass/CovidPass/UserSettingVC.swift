@@ -15,11 +15,11 @@ struct SettingsOption2 {
     let handler: (() -> Void)
 }
 
-class UserSettingsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
-        table.register(UserSettingsTableViewCell.self, forCellReuseIdentifier: UserSettingsTableViewCell.identifier)
+        table.register(UserSettingCell.self, forCellReuseIdentifier: UserSettingCell.identifier)
         return table
     }()
     
@@ -48,7 +48,7 @@ class UserSettingsViewController: UIViewController, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let model2 = modelss[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserSettingsTableViewCell.identifier, for: indexPath) as? UserSettingsTableViewCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: UserSettingCell.identifier, for: indexPath) as? UserSettingCell else {
             return UITableViewCell()
         }
         cell.configure(with: model2)

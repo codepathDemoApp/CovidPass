@@ -241,8 +241,9 @@
                                     <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="onNext:" destination="uor-n3-657" eventType="touchUpInside" id="L0q-fs-6NZ"/>
                                     <action selector="onSignIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TOA-zj-rfy"/>
-                                    <segue destination="mYZ-VS-BLt" kind="show" id="Gxe-gK-TUg"/>
+                                    <segue destination="mYZ-VS-BLt" kind="show" identifier="segueToType" id="Gxe-gK-TUg"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o36-ge-HX0">
@@ -517,7 +518,7 @@
         <!--Profile-->
         <scene sceneID="0Ls-Wq-Me9">
             <objects>
-                <viewController id="jqH-Ge-bW0" customClass="ProfileViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jqH-Ge-bW0" customClass="UserProfileVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uBo-MI-oip">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -705,8 +706,6 @@ United Statesv</string>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="editProfileButton" destination="GkL-3f-efZ" id="Gc1-KZ-iUM"/>
-                        <outlet property="logoutButton" destination="bZd-aY-bKa" id="vxo-88-bUg"/>
-                        <outlet property="qrCodeButton" destination="sxF-IW-dfQ" id="sSo-Us-4AU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCj-6L-fKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -974,7 +973,7 @@ United Statesv</string>
         <!--Settings-->
         <scene sceneID="wTE-Xj-Lay">
             <objects>
-                <viewController id="ujr-tN-hH9" customClass="LocationSettingsVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ujr-tN-hH9" customClass="LocationSettingVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hx6-qd-56e">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1143,7 +1142,7 @@ United Statesv</string>
         <!--Settings-->
         <scene sceneID="oTO-QB-mPo">
             <objects>
-                <viewController id="h8x-Mt-skY" customClass="UserSettingsViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="h8x-Mt-skY" customClass="UserSettingVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="PXz-6W-umq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1168,11 +1167,11 @@ United Statesv</string>
             </objects>
             <point key="canvasLocation" x="2542" y="3235"/>
         </scene>
-        <!--Item-->
+        <!--Setting-->
         <scene sceneID="4az-4z-JPv">
             <objects>
                 <navigationController id="kdW-tK-C7Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" selectedImage="gearshape.fill" catalog="system" id="476-Jf-ShC"/>
+                    <tabBarItem key="tabBarItem" title="Setting" selectedImage="gearshape.fill" catalog="system" id="476-Jf-ShC"/>
                     <navigationItem key="navigationItem" id="HKY-KN-QQ5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CMO-JV-ZE6">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>

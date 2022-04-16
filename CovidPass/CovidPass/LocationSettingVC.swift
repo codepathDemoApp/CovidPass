@@ -19,11 +19,11 @@ struct SettingsOption{
     let handler: (() -> Void)
 }
 
-class LocationSettingsVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
+class LocationSettingVC: UIViewController , UITableViewDelegate, UITableViewDataSource{
     
     private let tableView: UITableView = {
         let table = UITableView(frame: .zero, style: .grouped)
-        table.register(SettingsTableViewCell.self, forCellReuseIdentifier: SettingsTableViewCell.identifier)
+        table.register(LocationSettingCell.self, forCellReuseIdentifier: LocationSettingCell.identifier)
         return table
     }()
     override func viewDidLoad() {
@@ -74,8 +74,8 @@ class LocationSettingsVC: UIViewController , UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.rowHeight = 88
         let model = models[indexPath.section].options[indexPath.row]
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: SettingsTableViewCell.identifier, for: indexPath
-        ) as? SettingsTableViewCell else{
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: LocationSettingCell.identifier, for: indexPath
+        ) as? LocationSettingCell else{
             return UITableViewCell()
         }
         cell.configure(with: model)
