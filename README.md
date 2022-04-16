@@ -172,6 +172,16 @@ User signs up as a location type account.
 
 <img src='https://media1.giphy.com/media/9wryFVOgrIf3k8iqgd/giphy.gif?cid=790b7611b2defc4af512a8b0001180ccfbd1f104fe515d26&rid=giphy.gif&ct=g' title='Location Account' width='' alt='Video Walkthrough' />
 
+## Sprint 2
+
+### What we achieved
+- location type account can regenerate/generate QR code
+- location type account can access settings 
+- user can not create an existing username 
+- user can not create a username lower than 5 characters
+- user can not create a password lower than 6 cbaracters
+- 
+
 User that logs in as location can access settings.
 
 <img src='http://g.recordit.co/YpzDPmkCQw.gif' title='Settings Account' width='' alt='Video Walkthrough' />
