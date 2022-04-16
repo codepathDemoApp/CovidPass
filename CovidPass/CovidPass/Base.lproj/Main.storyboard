@@ -654,7 +654,7 @@
                                                 <rect key="frame" x="67.666666666666657" y="0.0" width="290.33333333333337" height="61"/>
                                                 <string key="text">75 Avenue E
 Piscataway, NJ  08854
-United Statesv</string>
+United States</string>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -670,7 +670,7 @@ United Statesv</string>
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="h0L-O1-0YK" kind="presentation" identifier="editProfileController" id="Xy3-Ni-pTc"/>
+                                    <segue destination="h0L-O1-0YK" kind="presentation" id="KT4-MS-Hhj"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -710,12 +710,12 @@ United Statesv</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCj-6L-fKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1749" y="3235"/>
+            <point key="canvasLocation" x="1748" y="3235"/>
         </scene>
         <!--Profile Edit Controller-->
         <scene sceneID="qh3-aa-9Hv">
             <objects>
-                <viewController storyboardIdentifier="editProfileController" id="h0L-O1-0YK" customClass="ProfileEditController" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="editProfileController" id="h0L-O1-0YK" customClass="ProfileEditController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jsc-jF-rLG">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -829,7 +829,7 @@ United Statesv</string>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="addressTextField" destination="3Hu-eL-rBb" id="zVY-Q7-ANj"/>
+                        <outlet property="addressTextField" destination="3Hu-eL-rBb" id="IAD-Zb-bW4"/>
                         <outlet property="editNameTextField" destination="ARN-jd-pfo" id="hRf-h3-i3H"/>
                         <outlet property="emailAddressTextField" destination="cKH-d0-1yT" id="gTo-KW-ThW"/>
                         <outlet property="genderTextField" destination="WqH-kd-b8j" id="AiX-gf-leT"/>

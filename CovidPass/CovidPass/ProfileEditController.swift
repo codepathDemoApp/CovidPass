@@ -7,7 +7,7 @@
 
 import UIKit
 
-class editProfileController: UIViewController {
+class ProfileEditController: UIViewController {
 
     @IBOutlet weak var editNameTextField: UITextField!
     
