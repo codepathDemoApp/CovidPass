@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ProfileEditController: UIViewController {
+class editProfileController: UIViewController {
 
     @IBOutlet weak var editNameTextField: UITextField!
     
@@ -22,8 +22,6 @@ class ProfileEditController: UIViewController {
     @IBOutlet weak var phoneTextField: UITextField!
     
     @IBOutlet weak var addressTextField: UITextField!
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

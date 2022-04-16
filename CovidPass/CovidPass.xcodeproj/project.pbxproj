@@ -171,13 +171,13 @@
 				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
 				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
 				B64BAAC627FD016600057FB2 /* UserProfileVC.swift */,
+				3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */,
 				0007F1CE280A3CED00C84AA0 /* UserSettingVC.swift */,
 				0007F1D2280A413900C84AA0 /* UserSettingCell.swift */,
 				C748E1A328000889005AB168 /* LocationCodeVC.swift */,
 				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
 				B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */,
 				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
-				3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
