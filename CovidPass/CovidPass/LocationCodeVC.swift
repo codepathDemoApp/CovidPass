@@ -18,6 +18,7 @@ class LocationCodeVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
 
 //        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed))
 //
@@ -94,7 +95,12 @@ class LocationCodeVC: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        self.onRegenerate((Any).self)
+        let locationCode = user["qrcode"]
+        if (locationCode != nil) {
+            let qrCode = QRCode(locationCode as! String)
+            qrCodeImage.backgroundColor = nil
+            qrCodeImage.image = qrCode?.image
+        }
     }
     
     /*
