@@ -15,7 +15,7 @@
 		B64BAAC727FD016600057FB2 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */; };
 		B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B64BAAC827FD06F200057FB2 /* HistoryCell.swift */; };
 		B65B30EE27FF9C1700E7A90D /* SignupTypeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */; };
-		B65B30F027FF9DB700E7A90D /* SignupUsernameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameViewController.swift */; };
+		B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */; };
 		B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */; };
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
@@ -63,7 +63,7 @@
 		B64BAAC627FD016600057FB2 /* UserProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		B64BAAC827FD06F200057FB2 /* HistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryCell.swift; sourceTree = "<group>"; };
 		B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupTypeViewController.swift; sourceTree = "<group>"; };
-		B65B30EF27FF9DB700E7A90D /* SignupUsernameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameViewController.swift; sourceTree = "<group>"; };
+		B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameVC.swift; sourceTree = "<group>"; };
 		B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordViewController.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingsViewController.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
@@ -157,7 +157,7 @@
 				C7692EC027F8D084007831FC /* LaunchScreen.storyboard */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				C7692EC327F8D084007831FC /* Info.plist */,
-				B65B30EF27FF9DB700E7A90D /* SignupUsernameViewController.swift */,
+				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
 				B65B30ED27FF9C1700E7A90D /* SignupTypeViewController.swift */,
 				B65B30F127FF9EA100E7A90D /* SignupPasswordViewController.swift */,
 				B64BAAC827FD06F200057FB2 /* HistoryCell.swift */,
@@ -443,7 +443,7 @@
 				B65B30EE27FF9C1700E7A90D /* SignupTypeViewController.swift in Sources */,
 				B64BAAC727FD016600057FB2 /* UserProfileViewController.swift in Sources */,
 				B65B30F427FFA6AB00E7A90D /* LocationSettingsViewController.swift in Sources */,
-				B65B30F027FF9DB700E7A90D /* SignupUsernameViewController.swift in Sources */,
+				B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */,
 				EF0DE09E280A0ADC00D3E089 /* SettingsTableViewCell.swift in Sources */,
 				B65B30F227FF9EA100E7A90D /* SignupPasswordViewController.swift in Sources */,
 				B64BAAC927FD06F200057FB2 /* HistoryCell.swift in Sources */,

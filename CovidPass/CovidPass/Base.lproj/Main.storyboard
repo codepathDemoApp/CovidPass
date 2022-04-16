@@ -152,7 +152,7 @@
         <!--SignUp Username-->
         <scene sceneID="Leq-2v-pDp">
             <objects>
-                <viewController title="SignUp Username" id="pWJ-M4-yPu" customClass="SignupUsernameViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="SignUp Username" id="pWJ-M4-yPu" customClass="SignupUsernameVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lZS-yP-L0j">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -861,9 +861,8 @@ United Statesv</string>
                                 <rect key="frame" x="16" y="516" width="358" height="200"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                 <rect key="frame" x="26" y="526" width="358" height="18"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -889,8 +888,11 @@ United Statesv</string>
                         <constraints>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="top" secondItem="3cz-WR-m8a" secondAttribute="bottom" constant="32" id="3Ab-j9-yD0"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" constant="55" id="CEg-je-3m2"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="55.333333333333371" id="Hib-7V-hDd"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="3cz-WR-m8a" secondAttribute="trailing" constant="68.329999999999998" id="RNs-Fu-A3e"/>
+                            <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="xNd-ti-gZK" secondAttribute="trailing" constant="6" id="aGi-HH-wHX"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="cg8-ZW-2GR"/>
+                            <constraint firstItem="xNd-ti-gZK" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="26" id="ctO-jT-yZU"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="16" id="dNz-yJ-XvS"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="pmc-eV-lXG"/>
