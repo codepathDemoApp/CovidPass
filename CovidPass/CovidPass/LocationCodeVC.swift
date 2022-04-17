@@ -13,6 +13,7 @@ class LocationCodeVC: UIViewController {
 
     
     @IBOutlet weak var qrCodeImage: UIImageView!
+    @IBOutlet weak var dateLabel: UILabel!
     
     var user = PFUser.current()!
     
@@ -61,12 +62,22 @@ class LocationCodeVC: UIViewController {
     }
     
     @IBAction func onRegenerate(_ sender: Any) {
+        let date = Date()
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy"
+        let yearString = dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "MMMM"
+        let monthString = dateFormatter.string(from: date)
+        dateFormatter.dateFormat = "d"
+        let dayString = dateFormatter.string(from: date)
         if qrCodeImage.image == nil {
+            dateLabel.text = "Generated on: \(monthString) \(dayString), \(yearString)"
             let code = generateRandomCode(length: 6)
             let qrCode = QRCode(code)
             qrCodeImage.backgroundColor = nil
             qrCodeImage.image = qrCode?.image
             user["qrcode"] = code
+            user["qrdate"] = "\(monthString) \(dayString), \(yearString)"
             user.saveInBackground()
             return
         }
@@ -74,11 +85,13 @@ class LocationCodeVC: UIViewController {
         let alert = UIAlertController(title: "Regenerate QR Code", message: "Are you sure you want to regenerate your QR Code?", preferredStyle: UIAlertController.Style.alert)
 
         alert.addAction(UIAlertAction(title: "Yes", style: UIAlertAction.Style.default, handler: { UIAlertAction in
+            self.dateLabel.text = "Generated on: \(monthString) \(dayString), \(yearString)"
             let code = self.generateRandomCode(length: 6)
             let qrCode = QRCode(code)
             self.qrCodeImage.backgroundColor = nil
             self.qrCodeImage.image = qrCode?.image
             self.user["qrcode"] = code
+            self.user["qrdate"] = "\(monthString) \(dayString), \(yearString)"
             self.user.saveInBackground()
         }))
         
@@ -96,10 +109,14 @@ class LocationCodeVC: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         let locationCode = user["qrcode"]
+        let qrDate = user["qrdate"]
         if (locationCode != nil) {
             let qrCode = QRCode(locationCode as! String)
             qrCodeImage.backgroundColor = nil
             qrCodeImage.image = qrCode?.image
+        }
+        if (qrDate != nil) {
+            dateLabel.text = "Generated on: " + ((qrDate as? String) ?? "")
         }
     }
     
