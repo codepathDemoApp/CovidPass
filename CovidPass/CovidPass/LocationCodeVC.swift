@@ -14,11 +14,16 @@ class LocationCodeVC: UIViewController {
     
     @IBOutlet weak var qrCodeImage: UIImageView!
     @IBOutlet weak var dateLabel: UILabel!
+    @IBOutlet weak var locationNameCell: UIStackView!
+    @IBOutlet weak var locationNameLabel: UILabel!
+    @IBOutlet weak var addressLabel: UILabel!
     
     var user = PFUser.current()!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let fGuesture = UITapGestureRecognizer(target: self, action: #selector(showF))
+        locationNameCell.addGestureRecognizer(fGuesture)
         
 
 //        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed))
@@ -39,6 +44,34 @@ class LocationCodeVC: UIViewController {
 //        super.didReceiveMemoryWarning()
 //            // Dispose of any resources that can be recreated.
 //    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        let locationCode = user["qrcode"]
+        let qrDate = user["qrdate"]
+        let locationname = user["locationname"] as? String ?? ""
+        let address = user["address"] as? String ?? ""
+        let country = user["country"] as? String ?? ""
+        let zipCode = user["zip"] as? String ?? ""
+        let state = user["state"] as? String ?? ""
+        let city = user["city"] as? String ?? ""
+        
+        if (locationCode != nil) {
+            let qrCode = QRCode(locationCode as! String)
+            qrCodeImage.backgroundColor = nil
+            qrCodeImage.image = qrCode?.image
+        }
+        if (qrDate != nil) {
+            dateLabel.text = "Generated on: " + ((qrDate as? String) ?? "")
+        }
+        if (locationname != "") {
+            locationNameLabel.text = locationname
+        }
+        
+        if (address != "" && country != "" && zipCode != "" && state != "" && city != "") {
+            addressLabel.text = "\(address)\n\(city), \(state), \(zipCode)\n\(country)"
+        }
+    }
 
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
@@ -106,18 +139,8 @@ class LocationCodeVC: UIViewController {
         return String((0..<length).map{ _ in letters.randomElement()!})
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        let locationCode = user["qrcode"]
-        let qrDate = user["qrdate"]
-        if (locationCode != nil) {
-            let qrCode = QRCode(locationCode as! String)
-            qrCodeImage.backgroundColor = nil
-            qrCodeImage.image = qrCode?.image
-        }
-        if (qrDate != nil) {
-            dateLabel.text = "Generated on: " + ((qrDate as? String) ?? "")
-        }
+    @objc func showF() {
+        print("HELLO")
     }
     
     /*

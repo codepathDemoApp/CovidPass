@@ -34,6 +34,7 @@
 		C7692ED927F8D085007831FC /* CovidPassUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */; };
 		C787EA54280B4AEA00A8807A /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = C787EA53280B4AEA00A8807A /* CodeScanner */; };
 		C7D75AB9280B71B400B5E7D1 /* ScannerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */; };
+		C7D75ABB280CEF0D00B5E7D1 /* SignupLocationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */; };
 		EF0DE09E280A0ADC00D3E089 /* LocationSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */; };
 /* End PBXBuildFile section */
 
@@ -89,6 +90,7 @@
 		C7692ED627F8D085007831FC /* CovidPassUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITests.swift; sourceTree = "<group>"; };
 		C7692ED827F8D085007831FC /* CovidPassUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CovidPassUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScannerVC.swift; sourceTree = "<group>"; };
+		C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupLocationVC.swift; sourceTree = "<group>"; };
 		CCF1E0F6CB5ADCD52678CE78 /* Pods-CovidPass.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass/Pods-CovidPass.debug.xcconfig"; sourceTree = "<group>"; };
 		EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingCell.swift; sourceTree = "<group>"; };
 		FB3DC35BED2C23417AA0B869 /* Pods-CovidPass-CovidPassUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.release.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -170,6 +172,7 @@
 				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
 				B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */,
 				B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */,
+				C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */,
 				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
 				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
 				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
@@ -463,6 +466,7 @@
 				B65B30EE27FF9C1700E7A90D /* SignupTypeVC.swift in Sources */,
 				0007F1CF280A3CED00C84AA0 /* UserSettingVC.swift in Sources */,
 				B64BAAC727FD016600057FB2 /* UserProfileVC.swift in Sources */,
+				C7D75ABB280CEF0D00B5E7D1 /* SignupLocationVC.swift in Sources */,
 				B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */,
 				B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */,
 				3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */,

@@ -27,24 +27,33 @@ class SignupTypeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let segueIdentifier = segue.identifier ?? ""
+        if segueIdentifier == "segueToLocationInformation" {
+            let destinationVC = segue.destination as! SignupLocationVC
+            destinationVC.password = password
+            destinationVC.username = username
+        }
+    }
+    
     // Sign up for location
     @IBAction func forLocation(_ sender: Any) {
-        
-        let user = PFUser()
-
-        user.username = username
-        user.password = password
-        user["type"] = "location"
-        
-        print("System: successfully signed \(user.username!) as location type account")
-
-        user.signUpInBackground { success, error in
-            if success {
-                self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
-            } else {
-                print("Error: \(error!.localizedDescription)")
-            }
-        }
+        self.performSegue(withIdentifier: "segueToLocationInformation", sender: nil)
+//        let user = PFUser()
+//
+//        user.username = username
+//        user.password = password
+//        user["type"] = "location"
+//
+//        print("System: successfully signed \(user.username!) as location type account")
+//
+//        user.signUpInBackground { success, error in
+//            if success {
+//                self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
+//            } else {
+//                print("Error: \(error!.localizedDescription)")
+//            }
+//        }
     }
     
     // Sign up for user

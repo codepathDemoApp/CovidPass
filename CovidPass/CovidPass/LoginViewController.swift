@@ -54,10 +54,9 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         let password = passwordField.text!
         
         PFUser.logInWithUsername(inBackground: username, password: password) { user, error in
-            
-            let usertype = user?["type"] as! String
 
             if user != nil {
+                let usertype = user?["type"] as! String
                 if usertype == "location" {
                     self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
                 } else {
