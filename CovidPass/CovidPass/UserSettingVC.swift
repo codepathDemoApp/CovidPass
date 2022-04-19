@@ -8,6 +8,11 @@
 import UIKit
 import Parse
 
+struct Section2{
+    let title: String
+    let options: [SettingsOption2]
+}
+
 struct SettingsOption2 {
     let title: String
     let icon: UIImage?
@@ -23,7 +28,7 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return table
     }()
     
-    var modelss = [SettingsOption]()
+    var modelss = [Section2]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,24 +41,58 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func configure() {
-        self.modelss = Array(0...100).compactMap({
-            SettingsOption(title: "Item \($0)", icon: UIImage(systemName: "house"), iconBackgroundColor: .systemPink) {
+        self.modelss.append(Section2(title: "General", options: [
+            SettingsOption2(title: "Notifications", icon: UIImage(systemName: "bell"),
+                iconBackgroundColor: .systemRed, handler: {
+                    print("tapped first cell")
+                    
+                }),
+            SettingsOption2(title: "FAQ", icon: UIImage(systemName: "book"), iconBackgroundColor: .systemGreen, handler: {
+                print("Tapped second cell")
                 
-            }
-        })
+            }),
+            SettingsOption2(title: "How the app works", icon: UIImage(systemName: "building"), iconBackgroundColor: .systemTeal, handler: {
+                print("Tapped third cell")
+                
+            }), SettingsOption2(title: "Delete my data", icon: UIImage(systemName: "trash"), iconBackgroundColor: .systemBlue, handler: {
+                print("Tapped third cell")
+                
+            })
+        ]))
+//        self.modelss = Array(0...100).compactMap({
+//            SettingsOption(title: "Item \($0)", icon: UIImage(systemName: "house"), iconBackgroundColor: .systemPink) {
+//
+//            }
+//        })
     }
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return modelss.count
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        tableView.deselectRow(at: indexPath, animated: true)
+        let model = modelss[indexPath.section].options[indexPath.row]
+        model.handler()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let model2 = modelss[indexPath.row]
+        tableView.rowHeight = 88
+        let model3 = modelss[indexPath.section].options[indexPath.row]
         guard let cell = tableView.dequeueReusableCell(withIdentifier: UserSettingCell.identifier, for: indexPath) as? UserSettingCell else {
             return UITableViewCell()
         }
-        cell.configure(with: model2)
+        cell.configure(with: model3)
         return cell
     }
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return modelss.count
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return modelss[section].options.count
+    }
+    
+    
+    
+    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         

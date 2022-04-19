@@ -69,7 +69,7 @@ class UserSettingCell: UITableViewCell {
         iconContainer.backgroundColor = nil
     }
 
-    public func configure(with model: SettingsOption) {
+    public func configure(with model: SettingsOption2) {
         label.text = model.title
         iconImageView.image = model.icon
         iconContainer.backgroundColor = model.iconBackgroundColor
