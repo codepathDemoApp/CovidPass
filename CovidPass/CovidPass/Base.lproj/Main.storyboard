@@ -534,7 +534,7 @@
         <!--Home-->
         <scene sceneID="Bli-Ev-2dI">
             <objects>
-                <viewController id="fEO-xu-emN" customClass="UserHomeVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserHomeVC" id="fEO-xu-emN" customClass="UserHomeVC" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fc8-3d-1Jb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -818,7 +818,7 @@ United States</string>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-3f-efZ">
                                 <rect key="frame" x="16" y="700" width="358" height="28.333333333333371"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Save Profile">
+                                <buttonConfiguration key="configuration" style="gray" title="Edit Profile">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -872,10 +872,10 @@ United States</string>
             </objects>
             <point key="canvasLocation" x="1748" y="3235"/>
         </scene>
-        <!--Hoster View Controller-->
+        <!--Hosting Controller-->
         <scene sceneID="kie-tb-V95">
             <objects>
-                <hostingController id="9Qd-pD-Z9q" customClass="HosterViewController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
+                <hostingController id="9Qd-pD-Z9q" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="8m1-2b-yih"/>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAd-El-vKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
