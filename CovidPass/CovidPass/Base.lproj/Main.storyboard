@@ -858,7 +858,14 @@ United States</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addressLabel" destination="qfr-7z-bK3" id="tgW-SR-EtW"/>
                         <outlet property="editProfileButton" destination="GkL-3f-efZ" id="Gc1-KZ-iUM"/>
+                        <outlet property="emailLabel" destination="hQA-6U-5am" id="AtV-tv-5eX"/>
+                        <outlet property="genderLabel" destination="EtU-fs-4VF" id="Kzb-3V-M8K"/>
+                        <outlet property="nameLabel" destination="4ig-VQ-ay9" id="tZd-OU-fir"/>
+                        <outlet property="passwordLabel" destination="RPK-sK-I88" id="ggv-so-ogq"/>
+                        <outlet property="phoneLabel" destination="0cX-Dg-sbR" id="aug-pR-Ork"/>
+                        <outlet property="usernameLabel" destination="nGj-rx-5wp" id="xJw-Gb-3Iv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCj-6L-fKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1170,8 +1177,39 @@ United States</string>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-WR-m8a">
+                                <rect key="frame" x="272.66666666666669" y="128" width="49" height="30.666666666666657"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system"/>
+                                <connections>
+                                    <action selector="onRegenerate:" destination="pv7-tj-Hpo" eventType="touchUpInside" id="XT3-6G-qyZ"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ta5-Yh-pXY">
+                                <rect key="frame" x="55" y="190.66666666666663" width="280" height="280"/>
+                                <color key="backgroundColor" red="0.95696693659999998" green="0.96080797910000004" blue="0.95668870210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="280" id="Tj5-Ki-3NV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-Qd-eyy">
+                                <rect key="frame" x="55" y="473" width="280" height="0.0"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJc-O2-YEq">
+                                <rect key="frame" x="55" y="504.99999999999994" width="280" height="28.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save Profile">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSaveCode:" destination="pv7-tj-Hpo" eventType="touchUpInside" id="JKf-AX-dxF"/>
+                                </connections>
+                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-U8-Qbu">
-                                <rect key="frame" x="16" y="507.99999999999994" width="355" height="139.33333333333331"/>
+                                <rect key="frame" x="16" y="565.33333333333337" width="355" height="139.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="18"/>
@@ -1197,7 +1235,7 @@ United States</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLX-gK-sEb">
-                                        <rect key="frame" x="0.0" y="78.333333333333371" width="355" height="61"/>
+                                        <rect key="frame" x="0.0" y="78.333333333333258" width="355" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paJ-Up-Q9T">
                                                 <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="61"/>
@@ -1218,34 +1256,13 @@ United States</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-WR-m8a">
-                                <rect key="frame" x="272.66666666666669" y="128" width="49" height="30.666666666666657"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system"/>
-                                <connections>
-                                    <action selector="onRegenerate:" destination="pv7-tj-Hpo" eventType="touchUpInside" id="XT3-6G-qyZ"/>
-                                </connections>
-                            </button>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ta5-Yh-pXY">
-                                <rect key="frame" x="55" y="190.66666666666663" width="280" height="280"/>
-                                <color key="backgroundColor" red="0.95696693659999998" green="0.96080797910000004" blue="0.95668870210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="280" id="Tj5-Ki-3NV"/>
-                                </constraints>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-Qd-eyy">
-                                <rect key="frame" x="55" y="473" width="280" height="17"/>
-                                <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wa6-1i-hqR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="EKI-Qd-eyy" secondAttribute="bottom" constant="18" id="2Bs-s2-ian"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="top" secondItem="3cz-WR-m8a" secondAttribute="bottom" constant="32" id="3Ab-j9-yD0"/>
                             <constraint firstItem="2mc-U8-Qbu" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="leading" id="98m-iq-bjk"/>
+                            <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="vJc-O2-YEq" secondAttribute="trailing" constant="55" id="AjH-Qu-mGR"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" constant="55" id="CEg-je-3m2"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="2mc-U8-Qbu" secondAttribute="trailing" constant="19" id="FhL-Qk-Hx4"/>
                             <constraint firstItem="EKI-Qd-eyy" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="2.3333333333333712" id="IFk-IV-EdD"/>
@@ -1255,9 +1272,11 @@ United States</string>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
                             <constraint firstItem="EKI-Qd-eyy" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" id="pkT-TT-xzJ"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="pmc-eV-lXG"/>
+                            <constraint firstItem="vJc-O2-YEq" firstAttribute="top" secondItem="EKI-Qd-eyy" secondAttribute="bottom" constant="32" id="qoJ-5t-Yez"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="rmK-lo-VD0"/>
-                            <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="37.333333333333371" id="trt-ba-ZDB"/>
+                            <constraint firstItem="vJc-O2-YEq" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="uGR-qz-JOP"/>
                             <constraint firstItem="EKI-Qd-eyy" firstAttribute="leading" secondItem="Ta5-Yh-pXY" secondAttribute="leading" id="upH-9u-mLl"/>
+                            <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="vJc-O2-YEq" secondAttribute="bottom" constant="32" id="wud-Gf-Ric"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="QR Code" id="982-vB-LtB">
@@ -1708,7 +1727,7 @@ United States</string>
     <inferredMetricsTieBreakers>
         <segue reference="JDh-lc-5bM"/>
         <segue reference="riu-Xg-SKX"/>
-        <segue reference="D3f-nu-Hg0"/>
+        <segue reference="K6F-gu-Stu"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>

@@ -321,7 +321,6 @@
 			mainGroup = C7692EA927F8D081007831FC;
 			packageReferences = (
 				C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */,
-				B67886D7280F8C6C005E0AC7 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = C7692EB327F8D081007831FC /* Products */;
 			projectDirPath = "";
@@ -668,7 +667,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97A6A6Z9V4;
+				DEVELOPMENT_TEAM = APTKZBPBQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
@@ -684,7 +683,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -700,7 +699,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97A6A6Z9V4;
+				DEVELOPMENT_TEAM = APTKZBPBQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
@@ -716,7 +715,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -846,14 +845,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		B67886D7280F8C6C005E0AC7 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/CodeScanner";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 2.0.0;
-			};
-		};
 		C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
