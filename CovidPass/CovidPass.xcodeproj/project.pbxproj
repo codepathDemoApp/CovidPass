@@ -21,6 +21,8 @@
 		B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */; };
 		B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */; };
+		B67886D6280F838A005E0AC7 /* SignupUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B67886D5280F838A005E0AC7 /* SignupUserVC.swift */; };
+		B67886D9280F8C6C005E0AC7 /* CodeScanner in Frameworks */ = {isa = PBXBuildFile; productRef = B67886D8280F8C6C005E0AC7 /* CodeScanner */; };
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
 		C748E1A428000889005AB168 /* LocationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748E1A328000889005AB168 /* LocationCodeVC.swift */; };
@@ -75,6 +77,7 @@
 		B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUsernameVC.swift; sourceTree = "<group>"; };
 		B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordVC.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingVC.swift; sourceTree = "<group>"; };
+		B67886D5280F838A005E0AC7 /* SignupUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserVC.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCodeVC.swift; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -103,6 +106,7 @@
 			files = (
 				C787EA54280B4AEA00A8807A /* CodeScanner in Frameworks */,
 				0C652C40F9A52E3AD8573907 /* Pods_CovidPass.framework in Frameworks */,
+				B67886D9280F8C6C005E0AC7 /* CodeScanner in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,6 +177,7 @@
 				B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */,
 				B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */,
 				C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */,
+				B67886D5280F838A005E0AC7 /* SignupUserVC.swift */,
 				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
 				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
 				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
@@ -237,6 +242,7 @@
 			name = CovidPass;
 			packageProductDependencies = (
 				C787EA53280B4AEA00A8807A /* CodeScanner */,
+				B67886D8280F8C6C005E0AC7 /* CodeScanner */,
 			);
 			productName = CovidPass;
 			productReference = C7692EB227F8D081007831FC /* CovidPass.app */;
@@ -315,6 +321,7 @@
 			mainGroup = C7692EA927F8D081007831FC;
 			packageReferences = (
 				C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */,
+				B67886D7280F8C6C005E0AC7 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = C7692EB327F8D081007831FC /* Products */;
 			projectDirPath = "";
@@ -467,6 +474,7 @@
 				0007F1CF280A3CED00C84AA0 /* UserSettingVC.swift in Sources */,
 				B64BAAC727FD016600057FB2 /* UserProfileVC.swift in Sources */,
 				C7D75ABB280CEF0D00B5E7D1 /* SignupLocationVC.swift in Sources */,
+				B67886D6280F838A005E0AC7 /* SignupUserVC.swift in Sources */,
 				B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */,
 				B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */,
 				3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */,
@@ -838,6 +846,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		B67886D7280F8C6C005E0AC7 /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/twostraws/CodeScanner";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/twostraws/CodeScanner";
@@ -849,6 +865,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		B67886D8280F8C6C005E0AC7 /* CodeScanner */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */;
+			productName = CodeScanner;
+		};
 		C787EA53280B4AEA00A8807A /* CodeScanner */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = C787EA52280B4AEA00A8807A /* XCRemoteSwiftPackageReference "CodeScanner" */;
