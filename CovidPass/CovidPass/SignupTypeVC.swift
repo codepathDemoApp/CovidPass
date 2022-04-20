@@ -33,11 +33,16 @@ class SignupTypeVC: UIViewController {
             let destinationVC = segue.destination as! SignupLocationVC
             destinationVC.password = password
             destinationVC.username = username
+        } else if segueIdentifier == "segueToUserInformation" {
+            let destinationVC = segue.destination as! SignupUserVC
+            destinationVC.password = password
+            destinationVC.username = username
         }
     }
     
     // Sign up for location
     @IBAction func forLocation(_ sender: Any) {
+        
         self.performSegue(withIdentifier: "segueToLocationInformation", sender: nil)
 //        let user = PFUser()
 //
@@ -59,21 +64,23 @@ class SignupTypeVC: UIViewController {
     // Sign up for user
     @IBAction func forUser(_ sender: Any) {
         
-        let user = PFUser()
+        self.performSegue(withIdentifier: "segueToUserInformation", sender: nil)
         
-        user.username = username
-        user.password = password
-        user["type"] = "user"
-        
-        print("System: successfully signed \(user.username!) as user type account")
-
-        user.signUpInBackground { success, error in
-            if success {
-                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
-            } else {
-                print("Error: \(error!.localizedDescription)")
-            }
-        }
+//        let user = PFUser()
+//
+//        user.username = username
+//        user.password = password
+//        user["type"] = "user"
+//
+//        print("System: successfully signed \(user.username!) as user type account")
+//
+//        user.signUpInBackground { success, error in
+//            if success {
+//                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
+//            } else {
+//                print("Error: \(error!.localizedDescription)")
+//            }
+//        }
     }
     
     /*

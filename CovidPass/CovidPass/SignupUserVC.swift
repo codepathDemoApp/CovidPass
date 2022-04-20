@@ -1,35 +1,44 @@
 //
-//  SignupLocationVC.swift
+//  SignupUserViewController.swift
 //  CovidPass
 //
-//  Created by Jackson Tran on 4/17/22.
+//  Created by LYON on 4/19/22.
 //
 
 import UIKit
 import Parse
 
-class SignupLocationVC: UIViewController, UITextFieldDelegate {
-    
-    @IBOutlet weak var locationNameTextField: UITextField!
+class SignupUserVC: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var genderTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
     @IBOutlet weak var countryTextField: UITextField!
-    @IBOutlet weak var zipTextField: UITextField!
     @IBOutlet weak var stateTextField: UITextField!
     @IBOutlet weak var cityTextField: UITextField!
+    @IBOutlet weak var zipTextField: UITextField!
     
     var username: String = ""
     var password: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        locationNameTextField.delegate = self
+        nameTextField.delegate = self
+        emailTextField.delegate = self
+        genderTextField.delegate = self
+        phoneTextField.delegate = self
         addressTextField.delegate = self
         countryTextField.delegate = self
         zipTextField.delegate = self
         stateTextField.delegate = self
         cityTextField.delegate = self
         
-        locationNameTextField.autocorrectionType = .no
+        nameTextField.autocorrectionType = .no
+        emailTextField.autocorrectionType = .no
+        genderTextField.autocorrectionType = .no
+        phoneTextField.autocorrectionType = .no
         addressTextField.autocorrectionType = .no
         countryTextField.autocorrectionType = .no
         zipTextField.autocorrectionType = .no
@@ -48,12 +57,16 @@ class SignupLocationVC: UIViewController, UITextFieldDelegate {
             self.present(alert, animated: true, completion: nil)
             return
         }
+        
         let user = PFUser()
 
         user.username = username
         user.password = password
-        user["type"] = "location"
-        user["locationname"] = locationNameTextField.text
+        user["type"] = "user"
+        user["name"] = nameTextField.text
+        user["email"] = emailTextField.text
+        user["gender"] = genderTextField.text
+        user["phone"] = phoneTextField.text
         user["address"] = addressTextField.text
         user["country"] = countryTextField.text
         user["state"] = stateTextField.text
@@ -61,11 +74,11 @@ class SignupLocationVC: UIViewController, UITextFieldDelegate {
         user["zip"] = zipTextField.text
         
 
-        print("System: successfully signed \(user.username!) as location type account")
+        print("System: successfully signed \(user.username!) as user type account")
 
         user.signUpInBackground { success, error in
             if success {
-                self.performSegue(withIdentifier: "loginToLocationSegue", sender: nil)
+                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
             } else {
                 print("Error: \(error!.localizedDescription)")
             }
@@ -73,7 +86,7 @@ class SignupLocationVC: UIViewController, UITextFieldDelegate {
     }
     
     func checkTextFields() -> Bool{
-        if locationNameTextField.text!.isEmpty || addressTextField.text!.isEmpty || countryTextField.text!.isEmpty || stateTextField.text!.isEmpty || zipTextField.text!.isEmpty || cityTextField.text!.isEmpty {
+        if nameTextField.text!.isEmpty || emailTextField.text!.isEmpty || genderTextField.text!.isEmpty || phoneTextField.text!.isEmpty || addressTextField.text!.isEmpty || countryTextField.text!.isEmpty || stateTextField.text!.isEmpty || zipTextField.text!.isEmpty || cityTextField.text!.isEmpty {
             return false
         }
         return true
@@ -84,7 +97,14 @@ class SignupLocationVC: UIViewController, UITextFieldDelegate {
     }
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        if textField == locationNameTextField {
+        
+        if textField == nameTextField {
+            emailTextField.becomeFirstResponder()
+        } else if textField == emailTextField {
+            genderTextField.becomeFirstResponder()
+        } else if textField == genderTextField {
+            phoneTextField.becomeFirstResponder()
+        } else if textField == phoneTextField {
             addressTextField.becomeFirstResponder()
         } else if textField == addressTextField {
             countryTextField.becomeFirstResponder()
@@ -112,3 +132,4 @@ class SignupLocationVC: UIViewController, UITextFieldDelegate {
     */
 
 }
+
