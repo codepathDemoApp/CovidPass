@@ -17,8 +17,7 @@ class SignupUsernameVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         usernameField.delegate = self
         usernameField.autocorrectionType = .no
-        
-        usernameField.becomeFirstResponder()
+
         // Do any additional setup after loading the view.
     }
     
