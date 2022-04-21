@@ -39,6 +39,7 @@ class LocationCodeVC: UIViewController {
         UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
     }
     
+    
 //    @objc func longPressed(sender: UILongPressGestureRecognizer) {
 //        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
 //        }

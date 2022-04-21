@@ -11,6 +11,7 @@ import CodeScanner
 
 class HosterViewController: UIHostingController<TestSwiftUIView>{
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,7 +34,6 @@ struct HosterViewController_Previews: PreviewProvider {
 }
 
 struct TestSwiftUIView: View {
-    
     var dismiss: (() -> Void)?
     
     var body: some View {
@@ -51,3 +51,4 @@ struct TestSwiftUIView: View {
         )
     }
 }
+

@@ -11,12 +11,10 @@ import SwiftUI
 import CodeScanner
 
 class UserHomeVC: UIViewController {
+
     
     @State private var isShowingScanner = false
     
-    var user = PFUser.current()!
-    
-    var codeString: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
