@@ -29,12 +29,12 @@ class UserHomeVC: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print("CHANGE")
         
         var history = [PFObject]()
         let query = PFQuery(className: "History")
         query.whereKey("user", equalTo: user)
         query.order(byDescending: "date")
+        query.limit = 1
         do {
             history = try query.findObjects()
         } catch {
