@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -147,7 +147,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2091" y="621"/>
+            <point key="canvasLocation" x="-2783" y="936"/>
         </scene>
         <!--SignUp Username-->
         <scene sceneID="Leq-2v-pDp">
@@ -214,7 +214,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hEk-AN-Xjh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-209" y="622"/>
+            <point key="canvasLocation" x="-854" y="93"/>
         </scene>
         <!--SignUp Password-->
         <scene sceneID="SCN-dt-hle">
@@ -275,7 +275,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yxd-sR-3Sb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="765" y="622"/>
+            <point key="canvasLocation" x="120" y="93"/>
         </scene>
         <!--Signup Type-->
         <scene sceneID="kBB-jX-Pap">
@@ -383,7 +383,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSK-8C-0E3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1748" y="622"/>
+            <point key="canvasLocation" x="1103" y="93"/>
         </scene>
         <!--Signup LocationVC-->
         <scene sceneID="OOU-3h-Gh4">
@@ -529,7 +529,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vY6-Mz-D7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2580" y="625.5924170616114"/>
+            <point key="canvasLocation" x="-352" y="936"/>
         </scene>
         <!--Home-->
         <scene sceneID="Bli-Ev-2dI">
@@ -858,7 +858,14 @@ United States</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="addressLabel" destination="qfr-7z-bK3" id="i4T-XY-aV1"/>
                         <outlet property="editProfileButton" destination="GkL-3f-efZ" id="Gc1-KZ-iUM"/>
+                        <outlet property="emailLabel" destination="hQA-6U-5am" id="jZG-lj-qEK"/>
+                        <outlet property="genderLabel" destination="EtU-fs-4VF" id="9rV-Y1-u32"/>
+                        <outlet property="nameLabel" destination="4ig-VQ-ay9" id="EgR-gj-3S7"/>
+                        <outlet property="passwordLabel" destination="RPK-sK-I88" id="ep3-ad-I77"/>
+                        <outlet property="phoneLabel" destination="0cX-Dg-sbR" id="XbU-5m-oVd"/>
+                        <outlet property="usernameLabel" destination="nGj-rx-5wp" id="YMw-6q-Owl"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bCj-6L-fKl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -874,7 +881,7 @@ United States</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ceG-M0-pY7">
-                                <rect key="frame" x="35" y="394" width="323" height="50.666666666666686"/>
+                                <rect key="frame" x="35.000000000000014" y="394" width="251.33333333333337" height="50.666666666666686"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="40" id="Ao3-vD-gnM"/>
                                     <constraint firstAttribute="height" constant="50.5" id="h5l-re-EyN"/>
@@ -887,7 +894,7 @@ United States</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="Zi1-fa-0Ku">
-                                <rect key="frame" x="30" y="181.66666666666666" width="312" height="63.333333333333343"/>
+                                <rect key="frame" x="30.000000000000014" y="181.66666666666666" width="240.33333333333337" height="63.333333333333343"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9C7-Q2-btb">
                                         <rect key="frame" x="0.0" y="0.0" width="202" height="31"/>
@@ -927,10 +934,10 @@ United States</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="8aD-Aq-4FL">
-                                <rect key="frame" x="30" y="276" width="314" height="63.333333333333314"/>
+                                <rect key="frame" x="30.000000000000014" y="276" width="242.33333333333337" height="63.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ocu-x3-rcy">
-                                        <rect key="frame" x="0.0" y="0.0" width="284" height="31"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="224.66666666666666" height="31"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="9GG-ky-6M6"/>
                                             <constraint firstAttribute="width" constant="250" id="Sc2-l5-CbT"/>
@@ -968,10 +975,10 @@ United States</string>
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="7w1-hj-D1n">
-                                <rect key="frame" x="30" y="369.33333333333331" width="330" height="80.333333333333314"/>
+                                <rect key="frame" x="30" y="369.33333333333331" width="258.33333333333331" height="80.333333333333314"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AZ-k0-CPV">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="48"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="228.33333333333334" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="250" id="2i7-bh-nb7"/>
                                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="325.32999999999998" id="KJK-5j-ZOk"/>
@@ -1038,7 +1045,7 @@ United States</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x2h-fj-WLX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1223" y="4533"/>
+            <point key="canvasLocation" x="-485" y="4036"/>
         </scene>
         <!--Hoster View Controller-->
         <scene sceneID="kie-tb-V95">
@@ -1048,7 +1055,7 @@ United States</string>
                 </hostingController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BAd-El-vKQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151" y="4191"/>
+            <point key="canvasLocation" x="945" y="4036"/>
         </scene>
         <!--Profile Edit Controller-->
         <scene sceneID="qh3-aa-9Hv">
@@ -1179,7 +1186,7 @@ United States</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vWN-1f-xfE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="hcU-qr-DOI" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2542" y="3929"/>
+            <point key="canvasLocation" x="2542" y="4036"/>
         </scene>
         <!--History-->
         <scene sceneID="aQL-Tj-cBx">
@@ -1349,7 +1356,7 @@ United States</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-U8-Qbu">
-                                <rect key="frame" x="16" y="507.99999999999994" width="355" height="139.33333333333331"/>
+                                <rect key="frame" x="16" y="565.33333333333337" width="355" height="139.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="18"/>
@@ -1375,7 +1382,7 @@ United States</string>
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLX-gK-sEb">
-                                        <rect key="frame" x="0.0" y="78.333333333333371" width="355" height="61"/>
+                                        <rect key="frame" x="0.0" y="78.333333333333258" width="355" height="61"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="paJ-Up-Q9T">
                                                 <rect key="frame" x="0.0" y="0.0" width="67.666666666666671" height="61"/>
@@ -1411,28 +1418,43 @@ United States</string>
                                     <constraint firstAttribute="height" constant="280" id="Tj5-Ki-3NV"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-Qd-eyy">
-                                <rect key="frame" x="55" y="473" width="280" height="17"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-Qd-eyy">
+                                <rect key="frame" x="55" y="473" width="280" height="0.0"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0p-7T-gC3">
+                                <rect key="frame" x="55" y="504.99999999999994" width="280" height="28.333333333333314"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Save QR Code">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="onSaveCode:" destination="pv7-tj-Hpo" eventType="touchUpInside" id="lKo-hO-5Lh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wa6-1i-hqR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="u0p-7T-gC3" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="1sa-d9-JTl"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="top" secondItem="3cz-WR-m8a" secondAttribute="bottom" constant="32" id="3Ab-j9-yD0"/>
                             <constraint firstItem="2mc-U8-Qbu" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="leading" id="98m-iq-bjk"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" constant="55" id="CEg-je-3m2"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="2mc-U8-Qbu" secondAttribute="trailing" constant="19" id="FhL-Qk-Hx4"/>
+                            <constraint firstItem="EKI-Qd-eyy" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="2.3333333333333712" id="N2y-D4-NGv"/>
+                            <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="u0p-7T-gC3" secondAttribute="trailing" constant="55" id="Oyx-9r-eDN"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="3cz-WR-m8a" secondAttribute="trailing" constant="68.329999999999998" id="RNs-Fu-A3e"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="cg8-ZW-2GR"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="16" id="dNz-yJ-XvS"/>
+                            <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="u0p-7T-gC3" secondAttribute="bottom" constant="32" id="fNn-CN-i9I"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
+                            <constraint firstItem="u0p-7T-gC3" firstAttribute="top" secondItem="EKI-Qd-eyy" secondAttribute="bottom" constant="32" id="nce-yl-PiL"/>
                             <constraint firstItem="Ta5-Yh-pXY" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="55" id="pmc-eV-lXG"/>
+                            <constraint firstItem="EKI-Qd-eyy" firstAttribute="leading" secondItem="Ta5-Yh-pXY" secondAttribute="leading" id="rh9-r8-imF"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="rmK-lo-VD0"/>
-                            <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="37.333333333333371" id="trt-ba-ZDB"/>
+                            <constraint firstItem="EKI-Qd-eyy" firstAttribute="trailing" secondItem="Ta5-Yh-pXY" secondAttribute="trailing" id="vBk-Tj-fQj"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="QR Code" id="982-vB-LtB">
@@ -1661,7 +1683,7 @@ United States</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iFl-tD-fv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1163" y="622"/>
+            <point key="canvasLocation" x="-1808" y="93"/>
         </scene>
         <!--History-->
         <scene sceneID="XtG-M8-vGf">

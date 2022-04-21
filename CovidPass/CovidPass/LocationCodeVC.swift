@@ -36,14 +36,14 @@ class LocationCodeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-//    @objc func longPressed(sender: UILongPressGestureRecognizer) {
-//        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
-//        }
-//
-//    override func didReceiveMemoryWarning() {
-//        super.didReceiveMemoryWarning()
-//            // Dispose of any resources that can be recreated.
-//    }
+    @IBAction func onSaveCode(_ sender: Any) {
+        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
+      }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+            // Dispose of any resources that can be recreated.
+    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
