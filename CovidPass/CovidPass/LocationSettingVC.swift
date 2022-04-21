@@ -70,6 +70,8 @@ class LocationSettingVC: UIViewController , UITableViewDelegate, UITableViewData
         tableView.deselectRow(at: indexPath, animated: true)
         let model = models[indexPath.section].options[indexPath.row]
         model.handler()
+        //connect pressing the cell to going thru the segue
+        performSegue(withIdentifier: "ShowFAQ", sender: self)
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         tableView.rowHeight = 88

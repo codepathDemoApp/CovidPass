@@ -71,6 +71,8 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tableView.deselectRow(at: indexPath, animated: true)
         let model = modelss[indexPath.section].options[indexPath.row]
         model.handler()
+        //connect pressing cell to going thru segue
+        performSegue(withIdentifier: "ShowFAQUser", sender: self)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
