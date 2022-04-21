@@ -8,9 +8,11 @@
 import UIKit
 import SwiftUI
 import CodeScanner
+import Parse
 
 class HosterViewController: UIHostingController<TestSwiftUIView>{
     
+    var user = PFUser.current()!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,9 +24,34 @@ class HosterViewController: UIHostingController<TestSwiftUIView>{
         rootView.dismiss = dismiss
     }
     
-    func dismiss () {
+    func dismiss (result: String) {
+        updateHistory(result: result)
         dismiss(animated: true, completion: nil)
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        presentingViewController?.viewWillAppear(true)
+    }
+    
+    func updateHistory(result:String) {
+        let date = Date()
+        var location = [PFObject]()
+        let query = PFQuery(className: "_User")
+        query.whereKey("qrcode", equalTo: result)
+        do {
+            location = try query.findObjects()
+        } catch {
+            print("ERROR: " + error.localizedDescription)
+        }
+        let history = PFObject(className: "History")
+        
+        history["user"] = user
+        history["location"] = location[0]
+        history["date"] = date
+        history.saveInBackground()
+    }
+    
 }
 
 struct HosterViewController_Previews: PreviewProvider {
@@ -34,7 +61,7 @@ struct HosterViewController_Previews: PreviewProvider {
 }
 
 struct TestSwiftUIView: View {
-    var dismiss: (() -> Void)?
+    var dismiss: ((String) -> Void)?
     
     var body: some View {
         CodeScannerView(
@@ -42,8 +69,7 @@ struct TestSwiftUIView: View {
             completion: { result in
                 switch result {
                 case .success(let result):
-                    print(result.string)
-                    dismiss!()
+                    dismiss!(result.string)
                 case .failure(let error):
                     print("Scanned failed: \(error.localizedDescription)")
                 }

@@ -13,13 +13,55 @@ import CodeScanner
 class UserHomeVC: UIViewController {
 
     
+
+    @IBOutlet weak var lastCheckInNameLabel: UILabel!
+    
+    @IBOutlet weak var lastCheckInDateLabel: UILabel!
     @State private var isShowingScanner = false
     
+    var user = PFUser.current()!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print("CHANGE")
+        
+        var history = [PFObject]()
+        let query = PFQuery(className: "History")
+        query.whereKey("user", equalTo: user)
+        query.order(byDescending: "date")
+        do {
+            history = try query.findObjects()
+        } catch {
+            print("ERROR:" + error.localizedDescription)
+        }
+        if history.isEmpty {
+            return
+        }
+        
+        let date = history[0]["date"] as! Date
+        let location = history[0]["location"] as! PFUser
+        
+        let locationquery = PFUser.query()!
+        locationquery.whereKey("objectId", equalTo: location.objectId!)
+        
+        var loc = [PFObject]()
+        do {
+            loc = try locationquery.findObjects()
+        } catch {
+            print("ERROR:" + error.localizedDescription)
+        }
+        lastCheckInNameLabel.text = loc[0].object(forKey: "locationname") as? String ?? "No location name"
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "MMMM dd, yyyy 'at' HH:mm"
+        let dateString = dateFormatter.string(from: date as Date)
+        lastCheckInDateLabel.text = dateString
     }
     
     @IBAction func onLogOut(_ sender: Any) {
