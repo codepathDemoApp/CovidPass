@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		0007F1CF280A3CED00C84AA0 /* UserSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F1CE280A3CED00C84AA0 /* UserSettingVC.swift */; };
 		0007F1D3280A413900C84AA0 /* UserSettingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0007F1D2280A413900C84AA0 /* UserSettingCell.swift */; };
-		007AF1B52810EB4500AE616F /* LocationFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007AF1B42810EB4500AE616F /* LocationFAQViewController.swift */; };
 		0C652C40F9A52E3AD8573907 /* Pods_CovidPass.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2AD4E0195F991CCA6A1F4D98 /* Pods_CovidPass.framework */; };
 		32DC4F65D0B38333F5F53022 /* Pods_CovidPassTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31FE516C353F467116B83016 /* Pods_CovidPassTests.framework */; };
 		3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */; };
@@ -25,6 +24,7 @@
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
 		B6E428F52811381A00261F82 /* SignupUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E428F42811381A00261F82 /* SignupUserVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
+		C733D68B2811E4A700CE5C63 /* LocationFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */; };
 		C748E1A428000889005AB168 /* LocationCodeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C748E1A328000889005AB168 /* LocationCodeVC.swift */; };
 		C7692EB627F8D081007831FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB527F8D081007831FC /* AppDelegate.swift */; };
 		C7692EB827F8D081007831FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7692EB727F8D081007831FC /* SceneDelegate.swift */; };
@@ -60,7 +60,6 @@
 /* Begin PBXFileReference section */
 		0007F1CE280A3CED00C84AA0 /* UserSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingVC.swift; sourceTree = "<group>"; };
 		0007F1D2280A413900C84AA0 /* UserSettingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSettingCell.swift; sourceTree = "<group>"; };
-		007AF1B42810EB4500AE616F /* LocationFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFAQViewController.swift; sourceTree = "<group>"; };
 		2AD4E0195F991CCA6A1F4D98 /* Pods_CovidPass.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPass.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B0A048A50BBF5381828F4EF /* Pods-CovidPass-CovidPassUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CovidPass-CovidPassUITests.debug.xcconfig"; path = "Target Support Files/Pods-CovidPass-CovidPassUITests/Pods-CovidPass-CovidPassUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		31FE516C353F467116B83016 /* Pods_CovidPassTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CovidPassTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +79,7 @@
 		B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingVC.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
 		B6E428F42811381A00261F82 /* SignupUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserVC.swift; sourceTree = "<group>"; };
+		C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFAQViewController.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCodeVC.swift; sourceTree = "<group>"; };
 		C7692EB227F8D081007831FC /* CovidPass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CovidPass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7692EB527F8D081007831FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -142,14 +142,6 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
-		B6E428F32811343500261F82 /* Recovered References */ = {
-			isa = PBXGroup;
-			children = (
-				007AF1B42810EB4500AE616F /* LocationFAQViewController.swift */,
-			);
-			name = "Recovered References";
-			sourceTree = "<group>";
-		};
 		C7692EA927F8D081007831FC = {
 			isa = PBXGroup;
 			children = (
@@ -159,7 +151,6 @@
 				C7692EB327F8D081007831FC /* Products */,
 				70E899FC4863E7E560FAD26D /* Pods */,
 				C7E28801F99C8E045A63F32A /* Frameworks */,
-				B6E428F32811343500261F82 /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -200,6 +191,7 @@
 				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */,
+				C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
@@ -484,9 +476,9 @@
 				B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */,
 				B65B30F027FF9DB700E7A90D /* SignupUsernameVC.swift in Sources */,
 				3F6DEF37280A77E4008D4FD7 /* ProfileEditController.swift in Sources */,
+				C733D68B2811E4A700CE5C63 /* LocationFAQViewController.swift in Sources */,
 				EF0DE09E280A0ADC00D3E089 /* LocationSettingCell.swift in Sources */,
 				B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */,
-				007AF1B52810EB4500AE616F /* LocationFAQViewController.swift in Sources */,
 				B64BAAC927FD06F200057FB2 /* UserHistoryCell.swift in Sources */,
 				B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */,
 				B64BAAC327FD015400057FB2 /* LoginViewController.swift in Sources */,
