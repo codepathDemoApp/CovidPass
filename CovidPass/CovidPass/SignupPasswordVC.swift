@@ -18,6 +18,8 @@ class SignupPasswordVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         passwordField.autocorrectionType = .no
         passwordField.delegate = self
+        
+        passwordField.becomeFirstResponder()
         // Do any additional setup after loading the view.
     }
     
