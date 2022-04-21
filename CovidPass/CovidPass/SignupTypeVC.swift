@@ -33,6 +33,10 @@ class SignupTypeVC: UIViewController {
             let destinationVC = segue.destination as! SignupLocationVC
             destinationVC.password = password
             destinationVC.username = username
+        } else if segueIdentifier == "segueToUserInformation" {
+            let destinationVC = segue.destination as! SignupUserVC
+            destinationVC.password = password
+            destinationVC.username = username
         }
     }
     
