@@ -1,14 +1,28 @@
 //
-//  ProfileEditController.swift
+//  editProfileController.swift
 //  CovidPass
 //
-//  Created by Hailey Tran on 4/19/22.
+//  Created by Hailey Tran on 4/15/22.
 //
 
 import UIKit
 
 class ProfileEditController: UIViewController {
 
+    @IBOutlet weak var editNameTextField: UITextField!
+    
+    @IBOutlet weak var userNameTextField: UITextField!
+    
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var emailAddressTextField: UITextField!
+    
+    @IBOutlet weak var genderTextField: UITextField!
+    
+    @IBOutlet weak var phoneTextField: UITextField!
+    
+    @IBOutlet weak var addressTextField: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
