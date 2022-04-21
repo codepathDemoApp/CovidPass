@@ -24,6 +24,7 @@ class LocationCodeVC: UIViewController {
         super.viewDidLoad()
         let fGuesture = UITapGestureRecognizer(target: self, action: #selector(showF))
         locationNameCell.addGestureRecognizer(fGuesture)
+        
 
 //        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed))
 //
@@ -35,23 +36,17 @@ class LocationCodeVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func onSaveCode(_ sender: Any) {
-        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
-    }
-    
-    
 //    @objc func longPressed(sender: UILongPressGestureRecognizer) {
 //        UIImageWriteToSavedPhotosAlbum(qrCodeImage.image!, self, nil, nil)
 //        }
 //
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-            // Dispose of any resources that can be recreated.
-    }
+//    override func didReceiveMemoryWarning() {
+//        super.didReceiveMemoryWarning()
+//            // Dispose of any resources that can be recreated.
+//    }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
         let locationCode = user["qrcode"]
         let qrDate = user["qrdate"]
         let locationname = user["locationname"] as? String ?? ""

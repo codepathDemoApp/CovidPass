@@ -9,6 +9,7 @@ import UIKit
 import Parse
 
 class SignupLocationVC: UIViewController, UITextFieldDelegate {
+
     
     @IBOutlet weak var locationNameTextField: UITextField!
     @IBOutlet weak var addressTextField: UITextField!
