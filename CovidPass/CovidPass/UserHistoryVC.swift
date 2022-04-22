@@ -70,6 +70,7 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "UserHistoryCell", for: indexPath) as! UserHistoryCell
         
         let record = history[indexPath.row]

@@ -1648,7 +1648,6 @@ United States</string>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="dateLabel" destination="87B-zd-3FL" id="8nR-jU-2vh"/>
-                                            <outlet property="locationLabel" destination="LmI-jp-lof" id="VFv-pg-iHM"/>
                                             <outlet property="timeLabel" destination="8Sd-ep-qtO" id="xgp-F1-sCS"/>
                                             <outlet property="userLabel" destination="LmI-jp-lof" id="l8a-n7-vLZ"/>
                                         </connections>
@@ -1669,7 +1668,7 @@ United States</string>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="tableView" destination="zT9-t4-Wf2" id="oa7-TX-3MW"/>
+                        <outlet property="tableView" destination="zT9-t4-Wf2" id="zen-hY-faA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Teo-L5-Wgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -75,15 +75,15 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         let record = history[indexPath.row]
         let date = record["date"] as! Date
-        let location = record["user"] as! PFUser
+        let username = record["user"] as! PFUser
         
-        let locationquery = PFUser.query()!
-        locationquery.whereKey("objectId", equalTo: location.objectId!)
+        let userQuery = PFUser.query()!
+        userQuery.whereKey("objectId", equalTo: username.objectId!)
         
         var loc = [PFObject]()
         
-        locationquery.findObjectsInBackground { (location, error) in
-            loc = location!
+        userQuery.findObjectsInBackground { (username, error) in
+            loc = username!
             cell.userLabel.text = loc[0].object(forKey: "username") as? String ?? "No username"
         }
             

@@ -92,9 +92,6 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         return modelss[section].options.count
     }
     
-    
-    
-    
     @IBAction func onLogout(_ sender: Any) {
         PFUser.logOut()
         
