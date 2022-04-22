@@ -9,19 +9,17 @@ import UIKit
 import Parse
 
 class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
-    }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        <#code#>
-    }
+    @IBOutlet weak var tableView: UITableView!
     
+    var history = [PFObject]()
+    var user = PFUser.current()!
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.delegate = self
+        tableView.dataSource = self
 
         // Do any additional setup after loading the view.
     }
@@ -45,6 +43,59 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         transition.timingFunction = CAMediaTimingFunction(name:CAMediaTimingFunctionName.default)
 
         delegate.window?.layer.add(transition, forKey: kCATransition)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        let query = PFQuery(className: "History")
+        query.whereKey("user", equalTo: user)
+        query.order(byDescending: "date")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (history, error) in
+            if history != nil {
+                self.history = history!
+                self.tableView.reloadData()
+            }
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        self.tableView.reloadData()
+    }
+    
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return history.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LocationHistoryCell", for: indexPath) as! LocationHistoryCell
+        
+        let record = history[indexPath.row]
+        let date = record["date"] as! Date
+        let location = record["user"] as! PFUser
+        
+        let locationquery = PFUser.query()!
+        locationquery.whereKey("objectId", equalTo: location.objectId!)
+        
+        var loc = [PFObject]()
+        
+        locationquery.findObjectsInBackground { (location, error) in
+            loc = location!
+            cell.userLabel.text = loc[0].object(forKey: "username") as? String ?? "No user name"
+        }
+            
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "EEE, MMMM dd, yyyy"
+        let timeFormatter = DateFormatter()
+        timeFormatter.dateFormat = "HH:mm"
+        let dateString = dateFormatter.string(from: date as Date)
+        let timeString = timeFormatter.string(from: date as Date)
+        cell.dateLabel.text = dateString
+        cell.timeLabel.text = timeString
+        return cell
     }
     
 
