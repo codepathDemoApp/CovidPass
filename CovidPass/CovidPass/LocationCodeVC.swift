@@ -47,7 +47,6 @@ class LocationCodeVC: UIViewController {
         let zipCode = user["zip"] as? String ?? ""
         let state = user["state"] as? String ?? ""
         let city = user["city"] as? String ?? ""
-        
         if (locationCode != nil) {
             let qrCode = QRCode(locationCode as! String)
             qrCodeImage.backgroundColor = nil
@@ -59,7 +58,6 @@ class LocationCodeVC: UIViewController {
         if (locationname != "") {
             locationNameLabel.text = locationname
         }
-        
         if (address != "" && country != "" && zipCode != "" && state != "" && city != "") {
             addressLabel.text = "\(address)\n\(city), \(state), \(zipCode)\n\(country)"
         }

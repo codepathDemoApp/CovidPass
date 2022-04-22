@@ -12,7 +12,7 @@ import CodeScanner
 import PhotosUI
 import AlamofireImage
 
-class UserHomeVC: UIViewController, PHPickerViewControllerDelegate {
+class UserHomeVC: UIViewController, PHPickerViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 
     @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var lastCheckInNameLabel: UILabel!
@@ -62,6 +62,22 @@ class UserHomeVC: UIViewController, PHPickerViewControllerDelegate {
         dateFormatter.dateFormat = "MMMM dd, yyyy 'at' HH:mm"
         let dateString = dateFormatter.string(from: date as Date)
         lastCheckInDateLabel.text = dateString
+        
+        let imageFile = user["image"] as? PFFileObject ?? nil
+        if(imageFile == nil) {
+            return
+        }
+        let urlString = imageFile?.url!
+        let url = URL(string: urlString!)!
+        do {
+            let data = try Data(contentsOf: url)
+            let uiimage = UIImage(data: data)
+            let flippedImage = UIImage(cgImage: (uiimage?.cgImage!)!, scale: 1.0, orientation: .right)
+            self.cardImage.image = flippedImage
+        } catch {
+            print(error.localizedDescription)
+        }
+            
     }
     
     @IBAction func onLogOut(_ sender: Any) {
@@ -100,8 +116,6 @@ class UserHomeVC: UIViewController, PHPickerViewControllerDelegate {
     }
     
     func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
-                
-        dismiss(animated: true, completion: nil)
         
         if let itemProvider = results.first?.itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
             let previousImage = cardImage.image
@@ -109,13 +123,28 @@ class UserHomeVC: UIViewController, PHPickerViewControllerDelegate {
                 DispatchQueue.main.async {
                     guard let self = self, let image = image as? UIImage, self.cardImage.image == previousImage else { return }
                     
-                    let size = CGSize(width: 300, height: 300)
+                    let size = CGSize(width: 400, height: 600)
                     let scaledImage = image.af.imageAspectScaled(toFill: size)
+                    let flippedImage = UIImage(cgImage: scaledImage.cgImage!, scale: 1.0, orientation: .right)
                     
-                    self.cardImage.image = scaledImage
+                    self.cardImage.image = flippedImage
+                    
+                    let imageData = self.cardImage.image!.pngData()
+                    let file = PFFileObject(data: imageData!)
+                    self.user["image"] = file
+                    
+                    self.user.saveInBackground { (success, error) in
+                        if success {
+                            print("saved!")
+                        } else {
+                            print("ERROR: \(error!.localizedDescription)")
+                        }
+                    }
                 }
             }
         }
+        dismiss(animated: true, completion: nil)
+        
     }
     
     /*

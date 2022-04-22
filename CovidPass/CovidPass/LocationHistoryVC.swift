@@ -49,9 +49,9 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         super.viewDidAppear(animated)
         
         let query = PFQuery(className: "History")
-        query.whereKey("user", equalTo: user)
+        query.whereKey("location", equalTo: user)
         query.order(byDescending: "date")
-        query.limit = 20
+        //query.limit = 20
         
         query.findObjectsInBackground { (history, error) in
             if history != nil {
@@ -80,11 +80,11 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         let userQuery = PFUser.query()!
         userQuery.whereKey("objectId", equalTo: username.objectId!)
         
-        var loc = [PFObject]()
+        var users = [PFObject]()
         
         userQuery.findObjectsInBackground { (username, error) in
-            loc = username!
-            cell.userLabel.text = loc[0].object(forKey: "username") as? String ?? "No username"
+            users = username!
+            cell.userLabel.text = users[0].object(forKey: "username") as? String ?? "No username"
         }
             
         let dateFormatter = DateFormatter()
