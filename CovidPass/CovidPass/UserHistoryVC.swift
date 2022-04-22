@@ -1,5 +1,5 @@
 //
-//  HistoryViewController.swift
+//  UserHistoryViewController.swift
 //  CovidPass
 //
 //  Created by LYON on 4/4/22.

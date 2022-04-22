@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1598,6 +1598,64 @@ United States</string>
                     <view key="view" contentMode="scaleToFill" id="MBl-SW-3US">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="zT9-t4-Wf2">
+                                <rect key="frame" x="0.0" y="95" width="414" height="801"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserHistoryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHistoryCell" rowHeight="119" id="JyH-2h-xPC" customClass="LocationHistoryCell" customModule="CovidPass" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="119"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JyH-2h-xPC" id="3VX-vZ-fpq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="119"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 2 Apr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87B-zd-3FL">
+                                                    <rect key="frame" x="16" y="16" width="382" height="21.5"/>
+                                                    <color key="backgroundColor" red="0.78041104859999999" green="0.78041104859999999" blue="0.78041104859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleAspectFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KJ5-jF-z7D">
+                                                    <rect key="frame" x="16" y="53.5" width="382" height="52.5"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LmI-jp-lof">
+                                                            <rect key="frame" x="0.0" y="0.0" width="382" height="24"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Sd-ep-qtO">
+                                                            <rect key="frame" x="0.0" y="32" width="382" height="20.5"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KJ5-jF-z7D" firstAttribute="leading" secondItem="3VX-vZ-fpq" secondAttribute="leading" constant="16" id="1pr-oa-syW"/>
+                                                <constraint firstAttribute="trailing" secondItem="87B-zd-3FL" secondAttribute="trailing" constant="16" id="227-Qj-beO"/>
+                                                <constraint firstAttribute="trailing" secondItem="KJ5-jF-z7D" secondAttribute="trailing" constant="16" id="WNe-sc-YP4"/>
+                                                <constraint firstItem="87B-zd-3FL" firstAttribute="leading" secondItem="3VX-vZ-fpq" secondAttribute="leading" constant="16" id="X48-kU-5GK"/>
+                                                <constraint firstAttribute="bottom" secondItem="KJ5-jF-z7D" secondAttribute="bottom" constant="13" id="gjE-zM-vnw"/>
+                                                <constraint firstItem="KJ5-jF-z7D" firstAttribute="top" secondItem="87B-zd-3FL" secondAttribute="bottom" constant="16" id="qlk-Fn-mIy"/>
+                                                <constraint firstItem="87B-zd-3FL" firstAttribute="top" secondItem="3VX-vZ-fpq" secondAttribute="top" constant="16" id="t16-gW-R5K"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="87B-zd-3FL" id="8nR-jU-2vh"/>
+                                            <outlet property="locationLabel" destination="LmI-jp-lof" id="VFv-pg-iHM"/>
+                                            <outlet property="timeLabel" destination="8Sd-ep-qtO" id="xgp-F1-sCS"/>
+                                            <outlet property="userLabel" destination="LmI-jp-lof" id="l8a-n7-vLZ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="i1w-Nr-LCg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
@@ -1613,7 +1671,7 @@ United States</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Teo-L5-Wgl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2009" y="3235"/>
+            <point key="canvasLocation" x="-2010.144927536232" y="3234.375"/>
         </scene>
         <!--Settings-->
         <scene sceneID="bbX-01-fB8">

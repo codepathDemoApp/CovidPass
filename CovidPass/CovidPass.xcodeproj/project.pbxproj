@@ -22,6 +22,7 @@
 		B65B30F227FF9EA100E7A90D /* SignupPasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */; };
 		B65B30F427FFA6AB00E7A90D /* LocationSettingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */; };
 		B6A3E2AF280A5B0600CEBB16 /* LocationHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */; };
+		B6A645932812A11D00A5C682 /* LocationHistoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */; };
 		B6E428F52811381A00261F82 /* SignupUserVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E428F42811381A00261F82 /* SignupUserVC.swift */; };
 		BEAABC5DE759E9270F14D7B1 /* Pods_CovidPass_CovidPassUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8437E20507CA3FE0CC911FC /* Pods_CovidPass_CovidPassUITests.framework */; };
 		C733D68B2811E4A700CE5C63 /* LocationFAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */; };
@@ -78,6 +79,7 @@
 		B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupPasswordVC.swift; sourceTree = "<group>"; };
 		B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationSettingVC.swift; sourceTree = "<group>"; };
 		B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryVC.swift; sourceTree = "<group>"; };
+		B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationHistoryCell.swift; sourceTree = "<group>"; };
 		B6E428F42811381A00261F82 /* SignupUserVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupUserVC.swift; sourceTree = "<group>"; };
 		C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationFAQViewController.swift; sourceTree = "<group>"; };
 		C748E1A328000889005AB168 /* LocationCodeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCodeVC.swift; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				B6E428F42811381A00261F82 /* SignupUserVC.swift */,
 				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
 				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
+				B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */,
 				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
 				B64BAAC627FD016600057FB2 /* UserProfileVC.swift */,
 				3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */,
@@ -489,6 +492,7 @@
 				B6E428F52811381A00261F82 /* SignupUserVC.swift in Sources */,
 				C7D75AB9280B71B400B5E7D1 /* ScannerVC.swift in Sources */,
 				B64BAAC127FD014900057FB2 /* UserHomeVC.swift in Sources */,
+				B6A645932812A11D00A5C682 /* LocationHistoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
