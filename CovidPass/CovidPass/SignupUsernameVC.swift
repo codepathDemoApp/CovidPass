@@ -18,6 +18,9 @@ class SignupUsernameVC: UIViewController, UITextFieldDelegate {
         usernameField.delegate = self
         usernameField.autocorrectionType = .no
 
+        nextButton.layer.cornerRadius = 12
+        nextButton.layer.masksToBounds = true
+        
         // Do any additional setup after loading the view.
     }
     

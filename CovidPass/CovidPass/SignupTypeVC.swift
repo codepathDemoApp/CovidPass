@@ -23,7 +23,7 @@ class SignupTypeVC: UIViewController {
         locationButton.layer.masksToBounds = true
         userButton.layer.cornerRadius = 12
         userButton.layer.masksToBounds = true
-
+    
         // Do any additional setup after loading the view.
     }
     

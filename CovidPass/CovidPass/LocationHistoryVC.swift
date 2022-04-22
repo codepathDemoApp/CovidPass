@@ -84,7 +84,7 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         
         locationquery.findObjectsInBackground { (location, error) in
             loc = location!
-            cell.userLabel.text = loc[0].object(forKey: "username") as? String ?? "No user name"
+            cell.userLabel.text = loc[0].object(forKey: "username") as? String ?? "No username"
         }
             
         let dateFormatter = DateFormatter()
@@ -95,6 +95,10 @@ class LocationHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataS
         let timeString = timeFormatter.string(from: date as Date)
         cell.dateLabel.text = dateString
         cell.timeLabel.text = timeString
+        
+        cell.dateLabel.layer.cornerRadius = 5
+        cell.dateLabel.clipsToBounds = true
+        
         return cell
     }
     

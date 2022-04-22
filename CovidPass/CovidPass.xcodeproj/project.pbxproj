@@ -192,9 +192,9 @@
 				B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */,
 				B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */,
 				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
+				C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */,
-				C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */,
 			);
 			path = CovidPass;
 			sourceTree = "<group>";
@@ -672,7 +672,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97A6A6Z9V4;
+				DEVELOPMENT_TEAM = APTKZBPBQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
@@ -688,7 +688,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -704,7 +704,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 97A6A6Z9V4;
+				DEVELOPMENT_TEAM = APTKZBPBQJ;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = CovidPass/Info.plist;
 				INFOPLIST_KEY_NSCameraUsageDescription = "Please allow access to scan QR Code";
@@ -720,7 +720,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.JacksonTran.CovidPass;
+				PRODUCT_BUNDLE_IDENTIFIER = com.LyonZhang.CovidPass;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

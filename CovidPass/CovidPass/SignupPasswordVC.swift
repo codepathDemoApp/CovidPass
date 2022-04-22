@@ -18,6 +18,9 @@ class SignupPasswordVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         passwordField.autocorrectionType = .no
         passwordField.delegate = self
+        
+        nextButton.layer.cornerRadius = 12
+        nextButton.layer.masksToBounds = true
         // Do any additional setup after loading the view.
     }
     

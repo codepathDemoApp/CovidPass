@@ -546,7 +546,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="45Q-bX-C3Z">
-                                <rect key="frame" x="298" y="128" width="85" height="31"/>
+                                <rect key="frame" x="298" y="126" width="85" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system"/>
                             </button>
@@ -635,7 +635,7 @@
                             <constraint firstItem="Z24-81-i3O" firstAttribute="top" secondItem="tRr-gp-ikP" secondAttribute="bottom" constant="32" id="UaM-w2-kL9"/>
                             <constraint firstItem="3Os-eL-oy0" firstAttribute="trailing" secondItem="ikq-t0-94W" secondAttribute="trailing" constant="55" id="eTl-eV-1Ne"/>
                             <constraint firstItem="3Os-eL-oy0" firstAttribute="trailing" secondItem="Z24-81-i3O" secondAttribute="trailing" constant="80" id="ezL-lY-D89"/>
-                            <constraint firstItem="45Q-bX-C3Z" firstAttribute="top" secondItem="3Os-eL-oy0" secondAttribute="top" constant="40" id="ghd-PN-qsd"/>
+                            <constraint firstItem="45Q-bX-C3Z" firstAttribute="top" secondItem="3Os-eL-oy0" secondAttribute="top" constant="38" id="ghd-PN-qsd"/>
                             <constraint firstItem="tRr-gp-ikP" firstAttribute="top" secondItem="ikq-t0-94W" secondAttribute="bottom" constant="32" id="hwR-5A-c7f"/>
                             <constraint firstItem="XcV-N3-rvS" firstAttribute="top" secondItem="Z24-81-i3O" secondAttribute="bottom" constant="8" id="jBK-NI-8X9"/>
                             <constraint firstItem="rcy-or-bZG" firstAttribute="top" secondItem="3Os-eL-oy0" secondAttribute="top" constant="40" id="jsP-Nb-aGW"/>
@@ -1158,7 +1158,7 @@ United States</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZU6-Jz-OuG">
-                                <rect key="frame" x="219" y="136" width="175" height="40"/>
+                                <rect key="frame" x="213" y="136" width="181" height="41.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ZU6-Jz-OuG" secondAttribute="height" multiplier="35:8" id="Nip-Yp-jKE"/>
                                 </constraints>
@@ -1166,7 +1166,7 @@ United States</string>
                                 <buttonConfiguration key="configuration" style="gray" title="Possible Exposure"/>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KWe-k0-qfX">
-                                <rect key="frame" x="0.0" y="189" width="414" height="707"/>
+                                <rect key="frame" x="0.0" y="190.5" width="414" height="705.5"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserHistoryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHistoryCell" rowHeight="119" id="P5Q-XW-ok0" customClass="UserHistoryCell" customModule="CovidPass" customModuleProvider="target">
@@ -1178,7 +1178,7 @@ United States</string>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 2 Apr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pGh-N8-AWK">
                                                     <rect key="frame" x="16" y="16" width="382" height="21.5"/>
-                                                    <color key="backgroundColor" red="0.78041104859999999" green="0.78041104859999999" blue="0.78041104859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.87883671147878784" green="0.87883671147878784" blue="0.87883671147878784" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1220,7 +1220,7 @@ United States</string>
                                 </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bRK-CF-Bf3">
-                                <rect key="frame" x="20" y="136" width="175" height="40"/>
+                                <rect key="frame" x="20" y="136" width="181" height="41.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="bRK-CF-Bf3" secondAttribute="height" multiplier="35:8" id="Pwl-F0-BD3"/>
                                 </constraints>
@@ -1239,7 +1239,7 @@ United States</string>
                             <constraint firstAttribute="bottom" secondItem="KWe-k0-qfX" secondAttribute="bottom" id="hpY-Q4-Nsa"/>
                             <constraint firstItem="ZU6-Jz-OuG" firstAttribute="top" secondItem="FUt-Vh-U4f" secondAttribute="top" constant="48" id="qRY-7j-XrF"/>
                             <constraint firstItem="bRK-CF-Bf3" firstAttribute="top" secondItem="FUt-Vh-U4f" secondAttribute="top" constant="48" id="ram-3I-OKQ"/>
-                            <constraint firstItem="ZU6-Jz-OuG" firstAttribute="leading" secondItem="bRK-CF-Bf3" secondAttribute="trailing" constant="24" id="ssm-f4-lJv"/>
+                            <constraint firstItem="ZU6-Jz-OuG" firstAttribute="leading" secondItem="bRK-CF-Bf3" secondAttribute="trailing" constant="12" id="ssm-f4-lJv"/>
                             <constraint firstItem="KWe-k0-qfX" firstAttribute="top" secondItem="bRK-CF-Bf3" secondAttribute="bottom" constant="13" id="tUT-JM-wsq"/>
                         </constraints>
                     </view>
@@ -1326,7 +1326,7 @@ United States</string>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="2mc-U8-Qbu">
-                                <rect key="frame" x="16" y="566" width="379" height="139.5"/>
+                                <rect key="frame" x="16" y="564" width="379" height="139.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xNd-ti-gZK">
                                         <rect key="frame" x="0.0" y="0.0" width="379" height="18"/>
@@ -1374,7 +1374,7 @@ United States</string>
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cz-WR-m8a">
-                                <rect key="frame" x="272.5" y="128" width="73" height="31"/>
+                                <rect key="frame" x="272.5" y="126" width="73" height="31"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="arrow.triangle.2.circlepath" catalog="system"/>
                                 <connections>
@@ -1382,20 +1382,20 @@ United States</string>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ta5-Yh-pXY">
-                                <rect key="frame" x="55" y="191" width="304" height="280"/>
+                                <rect key="frame" x="55" y="189" width="304" height="280"/>
                                 <color key="backgroundColor" red="0.95696693659999998" green="0.96080797910000004" blue="0.95668870210000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="280" id="Tj5-Ki-3NV"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKI-Qd-eyy">
-                                <rect key="frame" x="55" y="473.5" width="304" height="0.0"/>
+                                <rect key="frame" x="55" y="471.5" width="304" height="0.0"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0p-7T-gC3">
-                                <rect key="frame" x="55" y="505.5" width="304" height="28.5"/>
+                                <rect key="frame" x="55" y="503.5" width="304" height="28.5"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Save QR Code">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
@@ -1416,7 +1416,7 @@ United States</string>
                             <constraint firstItem="EKI-Qd-eyy" firstAttribute="top" secondItem="Ta5-Yh-pXY" secondAttribute="bottom" constant="2.3333333333333712" id="N2y-D4-NGv"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="u0p-7T-gC3" secondAttribute="trailing" constant="55" id="Oyx-9r-eDN"/>
                             <constraint firstItem="wa6-1i-hqR" firstAttribute="trailing" secondItem="3cz-WR-m8a" secondAttribute="trailing" constant="68.329999999999998" id="RNs-Fu-A3e"/>
-                            <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="40" id="cg8-ZW-2GR"/>
+                            <constraint firstItem="3cz-WR-m8a" firstAttribute="top" secondItem="wa6-1i-hqR" secondAttribute="top" constant="38" id="cg8-ZW-2GR"/>
                             <constraint firstItem="ync-e4-1Zy" firstAttribute="leading" secondItem="wa6-1i-hqR" secondAttribute="leading" constant="16" id="dNz-yJ-XvS"/>
                             <constraint firstItem="2mc-U8-Qbu" firstAttribute="top" secondItem="u0p-7T-gC3" secondAttribute="bottom" constant="32" id="fNn-CN-i9I"/>
                             <constraint firstItem="3cz-WR-m8a" firstAttribute="leading" secondItem="ync-e4-1Zy" secondAttribute="trailing" constant="16" id="me8-JU-Et7"/>
@@ -1604,7 +1604,7 @@ United States</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserHistoryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="UserHistoryCell" rowHeight="119" id="JyH-2h-xPC" customClass="LocationHistoryCell" customModule="CovidPass" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="UserHistoryCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="LocationHistoryCell" rowHeight="119" id="JyH-2h-xPC" customClass="LocationHistoryCell" customModule="CovidPass" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="119"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JyH-2h-xPC" id="3VX-vZ-fpq">
@@ -1613,7 +1613,7 @@ United States</string>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sat, 2 Apr" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="87B-zd-3FL">
                                                     <rect key="frame" x="16" y="16" width="382" height="21.5"/>
-                                                    <color key="backgroundColor" red="0.78041104859999999" green="0.78041104859999999" blue="0.78041104859999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.88" green="0.88" blue="0.88" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -1938,8 +1938,8 @@ United States</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JDh-lc-5bM"/>
-        <segue reference="bf1-hI-Su1"/>
+        <segue reference="7W7-iq-m4o"/>
+        <segue reference="NRB-fG-xpF"/>
         <segue reference="Fk7-vJ-f9J"/>
         <segue reference="UD1-xS-J6P"/>
     </inferredMetricsTieBreakers>

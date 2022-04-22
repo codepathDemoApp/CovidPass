@@ -51,8 +51,9 @@ class UserSettingCell: UITableViewCell {
         iconContainer.frame = CGRect(x: 10, y: 6, width: size, height: size)
         
         let imageSize = size/1.5
-        iconImageView.frame = CGRect(x: 0, y: 0, width: imageSize, height: imageSize)
-        iconImageView.center = iconContainer.center
+        iconImageView.frame = CGRect(x: (size-imageSize)/2, y: (size-imageSize)/2, width: imageSize, height: imageSize)
+//        iconImageView.frame = CGRect(x: 0, y: 0, width: imageSize, height: imageSize)
+//        iconImageView.center = iconContainer.center
         
         label.frame = CGRect(
             x: 15+iconContainer.frame.size.width,

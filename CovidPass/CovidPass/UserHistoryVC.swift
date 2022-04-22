@@ -94,6 +94,10 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let timeString = timeFormatter.string(from: date as Date)
         cell.dateLabel.text = dateString
         cell.timeLabel.text = timeString
+        
+        cell.dateLabel.layer.cornerRadius = 5
+        cell.dateLabel.clipsToBounds = true
+        
         return cell
     }
     
