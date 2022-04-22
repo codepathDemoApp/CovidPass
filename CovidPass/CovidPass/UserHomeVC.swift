@@ -9,13 +9,13 @@ import UIKit
 import Parse
 import SwiftUI
 import CodeScanner
+import PhotosUI
+import AlamofireImage
 
-class UserHomeVC: UIViewController {
+class UserHomeVC: UIViewController, PHPickerViewControllerDelegate {
 
-    
-
+    @IBOutlet weak var cardImage: UIImageView!
     @IBOutlet weak var lastCheckInNameLabel: UILabel!
-    
     @IBOutlet weak var lastCheckInDateLabel: UILabel!
     @State private var isShowingScanner = false
     
@@ -89,6 +89,34 @@ class UserHomeVC: UIViewController {
     @IBAction func scanQR(_ sender: Any) {
     }
     
+    @IBAction func onUpload(_ sender: Any) {
+        
+        var configuration = PHPickerConfiguration()
+        configuration.filter = .images
+
+        let picker = PHPickerViewController(configuration: configuration)
+        picker.delegate = self
+        present(picker, animated: true, completion: nil)
+    }
+    
+    func picker(_ picker: PHPickerViewController, didFinishPicking results: [PHPickerResult]) {
+                
+        dismiss(animated: true, completion: nil)
+        
+        if let itemProvider = results.first?.itemProvider, itemProvider.canLoadObject(ofClass: UIImage.self) {
+            let previousImage = cardImage.image
+            itemProvider.loadObject(ofClass: UIImage.self) { [weak self] image, error in
+                DispatchQueue.main.async {
+                    guard let self = self, let image = image as? UIImage, self.cardImage.image == previousImage else { return }
+                    
+                    let size = CGSize(width: 300, height: 300)
+                    let scaledImage = image.af.imageAspectScaled(toFill: size)
+                    
+                    self.cardImage.image = scaledImage
+                }
+            }
+        }
+    }
     
     /*
     // MARK: - Navigation

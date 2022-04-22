@@ -25,14 +25,6 @@ class LocationCodeVC: UIViewController {
         let fGuesture = UITapGestureRecognizer(target: self, action: #selector(showF))
         locationNameCell.addGestureRecognizer(fGuesture)
         
-
-//        let longPressRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longPressed))
-//
-//        longPressRecognizer.minimumPressDuration = 0.5
-//        qrCodeImage.addGestureRecognizer(longPressRecognizer)
-//        qrCodeImage.isUserInteractionEnabled = true
-//        view.addSubview(qrCodeImage)
-        
         // Do any additional setup after loading the view.
     }
     
@@ -152,5 +144,4 @@ class LocationCodeVC: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
 }
