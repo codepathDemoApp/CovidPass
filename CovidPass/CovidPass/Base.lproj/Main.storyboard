@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -1538,26 +1538,22 @@ United States</string>
                         <viewLayoutGuide key="safeArea" id="JD8-4x-wiq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <toolbarItems/>
                     <navigationItem key="navigationItem" title="Settings" id="LJQ-s1-0zq" customClass="UserSettings">
-                        <barButtonItem key="leftBarButtonItem" style="plain" id="dGF-vh-SAX">
-                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" id="kFA-4g-BgZ">
-                                <rect key="frame" x="20" y="5" width="86" height="34.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
-                            </button>
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="VuW-W2-yGn">
                             <connections>
-                                <action selector="onLogout:" destination="h8x-Mt-skY" id="PA6-Ny-SSx"/>
+                                <action selector="onLogout:" destination="h8x-Mt-skY" id="lhV-vP-Xy4"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="pgl-xK-TzS" kind="show" identifier="ShowFAQUser" id="d7W-RM-7kd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jrF-Cp-zqs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2542" y="3235"/>
+            <point key="canvasLocation" x="2540.579710144928" y="3234.375"/>
         </scene>
         <!--Setting-->
         <scene sceneID="4az-4z-JPv">
@@ -1944,8 +1940,8 @@ United States</string>
     <inferredMetricsTieBreakers>
         <segue reference="7W7-iq-m4o"/>
         <segue reference="NRB-fG-xpF"/>
-        <segue reference="D3f-nu-Hg0"/>
-        <segue reference="UD1-xS-J6P"/>
+        <segue reference="K6F-gu-Stu"/>
+        <segue reference="d7W-RM-7kd"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>

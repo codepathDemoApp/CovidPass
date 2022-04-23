@@ -38,6 +38,8 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
+        
+        self.tabBarItem.image = UIImage(systemName: "gearshape.fill")
     }
     
     func configure() {
