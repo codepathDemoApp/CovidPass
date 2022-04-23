@@ -202,3 +202,35 @@ User can not create a username that is less than 5 characters long.
 User can not create a password that is less than 6 characters long.
 
 <img src='https://media3.giphy.com/media/tyHt3HcF3Gmn7mAkZG/giphy.gif?cid=790b761169a32ac0ef1f4a0acbe402d4d72472f5a4bbeb4a&rid=giphy.gif&ct=g' title='create password requirement' width='' alt='Video Walkthrough' />
+
+## Sprint 3
+
+### What we achieved
+- user type account can upload an image from photo library for their vaccination card.
+- user type account can scan QR code.
+- user type account can view history of locations they have accessed
+- location type account can save the QR code into photo library.
+- location type account can view history of users that accessed the location
+- location/user type account can view FAQ to understand how to use the app
+
+### Video Walkthrough
+
+User type account can upload an image from photo library for their vaccination card.
+
+<img src='https://media4.giphy.com/media/qfCcHCVEkCc09y0u5E/giphy.gif?cid=790b761177a6711acc12b9002135e63286827b69b2f4f852&rid=giphy.gif&ct=g' title='upload vac card' width='' alt='Video Walkthrough' />
+
+User type account can scan QR code to check in to a location. User type account can view history of locations they have accessed and the last checked in location.
+
+<img src='https://media1.giphy.com/media/0lSnqTiMNGR1Ck0MZJ/giphy.gif?cid=790b761198d4a39f6215c22fa31e27fb0d0a4c4e5794203d&rid=giphy.gif&ct=g' title='scan QR code to check in' width='' alt='Video Walkthrough' />
+
+Location type account can view history of users that accessed the location
+
+<img src='https://media3.giphy.com/media/ay73X5uA9Oyswy4v1a/giphy.gif?cid=790b7611f486d36c80ab1964b185f2074cbf20e59ac2479c&rid=giphy.gif&ct=g' title='Location view history' width='' alt='Video Walkthrough' />
+
+Location/user type account can view FAQ to understand how to use the app.
+
+<img src='https://media4.giphy.com/media/da1za8hFV6iTrEtNm5/giphy.gif?cid=790b76119c4c80d2abeef48e28e9502476730b31180dc968&rid=giphy.gif&ct=g' title='FAQ' width='' alt='Video Walkthrough' />
+
+Location type account can save the QR code into photo library.
+
+<img src='https://media2.giphy.com/media/tq92opMIS5DBHmLcQD/giphy.gif?cid=790b761153eeef3d1b1b065ff4c93da320a5d14286b91b77&rid=giphy.gif&ct=g' title='savinging qr code' width='' alt='Video Walkthrough' />
