@@ -9,6 +9,8 @@ Original App Design Project - README Template
 1. [Wireframes](#Wireframes)
 2. [Schema](#Schema)
 3. [Sprint 1](#Sprint-1)
+4. [Sprint 2](#Sprint-2)
+5. [Sprint 3](#Sprint-3)
 
 ## Overview
 ### Description
