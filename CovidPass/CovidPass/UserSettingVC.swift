@@ -44,11 +44,7 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     func configure() {
         self.modelss.append(Section2(title: "General", options: [
-            SettingsOption2(title: "Notifications", icon: UIImage(systemName: "bell"),
-                iconBackgroundColor: .systemRed, handler: {
-                    print("tapped first cell")
-                    
-                }),
+    
             SettingsOption2(title: "FAQ", icon: UIImage(systemName: "book"), iconBackgroundColor: .systemGreen, handler: {
                 print("Tapped second cell")
                 
@@ -61,11 +57,7 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
                 
             })
         ]))
-//        self.modelss = Array(0...100).compactMap({
-//            SettingsOption(title: "Item \($0)", icon: UIImage(systemName: "house"), iconBackgroundColor: .systemPink) {
-//
-//            }
-//        })
+//      
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
