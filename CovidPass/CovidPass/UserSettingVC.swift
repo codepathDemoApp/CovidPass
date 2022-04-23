@@ -39,7 +39,7 @@ class UserSettingVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         tableView.dataSource = self
         tableView.frame = view.bounds
         
-        self.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 4)
+        //self.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 4)
     }
     
     func configure() {

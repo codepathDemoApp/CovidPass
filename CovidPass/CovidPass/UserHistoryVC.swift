@@ -40,9 +40,32 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         }
     }
     override func viewWillAppear(_ animated: Bool) {
-        self.tableView.reloadData()
+        let query = PFQuery(className: "History")
+        query.whereKey("user", equalTo: user)
+        query.order(byDescending: "date")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (history, error) in
+            if history != nil {
+                self.history = history!
+                self.tableView.reloadData()
+            }
+        }
     }
     
+    @IBAction func onAllRecords(_ sender: Any) {
+        let query = PFQuery(className: "History")
+        query.whereKey("user", equalTo: user)
+        query.order(byDescending: "date")
+        query.limit = 20
+        
+        query.findObjectsInBackground { (history, error) in
+            if history != nil {
+                self.history = history!
+                self.tableView.reloadData()
+            }
+        }
+    }
     @IBAction func onLogOut(_ sender: Any) {
         
         PFUser.logOut()

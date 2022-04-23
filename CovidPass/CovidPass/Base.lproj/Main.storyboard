@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -826,16 +826,6 @@ United States</string>
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GkL-3f-efZ">
-                                <rect key="frame" x="16" y="701" width="382" height="28.5"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="gray" title="Save Profile">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="12"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="h0L-O1-0YK" kind="presentation" id="KT4-MS-Hhj"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="lP3-BZ-GRe"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -844,12 +834,9 @@ United States</string>
                             <constraint firstItem="Ynl-ZG-1JU" firstAttribute="top" secondItem="H0W-bv-Qe5" secondAttribute="bottom" constant="8" id="NHG-pV-aBw"/>
                             <constraint firstItem="Ynl-ZG-1JU" firstAttribute="centerX" secondItem="uBo-MI-oip" secondAttribute="centerX" id="Nly-oT-WWq"/>
                             <constraint firstItem="jNj-3i-Gcf" firstAttribute="top" secondItem="Ynl-ZG-1JU" secondAttribute="bottom" constant="32" id="PcN-Ti-lPt"/>
-                            <constraint firstItem="lP3-BZ-GRe" firstAttribute="trailing" secondItem="GkL-3f-efZ" secondAttribute="trailing" constant="16" id="Pib-xM-L2W"/>
                             <constraint firstItem="jNj-3i-Gcf" firstAttribute="leading" secondItem="lP3-BZ-GRe" secondAttribute="leading" constant="16" id="e3Z-dU-jeF"/>
-                            <constraint firstItem="GkL-3f-efZ" firstAttribute="centerX" secondItem="Ynl-ZG-1JU" secondAttribute="centerX" id="hVi-lu-VxJ"/>
                             <constraint firstItem="H0W-bv-Qe5" firstAttribute="centerX" secondItem="uBo-MI-oip" secondAttribute="centerX" id="p5T-5x-d4G"/>
                             <constraint firstItem="H0W-bv-Qe5" firstAttribute="top" secondItem="lP3-BZ-GRe" secondAttribute="top" constant="32" id="qzi-HS-YNJ"/>
-                            <constraint firstItem="GkL-3f-efZ" firstAttribute="top" secondItem="jNj-3i-Gcf" secondAttribute="bottom" constant="86.666666666666742" id="syG-fA-Qhf"/>
                             <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="jNj-3i-Gcf" secondAttribute="bottom" constant="120" id="wbf-Xd-kL2"/>
                         </constraints>
                     </view>
@@ -870,7 +857,6 @@ United States</string>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="addressLabel" destination="qfr-7z-bK3" id="i4T-XY-aV1"/>
-                        <outlet property="editProfileButton" destination="GkL-3f-efZ" id="Gc1-KZ-iUM"/>
                         <outlet property="emailLabel" destination="hQA-6U-5am" id="jZG-lj-qEK"/>
                         <outlet property="genderLabel" destination="EtU-fs-4VF" id="9rV-Y1-u32"/>
                         <outlet property="nameLabel" destination="4ig-VQ-ay9" id="EgR-gj-3S7"/>
@@ -1030,7 +1016,7 @@ United States</string>
             <objects>
                 <viewController storyboardIdentifier="editProfileController" id="h0L-O1-0YK" customClass="ProfileEditController" customModule="CovidPass" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jsc-jF-rLG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="aUz-1V-wJ7">
@@ -1233,6 +1219,9 @@ United States</string>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="All Records"/>
+                                <connections>
+                                    <action selector="onAllRecords:" destination="7i1-aA-pY1" eventType="touchUpInside" id="8Hs-A7-ofU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FUt-Vh-U4f"/>
@@ -1559,7 +1548,7 @@ United States</string>
         <scene sceneID="4az-4z-JPv">
             <objects>
                 <navigationController id="kdW-tK-C7Q" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Setting" selectedImage="gearshape.fill" catalog="system" id="476-Jf-ShC"/>
+                    <tabBarItem key="tabBarItem" title="Setting" image="gear" catalog="system" id="476-Jf-ShC"/>
                     <navigationItem key="navigationItem" id="HKY-KN-QQ5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="CMO-JV-ZE6">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1680,9 +1669,7 @@ United States</string>
         <scene sceneID="bbX-01-fB8">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zT1-qS-1ba" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Settings" id="XCg-cM-lyu">
-                        <imageReference key="selectedImage" image="gearshape.fill" catalog="system" symbolScale="large"/>
-                    </tabBarItem>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="XCg-cM-lyu"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="s5w-4O-M5i">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1743,7 +1730,7 @@ United States</string>
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlJ-s9-twh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Information" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MlJ-s9-twh">
                                 <rect key="frame" x="81" y="72" width="253" height="32"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <nil key="textColor"/>
@@ -1924,7 +1911,6 @@ United States</string>
                         <outlet property="countryTextField" destination="pVl-to-TQq" id="RdC-AY-KC3"/>
                         <outlet property="emailTextField" destination="tKJ-K5-qkV" id="jvF-5x-6wb"/>
                         <outlet property="genderTextField" destination="p0o-zR-1j2" id="ybc-yX-nuv"/>
-                        <outlet property="locationNameTextField" destination="AV3-X6-yBv" id="37H-ut-1RG"/>
                         <outlet property="nameTextField" destination="AV3-X6-yBv" id="TZx-nk-R1Y"/>
                         <outlet property="phoneTextField" destination="Ezb-Uy-yAs" id="Mct-gi-44w"/>
                         <outlet property="stateTextField" destination="jV1-T7-Xjf" id="BeD-1Q-Wud"/>
@@ -1939,8 +1925,8 @@ United States</string>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="7W7-iq-m4o"/>
-        <segue reference="NRB-fG-xpF"/>
-        <segue reference="K6F-gu-Stu"/>
+        <segue reference="bf1-hI-Su1"/>
+        <segue reference="Fk7-vJ-f9J"/>
         <segue reference="d7W-RM-7kd"/>
     </inferredMetricsTieBreakers>
     <resources>
@@ -1951,7 +1937,7 @@ United States</string>
         <image name="feed_tab" width="25" height="25"/>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
         <image name="filemenu.and.selection" catalog="system" width="128" height="93"/>
-        <image name="gearshape.fill" catalog="system" width="128" height="121"/>
+        <image name="gear" catalog="system" width="128" height="119"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="profile_tab" width="25" height="25"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>

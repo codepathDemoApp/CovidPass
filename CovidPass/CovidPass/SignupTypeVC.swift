@@ -62,22 +62,22 @@ class SignupTypeVC: UIViewController {
     
     // Sign up for user
     @IBAction func forUser(_ sender: Any) {
-        
-        let user = PFUser()
-        
-        user.username = username
-        user.password = password
-        user["type"] = "user"
-        
-        print("System: successfully signed \(user.username!) as user type account")
-
-        user.signUpInBackground { success, error in
-            if success {
-                self.performSegue(withIdentifier: "loginToUserSegue", sender: nil)
-            } else {
-                print("Error: \(error!.localizedDescription)")
-            }
-        }
+        performSegue(withIdentifier: "segueToUserInformation", sender: nil)
+//        let user = PFUser()
+//
+//        user.username = username
+//        user.password = password
+//        user["type"] = "user"
+//
+//        print("System: successfully signed \(user.username!) as user type account")
+//
+//        user.signUpInBackground { success, error in
+//            if success {
+//                self.performSegue(withIdentifier: "segueToUserInformation", sender: nil)
+//            } else {
+//                print("Error: \(error!.localizedDescription)")
+//            }
+//        }
     }
     
     /*
