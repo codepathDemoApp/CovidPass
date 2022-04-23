@@ -1494,7 +1494,7 @@ United States</string>
         <scene sceneID="W7z-Z5-7T6">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qDe-DO-G1n" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="History" image="history" id="GEF-TC-X4r"/>
+                    <tabBarItem key="tabBarItem" title="History" image="clock.fill" catalog="system" id="GEF-TC-X4r"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6MU-Z6-ww7">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -1952,7 +1952,6 @@ United States</string>
         <image name="figure.stand" catalog="system" width="77" height="128"/>
         <image name="filemenu.and.selection" catalog="system" width="128" height="93"/>
         <image name="gearshape.fill" catalog="system" width="128" height="121"/>
-        <image name="history" width="24" height="24"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
         <image name="profile_tab" width="25" height="25"/>
         <image name="qrcode" catalog="system" width="128" height="114"/>

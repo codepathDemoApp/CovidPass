@@ -34,6 +34,8 @@ class LocationSettingVC: UIViewController , UITableViewDelegate, UITableViewData
         tableView.delegate = self
         tableView.dataSource = self
         tableView.frame = view.bounds
+        
+        self.tabBarItem = UITabBarItem(title: "Setting", image: UIImage(systemName: "gear"), tag: 3)
 
         // Do any additional setup after loading the view.
     }
