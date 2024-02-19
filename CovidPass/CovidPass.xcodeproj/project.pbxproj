@@ -146,6 +146,61 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		B63BE2412B840E2000DF6516 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */,
+				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
+				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
+				0007F1D2280A413900C84AA0 /* UserSettingCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B63BE2432B840E2900DF6516 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				B63BE2462B840E5600DF6516 /* User */,
+				B63BE2452B840E5400DF6516 /* Location */,
+				B63BE2442B840E4300DF6516 /* Signup */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		B63BE2442B840E4300DF6516 /* Signup */ = {
+			isa = PBXGroup;
+			children = (
+				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
+				B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */,
+				B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */,
+				C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */,
+				B6E428F42811381A00261F82 /* SignupUserVC.swift */,
+			);
+			path = Signup;
+			sourceTree = "<group>";
+		};
+		B63BE2452B840E5400DF6516 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				C748E1A328000889005AB168 /* LocationCodeVC.swift */,
+				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
+				B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */,
+				C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		B63BE2462B840E5600DF6516 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
+				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
+				B64BAAC627FD016600057FB2 /* UserProfileVC.swift */,
+				0007F1CE280A3CED00C84AA0 /* UserSettingVC.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
 		C7692EA927F8D081007831FC = {
 			isa = PBXGroup;
 			children = (
@@ -171,30 +226,15 @@
 		C7692EB427F8D081007831FC /* CovidPass */ = {
 			isa = PBXGroup;
 			children = (
+				B63BE2432B840E2900DF6516 /* ViewControllers */,
+				B63BE2412B840E2000DF6516 /* Cells */,
 				C7692EB527F8D081007831FC /* AppDelegate.swift */,
 				C7692EB727F8D081007831FC /* SceneDelegate.swift */,
 				C7692EBE27F8D084007831FC /* Assets.xcassets */,
 				C7692EC027F8D084007831FC /* LaunchScreen.storyboard */,
 				C7692EC327F8D084007831FC /* Info.plist */,
 				B64BAAC227FD015400057FB2 /* LoginViewController.swift */,
-				B65B30EF27FF9DB700E7A90D /* SignupUsernameVC.swift */,
-				B65B30F127FF9EA100E7A90D /* SignupPasswordVC.swift */,
-				B65B30ED27FF9C1700E7A90D /* SignupTypeVC.swift */,
-				C7D75ABA280CEF0D00B5E7D1 /* SignupLocationVC.swift */,
-				B6E428F42811381A00261F82 /* SignupUserVC.swift */,
-				B64BAAC027FD014900057FB2 /* UserHomeVC.swift */,
-				B64BAAC427FD015D00057FB2 /* UserHistoryVC.swift */,
-				B64BAAC827FD06F200057FB2 /* UserHistoryCell.swift */,
-				B64BAAC627FD016600057FB2 /* UserProfileVC.swift */,
 				3F6DEF36280A77E4008D4FD7 /* ProfileEditController.swift */,
-				0007F1CE280A3CED00C84AA0 /* UserSettingVC.swift */,
-				0007F1D2280A413900C84AA0 /* UserSettingCell.swift */,
-				C748E1A328000889005AB168 /* LocationCodeVC.swift */,
-				B6A3E2AE280A5B0600CEBB16 /* LocationHistoryVC.swift */,
-				B6A645922812A11D00A5C682 /* LocationHistoryCell.swift */,
-				B65B30F327FFA6AB00E7A90D /* LocationSettingVC.swift */,
-				EF0DE09D280A0ADC00D3E089 /* LocationSettingCell.swift */,
-				C733D68A2811E4A700CE5C63 /* LocationFAQViewController.swift */,
 				C7692EBB27F8D081007831FC /* Main.storyboard */,
 				B6A645942813B6E500A5C682 /* TabBarViewController.swift */,
 				C7D75AB8280B71B400B5E7D1 /* ScannerVC.swift */,
