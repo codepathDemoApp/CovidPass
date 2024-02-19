@@ -29,55 +29,82 @@ class UserHomeVC: UIViewController, PHPickerViewControllerDelegate, UIImagePicke
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
-        var history = [PFObject]()
+        getHistoryImage()
+    }
+    
+    func getHistoryImage() {
         let query = PFQuery(className: "History")
         query.whereKey("user", equalTo: user)
         query.order(byDescending: "date")
         query.limit = 1
-        do {
-            history = try query.findObjects()
-        } catch {
-            print("ERROR:" + error.localizedDescription)
-        }
-        if history.isEmpty {
-            return
-        }
         
-        let date = history[0]["date"] as! Date
-        let location = history[0]["location"] as! PFUser
-        
-        let locationquery = PFUser.query()!
-        locationquery.whereKey("objectId", equalTo: location.objectId!)
-        
-        var loc = [PFObject]()
-        do {
-            loc = try locationquery.findObjects()
-        } catch {
-            print("ERROR:" + error.localizedDescription)
-        }
-        lastCheckInNameLabel.text = loc[0].object(forKey: "locationname") as? String ?? "No location name"
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "MMMM dd, yyyy 'at' HH:mm"
-        let dateString = dateFormatter.string(from: date as Date)
-        lastCheckInDateLabel.text = dateString
-        
-        let imageFile = user["image"] as? PFFileObject ?? nil
-        if(imageFile == nil) {
-            return
-        }
-        let urlString = imageFile?.url!
-        let url = URL(string: urlString!)!
-        do {
-            let data = try Data(contentsOf: url)
-            let uiimage = UIImage(data: data)
-            let flippedImage = UIImage(cgImage: (uiimage?.cgImage!)!, scale: 1.0, orientation: .right)
-            self.cardImage.image = flippedImage
-        } catch {
-            print(error.localizedDescription)
-        }
+        query.findObjectsInBackground { (objects, error) in
+            if let error = error {
+                print("Error fetching history: \(error.localizedDescription)")
+                return
+            }
             
+            guard let history = objects as? [PFObject], let latestHistory = history.first else {
+                print("History not found")
+                return
+            }
+            
+            guard let date = latestHistory["date"] as? Date,
+                  let location = latestHistory["location"] as? PFUser else {
+                print("Date or location not found in history")
+                return
+            }
+            
+            let locationquery = PFUser.query()!
+            locationquery.whereKey("objectId", equalTo: location.objectId!)
+            
+            locationquery.findObjectsInBackground { (locationObjects, error) in
+                if let error = error {
+                    print("Error fetching location: \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let location = locationObjects?.first, let locationName = location["locationname"] as? String else {
+                    print("Location not found")
+                    return
+                }
+                
+                DispatchQueue.main.async {
+                    self.lastCheckInNameLabel.text = locationName
+                    
+                    let dateFormatter = DateFormatter()
+                    dateFormatter.dateFormat = "MMMM dd, yyyy 'at' HH:mm"
+                    let dateString = dateFormatter.string(from: date)
+                    self.lastCheckInDateLabel.text = dateString
+                }
+            }
+            
+            guard let imageFile = self.user["image"] as? PFFileObject else {
+                print("Image file not found")
+                return
+            }
+            
+            imageFile.getDataInBackground { (data, error) in
+                if let error = error {
+                    print("Error fetching image data: \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let imageData = data else {
+                    print("Image data not found")
+                    return
+                }
+                
+                if let uiimage = UIImage(data: imageData) {
+                    let flippedImage = UIImage(cgImage: uiimage.cgImage!, scale: 1.0, orientation: .right)
+                    DispatchQueue.main.async {
+                        self.cardImage.image = flippedImage
+                    }
+                } else {
+                    print("Failed to create UIImage from data")
+                }
+            }
+        }
     }
     
     @IBAction func onLogOut(_ sender: Any) {
@@ -146,15 +173,4 @@ class UserHomeVC: UIViewController, PHPickerViewControllerDelegate, UIImagePicke
         dismiss(animated: true, completion: nil)
         
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

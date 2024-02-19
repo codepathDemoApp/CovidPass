@@ -26,46 +26,38 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        let query = PFQuery(className: "History")
-        query.whereKey("user", equalTo: user)
-        query.order(byDescending: "date")
-        query.limit = 20
-        
-        query.findObjectsInBackground { (history, error) in
-            if history != nil {
-                self.history = history!
-                self.tableView.reloadData()
-            }
-        }
+        fetchData()
     }
-    override func viewWillAppear(_ animated: Bool) {
+    
+    func fetchData() {
         let query = PFQuery(className: "History")
         query.whereKey("user", equalTo: user)
         query.order(byDescending: "date")
         query.limit = 20
         
         query.findObjectsInBackground { (history, error) in
-            if history != nil {
-                self.history = history!
-                self.tableView.reloadData()
+            if let history = history {
+                self.history = history
+                DispatchQueue.main.async {
+                    self.tableView.reloadData() // Reload the tableView after data is fetched
+                }
+            } else {
+                if let error = error {
+                    print("Error fetching history: \(error.localizedDescription)")
+                }
             }
         }
     }
     
-    @IBAction func onAllRecords(_ sender: Any) {
-        let query = PFQuery(className: "History")
-        query.whereKey("user", equalTo: user)
-        query.order(byDescending: "date")
-        query.limit = 20
-        
-        query.findObjectsInBackground { (history, error) in
-            if history != nil {
-                self.history = history!
-                self.tableView.reloadData()
-            }
-        }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        fetchData()
     }
+    
+    @IBAction func onAllRecords(_ sender: Any) {
+        fetchData()
+    }
+    
     @IBAction func onLogOut(_ sender: Any) {
         
         PFUser.logOut()
@@ -103,11 +95,14 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
         let locationquery = PFUser.query()!
         locationquery.whereKey("objectId", equalTo: location.objectId!)
         
-        var loc = [PFObject]()
-        
-        locationquery.findObjectsInBackground { (location, error) in
-            loc = location!
-            cell.locationLabel.text = loc[0].object(forKey: "locationname") as? String ?? "No location name"
+        locationquery.findObjectsInBackground { (locations, error) in
+            if let locations = locations, let location = locations.first {
+                DispatchQueue.main.async {
+                    cell.locationLabel.text = location.object(forKey: "locationname") as? String ?? "No location name"
+                }
+            } else {
+                print("Error fetching location: \(error?.localizedDescription ?? "Unknown error")")
+            }
         }
             
         let dateFormatter = DateFormatter()
@@ -127,15 +122,4 @@ class UserHistoryVC: UIViewController, UITableViewDelegate, UITableViewDataSourc
     
     @IBAction func scanQR(_ sender: Any) {
     }
-    
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

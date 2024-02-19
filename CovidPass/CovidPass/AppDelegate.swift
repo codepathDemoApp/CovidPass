@@ -22,6 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Parse.initialize(with: parseConfig)
         
+        // Asynchronous URL loading example using URLSession
+        if let url = URL(string: "https://parsefiles.back4app.com/QGQMN81EW7gvohQtYE5F5bpBkdJurKwhKRm75UV9/4afa6d8382f97477869dd7614abcf700_file.bin") {
+            URLSession.shared.dataTask(with: url) { data, response, error in
+                // Handle error
+                if let error = error {
+                    print("Error: \(error)")
+                    return
+                }
+                // Handle response and data
+                if let httpResponse = response as? HTTPURLResponse {
+                    print("Status code: \(httpResponse.statusCode)")
+                }
+                // Process received data
+                if let data = data {
+                    print("Received data: \(data)")
+                }
+            }.resume()
+         }
         return true
     }
 
